@@ -33,50 +33,7 @@
   </div>
   <!--==================== Preloader End ====================-->
 
-  <!-- ========================== Settings Panel start ==================================== -->
-<div class="settings-panel position-fixed top-50 translate-middle-y z-999 flex items-center">
-  <button type="button"
-    class="settings-button w-12 h-12 bg-main-600 text-white hover-bg-main-800 duration-100 flex justify-center items-center">
-    <i class="ph-fill ph-gear-six setting-icon text-2xl leading-none animation-rotate w-6 h-6"></i>
-    <i class="ph-bold ph-x close-icon text-2xl leading-none w-6 h-6"></i>
-  </button>
-
-  <div class="settings-panel__content bg-white px-6 py-13 flex flex-column gap-10 scroll-sm overflow-y-auto">
-    <div class="flex flex-column gap-10">
-      <div class="">
-        <h6 class="settings-panel__title text-center mb-6 text-uppercase">
-          Cursor
-        </h6>
-        <div class="settings-panel__buttons cursor__buttons flex gap-4">
-          <button type="button"
-            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1 active">
-            Animate
-          </button>
-          <button type="button"
-            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1">
-            Default
-          </button>
-        </div>
-      </div>
-      <div class="">
-        <h6 class="settings-panel__title text-center mb-6 text-uppercase">
-          Direction
-        </h6>
-        <div class="settings-panel__buttons flex gap-4">
-          <button type="button"
-            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1 active">
-            LTR
-          </button>
-          <button type="button"
-            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1">
-            RTL
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ========================== Settings Panel end ==================================== -->
+  
 
   <!--==================== Overlay Start ====================-->
   <div class="overlay"></div>
@@ -104,9 +61,9 @@
   <!-- Custom Cursor End -->
 
   <!-- ==================== Mobile Menu Start Here ==================== -->
-<div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white w-300-px h-screen overflow-y-auto p-6 z-999 -translate-x-full pb-68 ">
+<div class="mobile-menu d-lg-none d-block scroll-sm fixed bg-white w-300-px h-screen overflow-y-auto p-6 z-999 -translate-x-full pb-68 ">
 
-    <button type="button" class="close-button absolute end-0 top-0 me-2 mt-2 w-605 h-605 rounded-circle flex justify-center items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white"> 
+    <button type="button" class="close-button absolute end-0 top-0 me-2 mt-2 w-605 h-605 rounded-circle flex justify-center items-center text-neutral-900 bg-neutral-200 hover:bg-neutral-900 hover:text-white"> 
         <i class="ph ph-x"></i>
     </button>
 
@@ -119,59 +76,59 @@
 <ul class="nav-menu d-lg-flex items-center nav-menu--mobile d-block mt-8">
     <li class="nav-menu__item has-submenu activePage">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Home</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Home</a>
         
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Pages</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Pages</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="pricing-plan.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Pricing
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="about.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     About Us
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="app-intigration.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     App Integration
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="intigration-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Integration Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="policy-privacy.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Privacy Policy
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="faq.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     FAQ
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="project-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Project Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="service-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Service Details
                 </a>
             </li>
@@ -179,30 +136,30 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Shop</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Shop</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="cart.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Cart
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="checkout.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Checkout
                 </a>
             </li>
@@ -210,18 +167,18 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Blog</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Blog</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog Details
                 </a>
             </li>
@@ -229,12 +186,12 @@
     </li>
     <li class="nav-menu__item">
         <a href="contact.html"
-            class="nav-menu__link hover--translate-y-1 text-heading py-9 fw-semibold w-full">Contact</a>
+            class="nav-menu__link hover:-translate-y-1 text-heading py-9 font-semibold w-full">Contact</a>
     </li>
 </ul>
 <!-- Nav menu End  -->
         </div>
-        <a href="register.html" class="btn btn-main-two hover-style-two button--stroke d-sm-none inline-flex items-center justify-center gap-5 group active--translate-y-2 px-8 rounded-pill mt-6" data-block="button">
+        <a href="register.html" class="btn btn-main-two hover:style-two button--stroke d-sm-none inline-flex items-center justify-center gap-5 group active--translate-y-2 px-8 rounded-pill mt-6" data-block="button">
             <span class="button__flair"></span>
             <span class="button__label">Sign Up Now</span>
         </a>
@@ -249,7 +206,7 @@
 <div class="bg-main-600 py-205 d-sm-block d-none">
     <div class="container">
         <div class="flex justify-center">
-            <p class="text-white bg-white-13 d-inline-block py-1 px-5 rounded-pill fw-normal">We're introducing an exceptionally crafted UI/UX template on ThemeForest, designed to deliver outstanding conversion results!</p>
+            <p class="text-white bg-white-13 d-inline-block py-1 px-5 rounded-pill font-normal">We're introducing an exceptionally crafted UI/UX template on ThemeForest, designed to deliver outstanding conversion results!</p>
         </div>
     </div>
 </div>
@@ -261,7 +218,7 @@
         <nav class="flex items-center justify-between relative">
             <!-- Logo Start -->
             <div class="logo">
-                <a href="index.html" class="link hover--translate-y-1 active--translate-y-scale-9">
+                <a href="index.html" class="link hover:-translate-y-1 active--translate-y-scale-9">
                     <img src="assets/images/logo/logo-three.png" alt="Logo" class="max-w-200-px">
                 </a>
             </div>
@@ -273,59 +230,59 @@
 <ul class="nav-menu d-lg-flex items-center gap-14">
     <li class="nav-menu__item has-submenu activePage">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Home</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Home</a>
         
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Pages</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Pages</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="pricing-plan.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Pricing
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="about.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     About Us
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="app-intigration.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     App Integration
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="intigration-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Integration Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="policy-privacy.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Privacy Policy
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="faq.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     FAQ
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="project-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Project Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="service-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Service Details
                 </a>
             </li>
@@ -333,30 +290,30 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Shop</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Shop</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="cart.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Cart
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="checkout.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Checkout
                 </a>
             </li>
@@ -364,18 +321,18 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Blog</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Blog</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog Details
                 </a>
             </li>
@@ -383,7 +340,7 @@
     </li>
     <li class="nav-menu__item">
         <a href="contact.html"
-            class="nav-menu__link hover--translate-y-1 text-heading py-9 fw-semibold w-full">Contact</a>
+            class="nav-menu__link hover:-translate-y-1 text-heading py-9 font-semibold w-full">Contact</a>
     </li>
 </ul>
 <!-- Nav menu End  -->
@@ -393,7 +350,7 @@
             <!-- Header Right start -->
             <div class="flex items-center gap-6">
                 <a href="register.html"
-                    class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex d-none items-center justify-center gap-5 group active--translate-y-2 px-9 rounded-pill py-4 fw-semibold common-shadow-inset-one"
+                    class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex d-none items-center justify-center gap-5 group active--translate-y-2 px-9 rounded-pill py-4 font-semibold common-shadow-inset-one"
                     data-block="button">
                     <span class="button__flair"></span>
                     <span class="button__label">Sign Up Now</span>
@@ -420,19 +377,19 @@
                 <div class="col-xxl-10">
                     <div class="text-center">
                         <div class="max-w-780-px text-center mx-auto">
-                            <div class="bg-white py-2 px-7 rounded-pill text-main-600 fw-bold text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyEight" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+                            <div class="bg-white py-2 px-7 rounded-pill text-main-600 font-bold capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyEight" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                                 what we offering
                             </div>
-                            <h1 class="splitTextStyleOne text-heading text-capitalize leading-none">Invest with confidence Grow your future </h1>
-                            <p class="text-neutral-600 text-xl mt-605 splitTextStyleOne max-w-5 mx-auto fw-medium leading-145 max-w-548-px">In today's competitive business, the demand for efficient and cost-effective IT solutions has never been more critical.</p>
+                            <h1 class="splitTextStyleOne text-heading capitalize leading-none">Invest with confidence Grow your future </h1>
+                            <p class="text-neutral-600 text-xl mt-605 splitTextStyleOne max-w-5 mx-auto font-medium leading-145 max-w-548-px">In today's competitive business, the demand for efficient and cost-effective IT solutions has never been more critical.</p>
                             <div class="flex items-center justify-center gap-405 mt-10">
                                 <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-                                    <a href="https://play.google.com/store/apps" class="hover--translate-y-1 active--translate-y-scale-9 rounded-2xl common-shadow-twentyEight">
+                                    <a href="https://play.google.com/store/apps" class="hover:-translate-y-1 active--translate-y-scale-9 rounded-2xl common-shadow-twentyEight">
                                         <img src="assets/images/icons/store-two1.png" alt="App Store">
                                     </a>
                                 </div>
                                 <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-                                    <a href="https://www.apple.com/app-store" class="hover--translate-y-1 active--translate-y-scale-9 rounded-2xl common-shadow-twentyEight">
+                                    <a href="https://www.apple.com/app-store" class="hover:-translate-y-1 active--translate-y-scale-9 rounded-2xl common-shadow-twentyEight">
                                         <img src="assets/images/icons/store-two2.png" alt="Google Store">
                                     </a>
                                 </div>
@@ -515,20 +472,20 @@
 <section class="work-process-five py-120">
     <div class="container">
         <div class="text-center mx-auto pb-15">
-            <div class="bg-white py-2 px-7 rounded-pill text-main-600 fw-bold text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" > what we offering
+            <div class="bg-white py-2 px-7 rounded-pill text-main-600 font-bold capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" > what we offering
             </div>
-            <h2 class="splitTextStyleOne text-heading text-capitalize leading-none">Simplifying your investment journey</h2>
+            <h2 class="splitTextStyleOne text-heading capitalize leading-none">Simplifying your investment journey</h2>
         </div>
         
         <div class="relative mt-17 stair-bg rounded-28-px">
             <div class="px-40-px flex pt-14 gradient-bg-eight rounded-28-px relative flex-md-nowrap flex-wrap gap-6">
                 <div class="max-w-780-px mx-auto">
                     <div class="text-center ">
-                        <div class="bg-transparent border border-blue text-blue py-2 px-7 rounded-pill fw-bold text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyEight" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+                        <div class="bg-transparent border border-blue text-blue py-2 px-7 rounded-pill font-bold capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyEight" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                             what we offering
                         </div>
-                        <h2 class="splitTextStyleOne text-heading text-capitalize leading-none max-w-500-px mx-auto">Sign up and secure your account</h2>
-                        <p class="text-neutral-600 text-xl mt-605 splitTextStyleOne max-w-5 mx-auto fw-medium leading-145 max-w-548-px">In today's competitive business, the demand for efficient and cost-effective IT solutions has never been more critical.</p>
+                        <h2 class="splitTextStyleOne text-heading capitalize leading-none max-w-500-px mx-auto">Sign up and secure your account</h2>
+                        <p class="text-neutral-600 text-xl mt-605 splitTextStyleOne max-w-5 mx-auto font-medium leading-145 max-w-548-px">In today's competitive business, the demand for efficient and cost-effective IT solutions has never been more critical.</p>
                     </div>
 
                     <div class="mt-80-px flex justify-between relative z-1 gap-2 pb-10">
@@ -536,20 +493,20 @@
                         
                         <div class="text-center">
                             <span class="w-405 h-405 bg-deep-green rounded-circle"></span>
-                            <span class="text-heading fw-semibold d-block mt-4 text-capitalize">Sign up</span>
+                            <span class="text-heading font-semibold d-block mt-4 capitalize">Sign up</span>
                         </div>
                         <div class="text-center">
                             <span class="w-405 h-405 rounded-circle bg-white common-shadow-twentyEight"></span>
-                            <span class="text-heading fw-semibold d-block mt-4 text-capitalize">investment goals</span>
+                            <span class="text-heading font-semibold d-block mt-4 capitalize">investment goals</span>
                         </div>
                         <div class="text-center">
                             <span class="w-405 h-405 rounded-circle bg-main-600"></span>
-                            <span class="text-heading fw-semibold d-block mt-4 text-capitalize">start investing</span>
+                            <span class="text-heading font-semibold d-block mt-4 capitalize">start investing</span>
                         </div>
                     </div>
                 </div>
     
-                <div class="flex flex-column justify-content-end">
+                <div class="flex flex-col justify-content-end">
                     <img src="assets/images/thumbs/work-process-five-thumb.png" alt="Thumbnail" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
                 </div>
             </div>
@@ -572,14 +529,14 @@
                     <div class="col-md-6">
                         <div class="">
                             <div class="max-w-780-px text-start mx-auto">
-                                <div class="bg-white py-2 px-7 rounded-pill text-main-600 fw-bold text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+                                <div class="bg-white py-2 px-7 rounded-pill text-main-600 font-bold capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                                     what we offering
                                 </div>
-                                <h2 class="splitTextStyleOne text-heading text-capitalize leading-none">Why should you choose Sassly mobile app.</h2>
-                                <p class="text-neutral-600 text-lg mt-605 splitTextStyleOne max-w-5 fw-medium leading-145 max-w-570-px">Sassly-CRM in the past allowing you to focus more on your business simply enjoy your newfound legal time to reflect leaving pen</p>
+                                <h2 class="splitTextStyleOne text-heading capitalize leading-none">Why should you choose Sassly mobile app.</h2>
+                                <p class="text-neutral-600 text-lg mt-605 splitTextStyleOne max-w-5 font-medium leading-145 max-w-570-px">Sassly-CRM in the past allowing you to focus more on your business simply enjoy your newfound legal time to reflect leaving pen</p>
                             </div>
-                            <div class="mt-11 flex flex-column gap-7">
-                                <div class="rounded-3xl border border-neutral-100 py-8 px-9 hover-bg-neutral-100 duration-300 flex align-items-start gap-605">
+                            <div class="mt-11 flex flex-col gap-7">
+                                <div class="rounded-3xl border border-neutral-100 py-8 px-9 hover:bg-neutral-100 duration-300 flex align-items-start gap-605">
                                     <div class="">
                                         <img src="assets/images/icons/offer-five-icon1.png" alt="icon">
                                     </div>
@@ -588,7 +545,7 @@
                                         <p class="text-lg text-neutral-600 max-w-278-px leading-153 splitTextStyleOne">Analytics refers to the systematic collection interpretation.</p>
                                     </div>
                                 </div>
-                                <div class="rounded-3xl border border-neutral-100 py-8 px-9 hover-bg-neutral-100 duration-300 flex align-items-start gap-605">
+                                <div class="rounded-3xl border border-neutral-100 py-8 px-9 hover:bg-neutral-100 duration-300 flex align-items-start gap-605">
                                     <div class="">
                                         <img src="assets/images/icons/offer-five-icon2.png" alt="icon">
                                     </div>
@@ -611,47 +568,47 @@
 <section class="about-features">
     <div class="container">
         <div class="text-center mx-auto pb-15 max-w-910-px">
-            <div class="bg-white py-2 px-7 rounded-pill text-main-600 fw-bold text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" > what we offering
+            <div class="bg-white py-2 px-7 rounded-pill text-main-600 font-bold capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" > what we offering
             </div>
-            <h2 class="splitTextStyleOne text-heading text-capitalize leading-none">Simplifying your investment journey</h2>
-            <p class="splitTextStyleOne text-neutral-500 max-w-602-px mx-auto fw-medium mt-5">Discover how Upshift not only simplifies your investment process but also empowers you to make smarter, data-driven decisions.</p>
+            <h2 class="splitTextStyleOne text-heading capitalize leading-none">Simplifying your investment journey</h2>
+            <p class="splitTextStyleOne text-neutral-500 max-w-602-px mx-auto font-medium mt-5">Discover how Upshift not only simplifies your investment process but also empowers you to make smarter, data-driven decisions.</p>
         </div>
         
         <div class="row gy-4">
             <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
-                <div class="rounded-2xl bg-neutral-50 bg-hover-app-landing py-14 px-7 border border-neutral-100 group animation-item group-item transition duration-200 h-100">
+                <div class="rounded-2xl bg-neutral-50 bg-hover:app-landing py-14 px-7 border border-neutral-100 group animation-item group-item transition duration-200 h-100">
                     <span class="w-92-px h-92-px rounded-circle flex items-center justify-center common-shadow-fifteen mb-11">
-                        <img src="assets/images/icons/about-features-two-icon1.svg" alt="Icon" class="group-hover-item-text-invert transition duration-200 animate__heartBeat">
+                        <img src="assets/images/icons/about-features-two-icon1.svg" alt="Icon" class="group-hover:item-text-invert transition duration-200 animate__heartBeat">
                     </span>
-                    <h4 class="splitTextStyleOne mb-7 group-hover-text-white transition duration-200">Comprehensive Education</h4>
-                    <p class="splitTextStyleOne group-hover-text-white fw-medium text-neutral-500 transition duration-200">Web hosting provides everything idea online. From where your</p>
+                    <h4 class="splitTextStyleOne mb-7 group-hover:text-white transition duration-200">Comprehensive Education</h4>
+                    <p class="splitTextStyleOne group-hover:text-white font-medium text-neutral-500 transition duration-200">Web hosting provides everything idea online. From where your</p>
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-                <div class="rounded-2xl bg-neutral-50 bg-hover-app-landing py-14 px-7 border border-neutral-100 group animation-item group-item transition duration-200 h-100">
+                <div class="rounded-2xl bg-neutral-50 bg-hover:app-landing py-14 px-7 border border-neutral-100 group animation-item group-item transition duration-200 h-100">
                     <span class="w-92-px h-92-px rounded-circle flex items-center justify-center common-shadow-fifteen mb-11">
-                        <img src="assets/images/icons/about-features-two-icon2.svg" alt="Icon" class="group-hover-item-text-invert transition duration-200 animate__heartBeat">
+                        <img src="assets/images/icons/about-features-two-icon2.svg" alt="Icon" class="group-hover:item-text-invert transition duration-200 animate__heartBeat">
                     </span>
-                    <h4 class="splitTextStyleOne mb-7 group-hover-text-white transition duration-200">User-friendly Interface</h4>
-                    <p class="splitTextStyleOne group-hover-text-white fw-medium text-neutral-500 transition duration-200">Web hosting provides everything idea online. From where your</p>
+                    <h4 class="splitTextStyleOne mb-7 group-hover:text-white transition duration-200">User-friendly Interface</h4>
+                    <p class="splitTextStyleOne group-hover:text-white font-medium text-neutral-500 transition duration-200">Web hosting provides everything idea online. From where your</p>
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-                <div class="rounded-2xl bg-neutral-50 bg-hover-app-landing py-14 px-7 border border-neutral-100 group animation-item group-item transition duration-200 h-100">
+                <div class="rounded-2xl bg-neutral-50 bg-hover:app-landing py-14 px-7 border border-neutral-100 group animation-item group-item transition duration-200 h-100">
                     <span class="w-92-px h-92-px rounded-circle flex items-center justify-center common-shadow-fifteen mb-11">
-                        <img src="assets/images/icons/about-features-two-icon3.svg" alt="Icon" class="group-hover-item-text-invert transition duration-200 animate__heartBeat">
+                        <img src="assets/images/icons/about-features-two-icon3.svg" alt="Icon" class="group-hover:item-text-invert transition duration-200 animate__heartBeat">
                     </span>
-                    <h4 class="splitTextStyleOne mb-7 group-hover-text-white transition duration-200">Bookkeeping & Cash Flow</h4>
-                    <p class="splitTextStyleOne group-hover-text-white fw-medium text-neutral-500 transition duration-200">Web hosting provides everything idea online. From where your</p>
+                    <h4 class="splitTextStyleOne mb-7 group-hover:text-white transition duration-200">Bookkeeping & Cash Flow</h4>
+                    <p class="splitTextStyleOne group-hover:text-white font-medium text-neutral-500 transition duration-200">Web hosting provides everything idea online. From where your</p>
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
-                <div class="rounded-2xl bg-neutral-50 bg-hover-app-landing py-14 px-7 border border-neutral-100 group animation-item group-item transition duration-200 h-100">
+                <div class="rounded-2xl bg-neutral-50 bg-hover:app-landing py-14 px-7 border border-neutral-100 group animation-item group-item transition duration-200 h-100">
                     <span class="w-92-px h-92-px rounded-circle flex items-center justify-center common-shadow-fifteen mb-11">
-                        <img src="assets/images/icons/about-features-two-icon4.svg" alt="Icon" class="group-hover-item-text-invert transition duration-200 animate__heartBeat">
+                        <img src="assets/images/icons/about-features-two-icon4.svg" alt="Icon" class="group-hover:item-text-invert transition duration-200 animate__heartBeat">
                     </span>
-                    <h4 class="splitTextStyleOne mb-7 group-hover-text-white transition duration-200">Customized reminder alerts</h4>
-                    <p class="splitTextStyleOne group-hover-text-white fw-medium text-neutral-500 transition duration-200">Web hosting provides everything idea online. From where your</p>
+                    <h4 class="splitTextStyleOne mb-7 group-hover:text-white transition duration-200">Customized reminder alerts</h4>
+                    <p class="splitTextStyleOne group-hover:text-white font-medium text-neutral-500 transition duration-200">Web hosting provides everything idea online. From where your</p>
                 </div>
             </div>
         </div>
@@ -664,22 +621,22 @@
         <section class="pt-120">
             <div class="container">
                 <div class="text-center mx-auto pb-15 max-w-548-px">
-                    <div class="bg-white py-2 px-7 rounded-pill text-main-600 fw-bold text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine"
+                    <div class="bg-white py-2 px-7 rounded-pill text-main-600 font-bold capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine"
                         data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600"> what we
                         offering
                     </div>
-                    <h2 class="splitTextStyleOne text-heading text-capitalize leading-none">Trueted CRM tools by the
+                    <h2 class="splitTextStyleOne text-heading capitalize leading-none">Trueted CRM tools by the
                         happy users</h2>
                 </div>
 
                 <div
                     class="border-top border-bottom flex justify-center flex-sm-nowrap flex-wrap gap-148-px">
                     <div
-                        class="text-center pt-13 pb-9 flex flex-column justify-center items-center transition duration-200">
+                        class="text-center pt-13 pb-9 flex flex-col justify-center items-center transition duration-200">
                         <h2 class="h1 text-main-600">
                             <span class="counter">282</span><span class="">+</span>
                         </h2>
-                        <span class="h6 text-uppercase text-base mt-5 d-sm-block d-none">worldwide clients</span>
+                        <span class="h6 uppercase text-base mt-5 d-sm-block d-none">worldwide clients</span>
                     </div>
 
                     <div class="flex">
@@ -687,11 +644,11 @@
                     </div>
 
                     <div
-                        class="text-center pt-13 pb-9 flex flex-column justify-center items-center transition duration-200">
+                        class="text-center pt-13 pb-9 flex flex-col justify-center items-center transition duration-200">
                         <h2 class="h1 text-main-600">
                             <span class="counter">95</span><span class="">%</span>
                         </h2>
-                        <span class="h6 text-uppercase text-base mt-5 d-sm-block d-none">worldwide clients</span>
+                        <span class="h6 uppercase text-base mt-5 d-sm-block d-none">worldwide clients</span>
                     </div>
 
                     <div class="flex">
@@ -699,11 +656,11 @@
                     </div>
 
                     <div
-                        class="text-center pt-13 pb-9 flex flex-column justify-center items-center transition duration-200">
+                        class="text-center pt-13 pb-9 flex flex-col justify-center items-center transition duration-200">
                         <h2 class="h1 text-main-600">
                             <span class="counter">282</span><span class="">+</span>
                         </h2>
-                        <span class="h6 text-uppercase text-base mt-5 d-sm-block d-none">worldwide clients</span>
+                        <span class="h6 uppercase text-base mt-5 d-sm-block d-none">worldwide clients</span>
                     </div>
                 </div>
 
@@ -723,36 +680,36 @@
             <div class="col-md-6">
                 <div class="">
                     <div class="max-w-780-px text-start mx-auto">
-                        <div class="bg-main-600 py-2 px-7 rounded-pill text-white fw-bold text-capitalize leading-none inline-flex items-center gap-2 mb-6 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+                        <div class="bg-main-600 py-2 px-7 rounded-pill text-white font-bold capitalize leading-none inline-flex items-center gap-2 mb-6 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                             what we offering
                         </div>
-                        <h2 class="splitTextStyleOne text-heading text-capitalize leading-none">Why should you choose Sassly mobile app.</h2>
-                        <p class="text-neutral-600 text-lg mt-605 splitTextStyleOne max-w-5 fw-medium leading-145 max-w-570-px">Sassly-CRM in the past allowing you to focus more on your business simply enjoy your newfound legal time to reflect leaving pen</p>
+                        <h2 class="splitTextStyleOne text-heading capitalize leading-none">Why should you choose Sassly mobile app.</h2>
+                        <p class="text-neutral-600 text-lg mt-605 splitTextStyleOne max-w-5 font-medium leading-145 max-w-570-px">Sassly-CRM in the past allowing you to focus more on your business simply enjoy your newfound legal time to reflect leaving pen</p>
                     </div>
                     
 
-                    <div class="flex flex-column gap-5 mt-12">
+                    <div class="flex flex-col gap-5 mt-12">
                         <div class="flex items-center gap-205" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
                             <span class="w-8 h-8 bg-neutral-200 rounded-circle flex justify-center items-center text-lg text-heading">
                                 <i class="ph-bold ph-check"></i>
                             </span>
-                            <span class="text-heading text-lg fw-semibold">Registration and onboarding</span>
+                            <span class="text-heading text-lg font-semibold">Registration and onboarding</span>
                         </div>
                         <div class="flex items-center gap-205" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="900">
                             <span class="w-8 h-8 bg-neutral-200 rounded-circle flex justify-center items-center text-lg text-heading">
                                 <i class="ph-bold ph-check"></i>
                             </span>
-                            <span class="text-heading text-lg fw-semibold">Transaction management</span>
+                            <span class="text-heading text-lg font-semibold">Transaction management</span>
                         </div>
                         <div class="flex items-center gap-205" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1100">
                             <span class="w-8 h-8 bg-neutral-200 rounded-circle flex justify-center items-center text-lg text-heading">
                                 <i class="ph-bold ph-check"></i>
                             </span>
-                            <span class="text-heading text-lg fw-semibold"> Standard banking layout</span>
+                            <span class="text-heading text-lg font-semibold"> Standard banking layout</span>
                         </div>
                     </div>
                     <div class="mt-13" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
-                        <a href="register.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex d-none items-center justify-center gap-5 group active--translate-y-2 px-9 rounded-pill py-505 fw-semibold common-shadow-inset-one" data-block="button">
+                        <a href="register.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex d-none items-center justify-center gap-5 group active--translate-y-2 px-9 rounded-pill py-505 font-semibold common-shadow-inset-one" data-block="button">
                             <span class="button__flair"></span>
                             <span class="button__label">Download app now</span>
                         </a>
@@ -771,10 +728,10 @@
     
     <div class="container">
         <div class="text-center mx-auto pb-15 max-w-910-px">
-            <div class="bg-white py-2 px-7 rounded-pill text-main-600 fw-bold text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" > what we offering
+            <div class="bg-white py-2 px-7 rounded-pill text-main-600 font-bold capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" > what we offering
             </div>
-            <h2 class="splitTextStyleOne text-heading text-capitalize leading-none">Simplifying your investment journey</h2>
-            <p class="splitTextStyleOne text-neutral-500 max-w-602-px text-lg mx-auto fw-medium mt-5">Discover how Upshift not only simplifies your investment process but also empowers you to make smarter, data-driven decisions.</p>
+            <h2 class="splitTextStyleOne text-heading capitalize leading-none">Simplifying your investment journey</h2>
+            <p class="splitTextStyleOne text-neutral-500 max-w-602-px text-lg mx-auto font-medium mt-5">Discover how Upshift not only simplifies your investment process but also empowers you to make smarter, data-driven decisions.</p>
         </div>
 
         <div class="text-center">
@@ -787,9 +744,9 @@
         <!-- =================================== Testimonials Five section start =================================== -->
 <section class="py-120 bg-black">
     <div class="text-center mx-auto pb-15 max-w-548-px">
-        <div class="bg-white py-2 px-7 rounded-pill text-main-600 fw-bold text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" > what we offering
+        <div class="bg-white py-2 px-7 rounded-pill text-main-600 font-bold capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" > what we offering
         </div>
-        <h2 class="splitTextStyleOne text-white text-capitalize leading-none">Trusted CRM tools by the happy users</h2>
+        <h2 class="splitTextStyleOne text-white capitalize leading-none">Trusted CRM tools by the happy users</h2>
     </div>
 
     <div class="">
@@ -801,8 +758,8 @@
                         <div class="common-shadow-ten rounded-2xl p-60-px bg-white h-100 animation-item">
                             <div class="flex items-center justify-between">
                                 <div class="">
-                                    <h5 class="mb-2 text-capitalize">william camel</h5>
-                                    <span class="text-neutral-500 fw-medium">Head of Design at Zazoo </span>
+                                    <h5 class="mb-2 capitalize">william camel</h5>
+                                    <span class="text-neutral-500 font-medium">Head of Design at Zazoo </span>
                                 </div>
                                 <div class="">
                                     <img src="assets/images/icons/ratings.svg" alt="Star Rating">
@@ -818,8 +775,8 @@
                         <div class="common-shadow-ten rounded-2xl p-60-px bg-white h-100 animation-item">
                             <div class="flex items-center justify-between">
                                 <div class="">
-                                    <h5 class="mb-2 text-capitalize">Robiul Hasan</h5>
-                                    <span class="text-neutral-500 fw-medium">Head of Design at Zazoo </span>
+                                    <h5 class="mb-2 capitalize">Robiul Hasan</h5>
+                                    <span class="text-neutral-500 font-medium">Head of Design at Zazoo </span>
                                 </div>
                                 <div class="">
                                     <img src="assets/images/icons/ratings.svg" alt="Star Rating">
@@ -835,8 +792,8 @@
                         <div class="common-shadow-ten rounded-2xl p-60-px bg-white h-100 animation-item">
                             <div class="flex items-center justify-between">
                                 <div class="">
-                                    <h5 class="mb-2 text-capitalize">John Doe</h5>
-                                    <span class="text-neutral-500 fw-medium">Head of Design at Zazoo </span>
+                                    <h5 class="mb-2 capitalize">John Doe</h5>
+                                    <span class="text-neutral-500 font-medium">Head of Design at Zazoo </span>
                                 </div>
                                 <div class="">
                                     <img src="assets/images/icons/ratings.svg" alt="Star Rating">
@@ -852,8 +809,8 @@
                         <div class="common-shadow-ten rounded-2xl p-60-px bg-white h-100 animation-item">
                             <div class="flex items-center justify-between">
                                 <div class="">
-                                    <h5 class="mb-2 text-capitalize">John Smith</h5>
-                                    <span class="text-neutral-500 fw-medium">Head of Design at Zazoo </span>
+                                    <h5 class="mb-2 capitalize">John Smith</h5>
+                                    <span class="text-neutral-500 font-medium">Head of Design at Zazoo </span>
                                 </div>
                                 <div class="">
                                     <img src="assets/images/icons/ratings.svg" alt="Star Rating">
@@ -878,51 +835,51 @@
 <section class="pricing-five py-120 bg-white">
     <div class="container">
         <div class="max-w-570-px text-start mb-10">
-            <div class="bg-white py-2 px-7 rounded-pill text-main-600 fw-bold text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+            <div class="bg-white py-2 px-7 rounded-pill text-main-600 font-bold capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                 Pricing Plan
             </div>
-            <h2 class="splitTextStyleOne text-heading text-capitalize leading-none">Affordable pricing plan for your business</h2>
+            <h2 class="splitTextStyleOne text-heading capitalize leading-none">Affordable pricing plan for your business</h2>
         </div>
         
 
         <div class="swiper pricing-five-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
-                    <div class="border border-neutral-200 rounded-xl relative p-44-px animation-item group-item group hover-border-main-600 duration-200 flex items-center gap-48-px">
+                    <div class="border border-neutral-200 rounded-xl relative p-44-px animation-item group-item group hover:border-main-600 duration-200 flex items-center gap-48-px">
                         <h3 class="absolute top-0 end-0 mt-10 me-10">$129.<span class="text-xl">99</span></h3>
-                        <span class="w-16 h-16 bg-main-50 rounded-md flex justify-center items-center group-hover-bg-main-600 duration-200 flex-shrink-0">
-                            <img src="assets/images/icons/pricing-five-icon1.svg" alt="Icon" class="group-hover-item-text-invert transition duration-200 animate__heartBeat">
+                        <span class="w-16 h-16 bg-main-50 rounded-md flex justify-center items-center group-hover:bg-main-600 duration-200 flex-shrink-0">
+                            <img src="assets/images/icons/pricing-five-icon1.svg" alt="Icon" class="group-hover:item-text-invert transition duration-200 animate__heartBeat">
                         </span>
                         <div class="flex-grow-1">  
-                            <span class="text-heading fw-medium py-05 px-6 border border-neutral-600 rounded-pill text-sm">20% off</span>
+                            <span class="text-heading font-medium py-05 px-6 border border-neutral-600 rounded-pill text-sm">20% off</span>
                             <h4 class="mt-4"> Weekly package </h4>
-                            <p class="text-neutral-600 text-lg mt-3 fw-medium max-w-432-px">Subscription fee is $129.99 USD and automatically renews each year.</p>
+                            <p class="text-neutral-600 text-lg mt-3 font-medium max-w-432-px">Subscription fee is $129.99 USD and automatically renews each year.</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
-                    <div class="border border-neutral-200 rounded-xl relative p-44-px animation-item group-item group hover-border-main-600 duration-200 flex items-center gap-48-px">
+                    <div class="border border-neutral-200 rounded-xl relative p-44-px animation-item group-item group hover:border-main-600 duration-200 flex items-center gap-48-px">
                         <h3 class="absolute top-0 end-0 mt-10 me-10">$329.<span class="text-xl">99</span></h3>
-                        <span class="w-16 h-16 bg-main-50 rounded-md flex justify-center items-center group-hover-bg-main-600 duration-200 flex-shrink-0">
-                            <img src="assets/images/icons/pricing-five-icon1.svg" alt="Icon" class="group-hover-item-text-invert transition duration-200 animate__heartBeat">
+                        <span class="w-16 h-16 bg-main-50 rounded-md flex justify-center items-center group-hover:bg-main-600 duration-200 flex-shrink-0">
+                            <img src="assets/images/icons/pricing-five-icon1.svg" alt="Icon" class="group-hover:item-text-invert transition duration-200 animate__heartBeat">
                         </span>
                         <div class="flex-grow-1">  
-                            <span class="text-heading fw-medium py-05 px-6 border border-neutral-600 rounded-pill text-sm">20% off</span>
+                            <span class="text-heading font-medium py-05 px-6 border border-neutral-600 rounded-pill text-sm">20% off</span>
                             <h4 class="mt-4">Monthly package</h4>
-                            <p class="text-neutral-600 text-lg mt-3 fw-medium max-w-432-px">Subscription fee is $129.99 USD and automatically renews each year.</p>
+                            <p class="text-neutral-600 text-lg mt-3 font-medium max-w-432-px">Subscription fee is $129.99 USD and automatically renews each year.</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
-                    <div class="border border-neutral-200 rounded-xl relative p-44-px animation-item group-item group hover-border-main-600 duration-200 flex items-center gap-48-px">
+                    <div class="border border-neutral-200 rounded-xl relative p-44-px animation-item group-item group hover:border-main-600 duration-200 flex items-center gap-48-px">
                         <h3 class="absolute top-0 end-0 mt-10 me-10">$629.<span class="text-xl">99</span></h3>
-                        <span class="w-16 h-16 bg-main-50 rounded-md flex justify-center items-center group-hover-bg-main-600 duration-200 flex-shrink-0">
-                            <img src="assets/images/icons/pricing-five-icon1.svg" alt="Icon" class="group-hover-item-text-invert transition duration-200 animate__heartBeat">
+                        <span class="w-16 h-16 bg-main-50 rounded-md flex justify-center items-center group-hover:bg-main-600 duration-200 flex-shrink-0">
+                            <img src="assets/images/icons/pricing-five-icon1.svg" alt="Icon" class="group-hover:item-text-invert transition duration-200 animate__heartBeat">
                         </span>
                         <div class="flex-grow-1">  
-                            <span class="text-heading fw-medium py-05 px-6 border border-neutral-600 rounded-pill text-sm">20% off</span>
+                            <span class="text-heading font-medium py-05 px-6 border border-neutral-600 rounded-pill text-sm">20% off</span>
                             <h4 class="mt-4">Yearly package</h4>
-                            <p class="text-neutral-600 text-lg mt-3 fw-medium max-w-432-px">Subscription fee is $129.99 USD and automatically renews each year.</p>
+                            <p class="text-neutral-600 text-lg mt-3 font-medium max-w-432-px">Subscription fee is $129.99 USD and automatically renews each year.</p>
                         </div>
                     </div>
                 </div>
@@ -933,28 +890,28 @@
         
         <!-- <div class="row gy-4">
             <div class="col-lg-6">
-                <div class="border border-neutral-200 rounded-xl relative p-44-px animation-item group-item group hover-border-main-600 duration-200 flex items-center gap-48-px">
+                <div class="border border-neutral-200 rounded-xl relative p-44-px animation-item group-item group hover:border-main-600 duration-200 flex items-center gap-48-px">
                     <h3 class="absolute top-0 end-0 mt-10 me-10">$129.<span class="text-xl">99</span></h3>
-                    <span class="w-16 h-16 bg-main-50 rounded-md flex justify-center items-center group-hover-bg-main-600 duration-200 flex-shrink-0">
-                        <img src="assets/images/icons/pricing-five-icon1.svg" alt="Icon" class="group-hover-item-text-invert transition duration-200 animate__heartBeat">
+                    <span class="w-16 h-16 bg-main-50 rounded-md flex justify-center items-center group-hover:bg-main-600 duration-200 flex-shrink-0">
+                        <img src="assets/images/icons/pricing-five-icon1.svg" alt="Icon" class="group-hover:item-text-invert transition duration-200 animate__heartBeat">
                     </span>
                     <div class="flex-grow-1">  
-                        <span class="text-heading fw-medium py-05 px-6 border border-neutral-600 rounded-pill text-sm">20% off</span>
+                        <span class="text-heading font-medium py-05 px-6 border border-neutral-600 rounded-pill text-sm">20% off</span>
                         <h4 class="mt-4"> Weekly package </h4>
-                        <p class="text-neutral-600 text-lg mt-3 fw-medium max-w-432-px">Subscription fee is $129.99 USD and automatically renews each year.</p>
+                        <p class="text-neutral-600 text-lg mt-3 font-medium max-w-432-px">Subscription fee is $129.99 USD and automatically renews each year.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="border border-neutral-200 rounded-xl relative p-44-px animation-item group-item group hover-border-main-600 duration-200 flex items-center gap-48-px">
+                <div class="border border-neutral-200 rounded-xl relative p-44-px animation-item group-item group hover:border-main-600 duration-200 flex items-center gap-48-px">
                     <h3 class="absolute top-0 end-0 mt-10 me-10">$329.<span class="text-xl">99</span></h3>
-                    <span class="w-16 h-16 bg-main-50 rounded-md flex justify-center items-center group-hover-bg-main-600 duration-200 flex-shrink-0">
-                        <img src="assets/images/icons/pricing-five-icon1.svg" alt="Icon" class="group-hover-item-text-invert transition duration-200 animate__heartBeat">
+                    <span class="w-16 h-16 bg-main-50 rounded-md flex justify-center items-center group-hover:bg-main-600 duration-200 flex-shrink-0">
+                        <img src="assets/images/icons/pricing-five-icon1.svg" alt="Icon" class="group-hover:item-text-invert transition duration-200 animate__heartBeat">
                     </span>
                     <div class="flex-grow-1">  
-                        <span class="text-heading fw-medium py-05 px-6 border border-neutral-600 rounded-pill text-sm">20% off</span>
+                        <span class="text-heading font-medium py-05 px-6 border border-neutral-600 rounded-pill text-sm">20% off</span>
                         <h4 class="mt-4">Monthly package</h4>
-                        <p class="text-neutral-600 text-lg mt-3 fw-medium max-w-432-px">Subscription fee is $129.99 USD and automatically renews each year.</p>
+                        <p class="text-neutral-600 text-lg mt-3 font-medium max-w-432-px">Subscription fee is $129.99 USD and automatically renews each year.</p>
                     </div>
                 </div>
             </div>
@@ -971,16 +928,16 @@
             <div class="col-xxl-11">
                 <div class="bg-main-600 rounded-28-px py-100-px">
                     <div class="text-center mx-auto max-w-724-px">
-                        <div class="bg-white-13 py-2 px-7 rounded-pill text-white fw-semibold text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine"
+                        <div class="bg-white-13 py-2 px-7 rounded-pill text-white font-semibold capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max common-shadow-twentyNine"
                             data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                             what we offering
                         </div>
-                        <h2 class="text-56-px splitTextStyleOne text-white text-capitalize leading-none fw-medium">
+                        <h2 class="text-56-px splitTextStyleOne text-white capitalize leading-none font-medium">
                             Supercharge Your Growing Business</h2>
                         <div class="mt-9" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
                             data-aos-duration="1200">
                             <a href="register.html"
-                                class="hover--translate-y-1 active--translate-y-scale-9 btn btn-white hover-style-one button--stroke d-sm-inline-flex d-none items-center justify-center gap-5 group active--translate-y-2 px-14 rounded-pill py-505 fw-semibold common-shadow-inset-one"
+                                class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-white hover:style-one button--stroke d-sm-inline-flex d-none items-center justify-center gap-5 group active--translate-y-2 px-14 rounded-pill py-505 font-semibold common-shadow-inset-one"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Sign up Now</span>
@@ -996,23 +953,23 @@
                 <div
                     class="flex gap-6 border-top border-bottom flex justify-between flex-lg-nowrap flex-wrap">
                     <div class="pt-100-px pb-80-px">
-                        <a href="index.html" class="link hover--translate-y-1 active--translate-y-scale-9 mb-6">
+                        <a href="index.html" class="link hover:-translate-y-1 active--translate-y-scale-9 mb-6">
                             <img src="assets/images/logo/logo-four.png" alt="">
                         </a>
                         <p class="max-w-250-px text-lg text-neutral-600">Build a modern and creative website with
                             crealand</p>
-                        <div class="mt-6 flex flex-column gap-4">
+                        <div class="mt-6 flex flex-col gap-4">
                             <div class="flex items-center gap-205">
                                 <span class="">
                                     <img src="assets/images/icons/phone-icon.png" alt="Icon">
                                 </span>
-                                <span class="fw-semibold text-heading">+806 (000) 88 99</span>
+                                <span class="font-semibold text-heading">+806 (000) 88 99</span>
                             </div>
                             <div class="flex items-center gap-205">
                                 <span class="">
                                     <img src="assets/images/icons/message-icon.png" alt="Icon">
                                 </span>
-                                <span class="fw-semibold text-heading">contact@info.com</span>
+                                <span class="font-semibold text-heading">contact@info.com</span>
                             </div>
                         </div>
                     </div>
@@ -1021,27 +978,27 @@
                     </div>
                     <div class="pt-100-px pb-80-px">
                         <div class="">
-                            <h5 class="fw-semibold fw-bold text-heading mb-8 text-uppercase">Our Location</h5>
-                            <ul class="flex flex-column gap-4">
+                            <h5 class="font-semibold font-bold text-heading mb-8 uppercase">Our Location</h5>
+                            <ul class="flex flex-col gap-4">
                                 <li>
                                     <a href="javascript:void(0)"
-                                        class="hover-arrow-start text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9">Overview</a>
+                                        class="hover:arrow-start text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9">Overview</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"
-                                        class="hover-arrow-start text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9">Features</a>
+                                        class="hover:arrow-start text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9">Features</a>
                                 </li>
                                 <li>
                                     <a href="contact.html"
-                                        class="hover-arrow-start text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9">Solutions</a>
+                                        class="hover:arrow-start text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9">Solutions</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"
-                                        class="hover-arrow-start text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9">Tutorials</a>
+                                        class="hover:arrow-start text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9">Tutorials</a>
                                 </li>
                                 <li class="mb-0">
                                     <a href="javascript:void(0)"
-                                        class="hover-arrow-start text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9">Pricing</a>
+                                        class="hover:arrow-start text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9">Pricing</a>
                                 </li>
                             </ul>
                         </div>
@@ -1051,29 +1008,29 @@
                     </div>
                     <div class="pt-100-px pb-80-px">
                         <div class="">
-                            <h5 class="fw-semibold fw-bold text-heading mb-8 text-uppercase">Contact info</h5>
-                            <ul class="flex flex-column gap-4">
+                            <h5 class="font-semibold font-bold text-heading mb-8 uppercase">Contact info</h5>
+                            <ul class="flex flex-col gap-4">
                                 <li>
                                     <a href="javascript:void(0)"
-                                        class="hover-arrow-start text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9">Partners</a>
+                                        class="hover:arrow-start text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9">Partners</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"
-                                        class="hover-arrow-start text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9">Partners
+                                        class="hover:arrow-start text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9">Partners
                                         Program</a>
                                 </li>
                                 <li>
                                     <a href="contact.html"
-                                        class="hover-arrow-start text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9">Affiliate
+                                        class="hover:arrow-start text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9">Affiliate
                                         Program</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"
-                                        class="hover-arrow-start text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9">Community</a>
+                                        class="hover:arrow-start text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9">Community</a>
                                 </li>
                                 <li class="mb-0">
                                     <a href="javascript:void(0)"
-                                        class="hover-arrow-start text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9">HR
+                                        class="hover:arrow-start text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9">HR
                                         Partner Program</a>
                                 </li>
                             </ul>
@@ -1084,17 +1041,17 @@
                     </div>
                     <div class="pt-100-px pb-80-px">
                         <div class="">
-                            <h5 class="fw-semibold fw-bold text-heading mb-8 text-uppercase">Newsletter</h5>
+                            <h5 class="font-semibold font-bold text-heading mb-8 uppercase">Newsletter</h5>
                             <form action="#" class="relative common-shadow-twentySeven rounded-pill">
                                 <input type="text"
-                                    class="form-control shadow-none bg-white border border-white focus-border-main-600 text-heading fw-medium px-6 py-4 rounded-pill focus-outline-0 ps-12 pe-14"
+                                    class="form-control shadow-none bg-white border border-white focus-border-main-600 text-heading font-medium px-6 py-4 rounded-pill focus-outline-0 ps-12 pe-14"
                                     placeholder="Enter your e-mail">
                                 <span
                                     class="text-neutral-600 text-xl absolute start-0 top-50 translate-middle-y ms-5 leading-none flex">
                                     <i class="ph-bold ph-envelope-simple"></i>
                                 </span>
                                 <button type="button"
-                                    class="flex-grow-1 hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke items-center flex justify-center gap-5 group active--translate-y-2 rounded-pill fw-bold p-0 w-11 h-11 bg-main-600 text-xl text-heading rounded-circle absolute end-0 top-50 translate-middle-y me-2"
+                                    class="flex-grow-1 hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke items-center flex justify-center gap-5 group active--translate-y-2 rounded-pill font-bold p-0 w-11 h-11 bg-main-600 text-xl text-heading rounded-circle absolute end-0 top-50 translate-middle-y me-2"
                                     data-block="button">
                                     <span class="button__flair"></span>
                                     <span class="button__label"><i class="ph-bold ph-arrow-up-right"></i></span>
@@ -1108,19 +1065,19 @@
             <div class="footer-four-bottom pb-6 pt-7">
                 <div class="container">
                     <div class="flex items-center justify-between gap-4 flex-wrap">
-                        <p class="fw-semibold text-heading">Copyright &copy; 2024 by <a href="index.html"
-                                class="text-blue hover-underline">wowtheme7</a> . All Rights Reserved</p>
+                        <p class="font-semibold text-heading">Copyright &copy; 2024 by <a href="index.html"
+                                class="text-blue hover:underline">wowtheme7</a> . All Rights Reserved</p>
                         <div class="flex items-center gap-305">
                             <button type="button"
-                                class="fw-bold p-0 w-11 h-11 border border-neutral-200 bg-white hover-bg-main-600 text-xl text-heading hover-border-main-600 duration-300 rounded-circle">
+                                class="font-bold p-0 w-11 h-11 border border-neutral-200 bg-white hover:bg-main-600 text-xl text-heading hover:border-main-600 duration-300 rounded-circle">
                                 <i class="ph-fill ph-facebook-logo"></i>
                             </button>
                             <button type="button"
-                                class="fw-bold p-0 w-11 h-11 border border-neutral-200 bg-white hover-bg-main-600 text-xl text-heading hover-border-main-600 duration-300 rounded-circle">
+                                class="font-bold p-0 w-11 h-11 border border-neutral-200 bg-white hover:bg-main-600 text-xl text-heading hover:border-main-600 duration-300 rounded-circle">
                                 <i class="ph-fill ph-twitter-logo"></i>
                             </button>
                             <button type="button"
-                                class="fw-bold p-0 w-11 h-11 border border-neutral-200 bg-white hover-bg-main-600 text-xl text-heading hover-border-main-600 duration-300 rounded-circle">
+                                class="font-bold p-0 w-11 h-11 border border-neutral-200 bg-white hover:bg-main-600 text-xl text-heading hover:border-main-600 duration-300 rounded-circle">
                                 <i class="ph-fill ph-instagram-logo"></i>
                             </button>
                         </div>

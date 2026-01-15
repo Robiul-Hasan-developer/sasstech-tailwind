@@ -33,50 +33,7 @@
   </div>
   <!--==================== Preloader End ====================-->
 
-  <!-- ========================== Settings Panel start ==================================== -->
-<div class="settings-panel position-fixed top-50 translate-middle-y z-999 flex items-center">
-  <button type="button"
-    class="settings-button w-12 h-12 bg-main-600 text-white hover-bg-main-800 duration-100 flex justify-center items-center">
-    <i class="ph-fill ph-gear-six setting-icon text-2xl leading-none animation-rotate w-6 h-6"></i>
-    <i class="ph-bold ph-x close-icon text-2xl leading-none w-6 h-6"></i>
-  </button>
-
-  <div class="settings-panel__content bg-white px-6 py-13 flex flex-column gap-10 scroll-sm overflow-y-auto">
-    <div class="flex flex-column gap-10">
-      <div class="">
-        <h6 class="settings-panel__title text-center mb-6 text-uppercase">
-          Cursor
-        </h6>
-        <div class="settings-panel__buttons cursor__buttons flex gap-4">
-          <button type="button"
-            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1 active">
-            Animate
-          </button>
-          <button type="button"
-            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1">
-            Default
-          </button>
-        </div>
-      </div>
-      <div class="">
-        <h6 class="settings-panel__title text-center mb-6 text-uppercase">
-          Direction
-        </h6>
-        <div class="settings-panel__buttons flex gap-4">
-          <button type="button"
-            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1 active">
-            LTR
-          </button>
-          <button type="button"
-            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1">
-            RTL
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ========================== Settings Panel end ==================================== -->
+  
 
   <!--==================== Overlay Start ====================-->
   <div class="overlay"></div>
@@ -104,9 +61,9 @@
   <!-- Custom Cursor End -->
 
   <!-- ==================== Mobile Menu Start Here ==================== -->
-<div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white w-300-px h-screen overflow-y-auto p-6 z-999 -translate-x-full pb-68 ">
+<div class="mobile-menu d-lg-none d-block scroll-sm fixed bg-white w-300-px h-screen overflow-y-auto p-6 z-999 -translate-x-full pb-68 ">
 
-    <button type="button" class="close-button absolute end-0 top-0 me-2 mt-2 w-605 h-605 rounded-circle flex justify-center items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white"> 
+    <button type="button" class="close-button absolute end-0 top-0 me-2 mt-2 w-605 h-605 rounded-circle flex justify-center items-center text-neutral-900 bg-neutral-200 hover:bg-neutral-900 hover:text-white"> 
         <i class="ph ph-x"></i>
     </button>
 
@@ -119,59 +76,59 @@
 <ul class="nav-menu d-lg-flex items-center nav-menu--mobile d-block mt-8">
     <li class="nav-menu__item has-submenu activePage">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Home</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Home</a>
         
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Pages</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Pages</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="pricing-plan.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Pricing
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="about.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     About Us
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="app-intigration.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     App Integration
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="intigration-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Integration Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="policy-privacy.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Privacy Policy
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="faq.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     FAQ
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="project-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Project Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="service-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Service Details
                 </a>
             </li>
@@ -179,30 +136,30 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Shop</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Shop</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="cart.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Cart
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="checkout.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Checkout
                 </a>
             </li>
@@ -210,18 +167,18 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Blog</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Blog</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog Details
                 </a>
             </li>
@@ -229,12 +186,12 @@
     </li>
     <li class="nav-menu__item">
         <a href="contact.html"
-            class="nav-menu__link hover--translate-y-1 text-heading py-9 fw-semibold w-full">Contact</a>
+            class="nav-menu__link hover:-translate-y-1 text-heading py-9 font-semibold w-full">Contact</a>
     </li>
 </ul>
 <!-- Nav menu End  -->
         </div>
-        <a href="register.html" class="btn btn-main-two hover-style-two button--stroke d-sm-none inline-flex items-center justify-center gap-5 group active--translate-y-2 px-8 rounded-pill mt-6" data-block="button">
+        <a href="register.html" class="btn btn-main-two hover:style-two button--stroke d-sm-none inline-flex items-center justify-center gap-5 group active--translate-y-2 px-8 rounded-pill mt-6" data-block="button">
             <span class="button__flair"></span>
             <span class="button__label">Sign Up Now</span>
         </a>
@@ -252,7 +209,7 @@
             <nav class="flex items-center justify-between relative">
                 <!-- Logo Start -->
                 <div class="logo">
-                    <a href="index.html" class="link hover--translate-y-1 active--translate-y-scale-9">
+                    <a href="index.html" class="link hover:-translate-y-1 active--translate-y-scale-9">
                         <img src="assets/images/logo/logo-four.png" alt="Logo" class="max-w-200-px">
                     </a>
                 </div>
@@ -264,7 +221,7 @@
 <ul class="nav-menu d-lg-flex items-center gap-7">
     <li class="nav-menu__item has-submenu activePage">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-white py-9 fw-semibold w-full">Home</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-white py-9 font-semibold w-full">Home</a>
         <!-- mega menu start -->
 <div
     class="mega-menu p-6 rounded-lg scroll-sm nav-submenu absolute start-0 top-100 w-max bg-white rounded-md z-99">
@@ -278,19 +235,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -298,7 +255,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">IT
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">IT
                         Solution</a>
                 </div>
             </div>
@@ -312,19 +269,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index-2.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -332,7 +289,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index-2.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">Web
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">Web
                         Hosting</a>
                 </div>
             </div>
@@ -346,19 +303,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index-3.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -366,7 +323,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index-3.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">Task
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">Task
                         Management</a>
                 </div>
             </div>
@@ -380,19 +337,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index-4.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -400,7 +357,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index-4.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">CRM
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">CRM
                         Software
                     </a>
                 </div>
@@ -415,19 +372,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index-5.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -435,7 +392,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index-5.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">App
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">App
                         Landing</a>
                 </div>
             </div>
@@ -449,19 +406,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index-6.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -469,7 +426,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index-6.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">Payment
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">Payment
                         Solution</a>
                 </div>
             </div>
@@ -483,7 +440,7 @@
                     </span>
                 </div>
                 <div class="mt-4 text-center">
-                    <span class="text-heading fw-semibold text-md text-capitalize line-clamp-1">Home 7</span>
+                    <span class="text-heading font-semibold text-md capitalize line-clamp-1">Home 7</span>
                 </div>
             </div>
         </div>
@@ -493,54 +450,54 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-white py-9 fw-semibold w-full">Pages</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-white py-9 font-semibold w-full">Pages</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="pricing-plan.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Pricing
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="about.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     About Us
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="app-intigration.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     App Integration
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="intigration-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Integration Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="policy-privacy.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Privacy Policy
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="faq.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     FAQ
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="project-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Project Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="service-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Service Details
                 </a>
             </li>
@@ -548,12 +505,12 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-white py-9 fw-semibold w-full">Portfolio</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-white py-9 font-semibold w-full">Portfolio</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="javascript:void(0)"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Portfolio
                 </a>
             </li>
@@ -561,30 +518,30 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-white py-9 fw-semibold w-full">Shop</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-white py-9 font-semibold w-full">Shop</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="cart.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Cart
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="checkout.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Checkout
                 </a>
             </li>
@@ -592,18 +549,18 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-white py-9 fw-semibold w-full">Blog</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-white py-9 font-semibold w-full">Blog</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog Details
                 </a>
             </li>
@@ -611,7 +568,7 @@
     </li>
     <li class="nav-menu__item">
         <a href="contact.html"
-            class="nav-menu__link hover--translate-y-1 text-white py-9 fw-semibold w-full">Contact</a>
+            class="nav-menu__link hover:-translate-y-1 text-white py-9 font-semibold w-full">Contact</a>
     </li>
 </ul>
 <!-- Nav menu Three End  -->
@@ -622,15 +579,15 @@
                 <div class="flex items-center gap-6">
                     <div class="flex items-center gap-6">
                         <a href="login.html"
-                            class="flex items-center gap-105 d-xl-flex d-none text-heading hover-text-main-600">
+                            class="flex items-center gap-105 d-xl-flex d-none text-heading hover:text-main-600">
                             <span class="text-base text-main-600 flex leading-none">
                                 <i class="ph-bold ph-user"></i>
                             </span>
-                            <span class="fw-semibold text-sm ">Sign in</span>
+                            <span class="font-semibold text-sm ">Sign in</span>
                         </a>
 
                         <a href="register.html"
-                            class="hover--translate-y-1 active--translate-y-scale-9 btn button--stroke d-lg-flex d-none items-center justify-center gap-5 group active--translate-y-2 px-xxl-5 px-xl-4 px-3 py-405 fw-medium rounded-xl btn-main-two hover-style-two"
+                            class="hover:-translate-y-1 active--translate-y-scale-9 btn button--stroke d-lg-flex d-none items-center justify-center gap-5 group active--translate-y-2 px-xxl-5 px-xl-4 px-3 py-405 font-medium rounded-xl btn-main-two hover:style-two"
                             data-block="button">
                             <span class="button__flair"></span>
                             <span class="button__label">Get Started</span>
@@ -657,7 +614,7 @@
                     <span class="mb-4">
                         <img src="assets/images/logo/favicon-two.png" alt="Favicon Two">
                     </span>
-                    <h1 class="mb-0 splitTextStyleOne text-capitalize"> Shop Page</h1>
+                    <h1 class="mb-0 splitTextStyleOne capitalize"> Shop Page</h1>
                 </div>
             </div>
         </div>
@@ -670,9 +627,9 @@
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-4">
-                        <div class="flex flex-column gap-705">
+                        <div class="flex flex-col gap-705">
                             <div class="px-8 py-8 common-shadow-nineteen rounded-lg" data-aos="fade-up" data-aos-duration="800">
-                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 text-capitalize">Search Here</h5>
+                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 capitalize">Search Here</h5>
                                 <form action="#" class="relative">
                                     <input type="text" class="ps-4 pe-12 py-4 bg-white placeholder-text-main-two-600 focus-outline-0 w-full placeholder-transition-2 focus-placeholder-text-hidden rounded-md shadow-none flex-grow-1 border border-neutral-200 focus-border-main-600 duration-300" placeholder="Search here...">
                                     <button type="submit" class="absolute top-50 -translate-y-50 end-0 text-main-two-600 text-lg flex me-5">
@@ -682,37 +639,37 @@
                             </div> 
         
                             <div class="px-8 py-8 common-shadow-nineteen rounded-lg" data-aos="fade-up" data-aos-duration="800">
-                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 text-capitalize">Categories</h5>
-                                <div class="flex flex-column gap-6">
-                                    <a href="javascript:void(0)" class="flex items-center gap-4 fw-medium text-heading hover-text-main-600">
+                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 capitalize">Categories</h5>
+                                <div class="flex flex-col gap-6">
+                                    <a href="javascript:void(0)" class="flex items-center gap-4 font-medium text-heading hover:text-main-600">
                                         <i class="ph-bold ph-caret-left"></i>
                                         Brochures & Catalogues
                                     </a>
-                                    <a href="javascript:void(0)" class="flex items-center gap-4 fw-medium text-heading hover-text-main-600">
+                                    <a href="javascript:void(0)" class="flex items-center gap-4 font-medium text-heading hover:text-main-600">
                                         <i class="ph-bold ph-caret-left"></i>
                                         Business Cards
                                     </a>
-                                    <a href="javascript:void(0)" class="flex items-center gap-4 fw-medium text-heading hover-text-main-600">
+                                    <a href="javascript:void(0)" class="flex items-center gap-4 font-medium text-heading hover:text-main-600">
                                         <i class="ph-bold ph-caret-left"></i>
                                         Calendars printing
                                     </a>
-                                    <a href="javascript:void(0)" class="flex items-center gap-4 fw-medium text-heading hover-text-main-600">
+                                    <a href="javascript:void(0)" class="flex items-center gap-4 font-medium text-heading hover:text-main-600">
                                         <i class="ph-bold ph-caret-left"></i>
                                         Design Online
                                     </a>
-                                    <a href="javascript:void(0)" class="flex items-center gap-4 fw-medium text-heading hover-text-main-600">
+                                    <a href="javascript:void(0)" class="flex items-center gap-4 font-medium text-heading hover:text-main-600">
                                         <i class="ph-bold ph-caret-left"></i>
                                         Flyers Design
                                     </a>
-                                    <a href="javascript:void(0)" class="flex items-center gap-4 fw-medium text-heading hover-text-main-600">
+                                    <a href="javascript:void(0)" class="flex items-center gap-4 font-medium text-heading hover:text-main-600">
                                         <i class="ph-bold ph-caret-left"></i>
                                         Folded Leaflets
                                     </a>
-                                    <a href="javascript:void(0)" class="flex items-center gap-4 fw-medium text-heading hover-text-main-600">
+                                    <a href="javascript:void(0)" class="flex items-center gap-4 font-medium text-heading hover:text-main-600">
                                         <i class="ph-bold ph-caret-left"></i>
                                         t-shirt printing
                                     </a>
-                                    <a href="javascript:void(0)" class="flex items-center gap-4 fw-medium text-heading hover-text-main-600">
+                                    <a href="javascript:void(0)" class="flex items-center gap-4 font-medium text-heading hover:text-main-600">
                                         <i class="ph-bold ph-caret-left"></i>
                                         Gift item printing
                                     </a>
@@ -720,7 +677,7 @@
                             </div> 
                             
                             <div class="px-8 py-8 common-shadow-nineteen rounded-lg" data-aos="fade-up" data-aos-duration="800">
-                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 text-capitalize">Filter By Price</h5>
+                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 capitalize">Filter By Price</h5>
                                 <!-- Slider start -->
                                 <div class="slider">
                                     <div class="progress"></div>
@@ -739,7 +696,7 @@
                                             <input type="number" class="border-0 focus-outline-0 w-11 text-neutral-600 input-max" value="7500">
                                         </div>
                                     </div>
-                                    <button type="button" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-6 py-305 text-base fw-semibold rounded-md" data-block="button">
+                                    <button type="button" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-6 py-305 text-base font-semibold rounded-md" data-block="button">
                                         <span class="button__flair"></span>
                                         <span class="button__label">Filter</span>
                                     </button>
@@ -748,8 +705,8 @@
                             </div> 
                             
                             <div class="px-8 py-8 common-shadow-nineteen rounded-lg" data-aos="fade-up" data-aos-duration="800">
-                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 text-capitalize">select by size</h5>
-                                <div class="flex flex-column gap-3">
+                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 capitalize">select by size</h5>
+                                <div class="flex flex-col gap-3">
                                     <div class="form-check common-check gap-3">
                                         <input class="form-check-input" type="checkbox" id="sizeOne">
                                         <label class="form-check-label" for="sizeOne">36"x80" (8)</label>
@@ -770,8 +727,8 @@
                             </div> 
         
                             <div class="px-8 py-8 common-shadow-nineteen rounded-lg" data-aos="fade-up" data-aos-duration="800">
-                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 text-capitalize">Filter by Rating</h5>
-                                <div class="flex flex-column gap-3">
+                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 capitalize">Filter by Rating</h5>
+                                <div class="flex flex-col gap-3">
                                     <div class="form-check common-check gap-3">
                                         <input class="form-check-input" type="checkbox" id="starFive">
                                         <label class="form-check-label" for="starFive">
@@ -783,7 +740,7 @@
                                                     <span class="text-star text-main-600 text-base flex"><i class="ph-fill ph-star"></i></span>
                                                     <span class="text-star text-main-600 text-base flex"><i class="ph-fill ph-star"></i></span>
                                                 </span>
-                                                <span class="text-neutral-600 fw-medium">( 5 Star )</span>
+                                                <span class="text-neutral-600 font-medium">( 5 Star )</span>
                                             </span>
                                         </label>
                                     </div>
@@ -798,7 +755,7 @@
                                                     <span class="text-star text-main-600 text-base flex"><i class="ph-fill ph-star"></i></span>
                                                     <span class="text-star text-neutral-300 text-base flex"><i class="ph-fill ph-star"></i></span>
                                                 </span>
-                                                <span class="text-neutral-600 fw-medium">( 4 Star )</span>
+                                                <span class="text-neutral-600 font-medium">( 4 Star )</span>
                                             </span>
                                         </label>
                                     </div>
@@ -813,7 +770,7 @@
                                                     <span class="text-star text-neutral-300 text-base flex"><i class="ph-fill ph-star"></i></span>
                                                     <span class="text-star text-neutral-300 text-base flex"><i class="ph-fill ph-star"></i></span>
                                                 </span>
-                                                <span class="text-neutral-600 fw-medium">( 3 Star )</span>
+                                                <span class="text-neutral-600 font-medium">( 3 Star )</span>
                                             </span>
                                         </label>
                                     </div>
@@ -828,7 +785,7 @@
                                                     <span class="text-star text-neutral-300 text-base flex"><i class="ph-fill ph-star"></i></span>
                                                     <span class="text-star text-neutral-300 text-base flex"><i class="ph-fill ph-star"></i></span>
                                                 </span>
-                                                <span class="text-neutral-600 fw-medium">( 2 Star )</span>
+                                                <span class="text-neutral-600 font-medium">( 2 Star )</span>
                                             </span>
                                         </label>
                                     </div>
@@ -843,7 +800,7 @@
                                                     <span class="text-star text-neutral-300 text-base flex"><i class="ph-fill ph-star"></i></span>
                                                     <span class="text-star text-neutral-300 text-base flex"><i class="ph-fill ph-star"></i></span>
                                                 </span>
-                                                <span class="text-neutral-600 fw-medium">( 1 Star )</span>
+                                                <span class="text-neutral-600 font-medium">( 1 Star )</span>
                                             </span>
                                         </label>
                                     </div>
@@ -851,16 +808,16 @@
                             </div> 
         
                             <div class="px-8 py-8 common-shadow-nineteen rounded-lg" data-aos="fade-up" data-aos-duration="800">
-                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 text-capitalize">Popular tags</h5>
+                                <h5 class="border-start border-2 border-main-600 text-main-two-600 ps-2 splitTextStyleOne mb-6 capitalize">Popular tags</h5>
                                 <div class="flex gap-3 flex-wrap">
-                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover-text-white hover-bg-main-600 text-sm fw-medium text-center d-inline-block active-scale-09 text-capitalize flex-grow-1 duration-200">Sweat Shirt</a>
-                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover-text-white hover-bg-main-600 text-sm fw-medium text-center d-inline-block active-scale-09 text-capitalize flex-grow-1 duration-200">Banner design</a>
-                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover-text-white hover-bg-main-600 text-sm fw-medium text-center d-inline-block active-scale-09 text-capitalize flex-grow-1 duration-200">Brochure</a>
-                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover-text-white hover-bg-main-600 text-sm fw-medium text-center d-inline-block active-scale-09 text-capitalize flex-grow-1 duration-200">Business Card</a>
-                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover-text-white hover-bg-main-600 text-sm fw-medium text-center d-inline-block active-scale-09 text-capitalize flex-grow-1 duration-200">landing </a>
-                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover-text-white hover-bg-main-600 text-sm fw-medium text-center d-inline-block active-scale-09 text-capitalize flex-grow-1 duration-200">Brochure</a>
-                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover-text-white hover-bg-main-600 text-sm fw-medium text-center d-inline-block active-scale-09 text-capitalize flex-grow-1 duration-200">Tryptich Brochure</a>
-                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover-text-white hover-bg-main-600 text-sm fw-medium text-center d-inline-block active-scale-09 text-capitalize flex-grow-1 duration-200">Cap</a>
+                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover:text-white hover:bg-main-600 text-sm font-medium text-center d-inline-block active-scale-09 capitalize flex-grow-1 duration-200">Sweat Shirt</a>
+                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover:text-white hover:bg-main-600 text-sm font-medium text-center d-inline-block active-scale-09 capitalize flex-grow-1 duration-200">Banner design</a>
+                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover:text-white hover:bg-main-600 text-sm font-medium text-center d-inline-block active-scale-09 capitalize flex-grow-1 duration-200">Brochure</a>
+                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover:text-white hover:bg-main-600 text-sm font-medium text-center d-inline-block active-scale-09 capitalize flex-grow-1 duration-200">Business Card</a>
+                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover:text-white hover:bg-main-600 text-sm font-medium text-center d-inline-block active-scale-09 capitalize flex-grow-1 duration-200">landing </a>
+                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover:text-white hover:bg-main-600 text-sm font-medium text-center d-inline-block active-scale-09 capitalize flex-grow-1 duration-200">Brochure</a>
+                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover:text-white hover:bg-main-600 text-sm font-medium text-center d-inline-block active-scale-09 capitalize flex-grow-1 duration-200">Tryptich Brochure</a>
+                                    <a href="javascript:void(0)" class="bg-white py-105 px-4 border border-neutral-200 rounded-pill text-neutral-600 hover:text-white hover:bg-main-600 text-sm font-medium text-center d-inline-block active-scale-09 capitalize flex-grow-1 duration-200">Cap</a>
                                 </div>
                             </div> 
                         </div>
@@ -870,14 +827,14 @@
                         <div class="">
                             <!-- Top List Grid start -->
                             <div class="border rounded-lg border-neutral-200 p-5 flex items-center justify-between flex-wrap gap-4 mb-6">
-                                <div class="text-heading fw-bold">Showing <span class="text-main-600">12</span> of 21 Results</div>
+                                <div class="text-heading font-bold">Showing <span class="text-main-600">12</span> of 21 Results</div>
         
                                 <div class="flex items-center gap-10">
                                     <div class="flex items-center gap-3">
-                                        <span class="text-heading fw-bold">Sort by:</span>
+                                        <span class="text-heading font-bold">Sort by:</span>
                                         <div class="flex items-center">
                                             <span class="text-neutral-500"><i class="ph-bold ph-arrows-down-up"></i></span>
-                                            <select class="form-control form-select fw-semibold fw-semibold border-0 ps-205 pe-1 py-0 text-neutral-500 shadow-none">
+                                            <select class="form-control form-select font-semibold font-semibold border-0 ps-205 pe-1 py-0 text-neutral-500 shadow-none">
                                                 <option value="Price">Price</option>
                                                 <option value="Sales">Sales</option>
                                                 <option value="Published">Published</option>
@@ -885,10 +842,10 @@
                                         </div>
                                     </div>
                                     <div class="flex items-center gap-4">
-                                        <button type="button" class="text-2xl hover-text-main-600 leading-none text-main-600 list-view-btn">
+                                        <button type="button" class="text-2xl hover:text-main-600 leading-none text-main-600 list-view-btn">
                                             <i class="ph-bold ph-list-bullets"></i>
                                         </button>
-                                        <button type="button" class="text-2xl hover-text-main-600 leading-none text-heading grid-view-btn">
+                                        <button type="button" class="text-2xl hover:text-main-600 leading-none text-heading grid-view-btn">
                                             <i class="ph-bold ph-squares-four"></i>
                                         </button>
                                     </div>
@@ -899,24 +856,24 @@
                             <div class="row gy-4 product-item-wrapper">
                                 
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img1.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img1.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -933,30 +890,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Smart wireless headphone</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img2.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img2.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -973,30 +930,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Go pro hero action camera</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img3.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img3.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -1013,30 +970,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Colorful apple Ipad</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img4.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img4.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -1053,30 +1010,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Humidifiler white grow</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img5.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img5.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -1093,30 +1050,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Apple Iphone 16 promax</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img6.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img6.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -1133,30 +1090,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Go pro hero action camera</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img7.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img7.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -1173,30 +1130,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Apple smartwatch series</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img8.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img8.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -1213,30 +1170,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Instax pro camera hero</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img9.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img9.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -1253,30 +1210,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Macbook m1 cheap pro</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img10.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img10.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -1293,30 +1250,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">VISION RAC Micro Oven </a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img11.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img11.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -1333,30 +1290,30 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Folding Keayboard display</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
         
                                 <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <div class="product-item group-item flex flex-column gap-5 hover-common-shadow-four bg-white pb-2 rounded-2xl">
+                                    <div class="product-item group-item flex flex-col gap-5 hover:common-shadow-four bg-white pb-2 rounded-2xl">
                                         <div class="product-item__thumb relative overflow-hidden d-block border border-neutral-200 rounded-2xl min-h-290-px flex justify-center items-center">
                                             <a href="shop-details.html" class="d-block">
-                                                <img src="assets/images/thumbs/product-img12.png" alt="Product Thumbnail" class="group-hover-item-scale-12 duration-300">
+                                                <img src="assets/images/thumbs/product-img12.png" alt="Product Thumbnail" class="group-hover:item-scale-12 duration-300">
                                             </a>
-                                            <div class="flex flex-column gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover-item-translate-x-0 duration-500">
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                            <div class="flex flex-col gap-3 absolute top-0 end-0 mt-4 me-4 translate-x-100-16 group-hover:item-translate-x-0 duration-500">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-eye"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-star"></i>
                                                 </button>
-                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover-bg-main-600 hover-text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
+                                                <button type="button" class="w-10 h-10 bg-neutral-200 text-heading hover:bg-main-600 hover:text-white text-lg flex justify-center items-center rounded-md duration-200 active-scale-09">
                                                     <i class="ph-bold ph-arrows-down-up"></i>
                                                 </button>
                                             </div>
-                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover-item-opacity-1 group-hover-item-visible group-hover-item-scale-1 duration-500">
-                                                <a href="cart.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm fw-semibold rounded-pill w-full" data-block="button">
+                                            <div class="absolute start-0 bottom-0 mb-4 px-6 w-full scale-04 invisible opacity-0 group-hover:item-opacity-1 group-hover:item-visible group-hover:item-scale-1 duration-500">
+                                                <a href="cart.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex items-center justify-center gap-5 group active--translate-y-2 px-3 py-305 text-sm font-semibold rounded-pill w-full" data-block="button">
                                                     <span class="button__flair"></span>
                                                     <span class="button__label">Add To Cart</span>
                                                 </a>
@@ -1373,7 +1330,7 @@
                                             <h6 class="text-base my-205">
                                                 <a href="shop-details.html" class="">Logitech Mouse Havit</a>
                                             </h6>
-                                            <span class="text-heading fw-medium">$112.00</span>
+                                            <span class="text-heading font-medium">$112.00</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1398,7 +1355,7 @@
             <img src="assets/images/thumbs/task-management-img.png" alt="Image" class="absolute end-0 top-0 me-5 mt-5 d-lg-block d-none">
             
             <div class="mb-8 text-center max-w-570-px mx-auto">
-                <div class="py-3 px-305 rounded-pill fw-medium text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max text-white bg-white-13" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+                <div class="py-3 px-305 rounded-pill font-medium capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max text-white bg-white-13" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                     <div class="">
                         Up to <span class="text-yellow text-stroke-yellow">70%</span> off managed cloud hosting
                     </div>
@@ -1408,7 +1365,7 @@
                 </h3>
 
                 <div class="d-none">
-                    <a href="javascript:void(0)" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-0 py-6 fw-bold mt-7" data-block="button">
+                    <a href="javascript:void(0)" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-0 py-6 font-bold mt-7" data-block="button">
                         <span class="button__flair"></span>
                         <div class="flex items-center gap-2 z-1">
                             <span class="button__label">Download for free</span>
@@ -1417,13 +1374,13 @@
                 </div>
                 <div class="d-block">
                     <div class="flex items-center gap-4 justify-center flex-wrap">
-                        <a href="javascript:void(0)" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-705 rounded-2xl py-6 fw-bold mt-7" data-block="button">
+                        <a href="javascript:void(0)" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-705 rounded-2xl py-6 font-bold mt-7" data-block="button">
                             <span class="button__flair"></span>
                             <div class="flex items-center gap-2 z-1">
                                 <span class="button__label">Get Started Trial</span>
                             </div>
                         </a>
-                        <a href="javascript:void(0)" class="hover--translate-y-1 active--translate-y-scale-9 btn hover-style-two button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-705 rounded-2xl py-6 fw-bold mt-7" data-block="button">
+                        <a href="javascript:void(0)" class="hover:-translate-y-1 active--translate-y-scale-9 btn hover:style-two button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-705 rounded-2xl py-6 font-bold mt-7" data-block="button">
                             <span class="button__flair"></span>
                             <div class="flex items-center gap-2 z-1">
                                 <span class="button__label">Get Started Trial</span>
@@ -1435,16 +1392,16 @@
             </div>
             <div class="pt-8 text-center"> 
                 <div class="myContainer relative flex flex-wrap items-center justify-center gap-6 pt-16 overflow-hidden w-full px-6">
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-white gradient-bg-six rounded-pill">Project management</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-paste rounded-pill">Technology</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-yellow rounded-pill">Project management</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-orange rounded-pill">Technology</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-orange rounded-pill">Project management</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-paste rounded-pill">Project management</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-pink rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-white gradient-bg-six rounded-pill">Project management</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-paste rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-yellow rounded-pill">Project management</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-orange rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-orange rounded-pill">Project management</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-paste rounded-pill">Project management</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-pink rounded-pill">Technology</span>
                 </div>
             </div>
         </div>
@@ -1459,89 +1416,89 @@
             <div class="row gy-5">
                 <div class="col-xl-3 col-sm-4 col-xs-6" data-aos="fade-up" data-aos-duration="600">
                     <div class="">
-                        <h5 class="fw-medium mb-8 splitTextStyleOne">Collaborate</h5>
-                        <ul class="flex flex-column gap-4">
+                        <h5 class="font-medium mb-8 splitTextStyleOne">Collaborate</h5>
+                        <ul class="flex flex-col gap-4">
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Partners</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Partners</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Partners Program</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Partners Program</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Affiliate Program</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Affiliate Program</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Community</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Community</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">HR Partner Program</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">HR Partner Program</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-2 col-sm-4 col-xs-6" data-aos="fade-up" data-aos-duration="700">
                     <div class="">
-                        <h5 class="fw-medium mb-8 splitTextStyleOne">My account</h5>
-                        <ul class="flex flex-column gap-4">
+                        <h5 class="font-medium mb-8 splitTextStyleOne">My account</h5>
+                        <ul class="flex flex-col gap-4">
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Company</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Company</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Customer Success</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Customer Success</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Resources</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Resources</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Talk an Expert</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Talk an Expert</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-2 col-sm-4 col-xs-6" data-aos="fade-up" data-aos-duration="800">
                     <div class="">
-                        <h5 class="fw-medium mb-8 splitTextStyleOne">Service</h5>
-                        <ul class="flex flex-column gap-4">
+                        <h5 class="font-medium mb-8 splitTextStyleOne">Service</h5>
+                        <ul class="flex flex-col gap-4">
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Software Development</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Software Development</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Cloud Services</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Cloud Services</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">AI Machine Learning</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">AI Machine Learning</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Data Security</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Data Security</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Software Development</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Software Development</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6" data-aos="fade-up" data-aos-duration="900">
                     <div class="ps-xl-5">
-                        <a href="index.html" class="link hover--translate-y-1 active--translate-y-scale-9 mb-10">
+                        <a href="index.html" class="link hover:-translate-y-1 active--translate-y-scale-9 mb-10">
                             <img src="assets/images/logo/logo-three.png" alt="">
                         </a>
-                        <form action="#" class="flex flex-md-row flex-column gap-5 form-submit">
+                        <form action="#" class="flex flex-md-row flex-col gap-5 form-submit">
                             <div class="relative flex-grow-1">
                                 <input type="email" class="h-14 rounded-lg bg-white ps-12 border border-transparent focus-border-main-600 text-heading focus-outline-0 w-full pe-6" placeholder="Email Address" required>
                                 <span class="text-heading text-lg absolute top-50 start-0 -translate-y-50 ms-5 flex">
                                     <i class="ph ph-envelope-simple"></i>
                                 </span>
                             </div>
-                            <button type="submit" class="btn btn-main hover-style-one button--stroke inline-flex items-center justify-center gap-2 group active--translate-y-2 fw-semibold flex-shrink-0 hover--translate-y-1 active--translate-y-scale-9" data-block="button">
+                            <button type="submit" class="btn btn-main hover:style-one button--stroke inline-flex items-center justify-center gap-2 group active--translate-y-2 font-semibold flex-shrink-0 hover:-translate-y-1 active--translate-y-scale-9" data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Sign Up</span>
-                                <span class="text-white text-sm rounded flex justify-center items-center relative group-hover-text-main-600 duration-500">
+                                <span class="text-white text-sm rounded flex justify-center items-center relative group-hover:text-main-600 duration-500">
                                     <i class="ph-bold ph-caret-right"></i>
                                 </span>
                             </button>
                         </form>
-                        <p class="text-heading fw-semibold mt-9">By subscribing, you're accept
-                            <a href="javascript:void(0)" class="text-heading text-decoration-underline hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9">Privacy Policy</a>
+                        <p class="text-heading font-semibold mt-9">By subscribing, you're accept
+                            <a href="javascript:void(0)" class="text-heading text-decoration-underline hover:text-main-600 hover:-translate-y-1 active--translate-y-scale-9">Privacy Policy</a>
                         </p>
                     </div>
                 </div>
@@ -1555,16 +1512,16 @@
         <div class="border-top border-neutral-200 border-0 py-8">
             <div class="container container-two">
                 <div class="flex items-center justify-between gap-4 flex-wrap">
-                    <p class="text-heading text-line-1 fw-semibold"> 
+                    <p class="text-heading text-line-1 font-semibold"> 
                         &copy; 2025 
-                        <a href="https://themeforest.net/user/wowtheme7" class="fw-bold text-gradient-teal hover-underline hover--translate-y-1 active--translate-y-scale-9">WowTheme7</a>
+                        <a href="https://themeforest.net/user/wowtheme7" class="font-bold text-gradient-teal hover:underline hover:-translate-y-1 active--translate-y-scale-9">WowTheme7</a>
                         - IT Services. All rights reserved.
                     </p>
                     <div class="flex items-center gap-6">
-                        <a href="javascript:void(0)" class="text-neutral-600 fw-semibold hover-text-heading hover-text-neutral-900 hover-underline hover--translate-y-1 active--translate-y-scale-9">Faqs</a>
-                        <a href="javascript:void(0)" class="text-neutral-600 fw-semibold hover-text-heading hover-text-neutral-900 hover-underline hover--translate-y-1 active--translate-y-scale-9">Setting</a>
-                        <a href="javascript:void(0)" class="text-neutral-600 fw-semibold hover-text-heading hover-text-neutral-900 hover-underline hover--translate-y-1 active--translate-y-scale-9">Privacy</a>
-                        <a href="javascript:void(0)" class="text-neutral-600 fw-semibold hover-text-heading hover-text-neutral-900 hover-underline hover--translate-y-1 active--translate-y-scale-9">Contact</a>
+                        <a href="javascript:void(0)" class="text-neutral-600 font-semibold hover:text-heading hover:text-neutral-900 hover:underline hover:-translate-y-1 active--translate-y-scale-9">Faqs</a>
+                        <a href="javascript:void(0)" class="text-neutral-600 font-semibold hover:text-heading hover:text-neutral-900 hover:underline hover:-translate-y-1 active--translate-y-scale-9">Setting</a>
+                        <a href="javascript:void(0)" class="text-neutral-600 font-semibold hover:text-heading hover:text-neutral-900 hover:underline hover:-translate-y-1 active--translate-y-scale-9">Privacy</a>
+                        <a href="javascript:void(0)" class="text-neutral-600 font-semibold hover:text-heading hover:text-neutral-900 hover:underline hover:-translate-y-1 active--translate-y-scale-9">Contact</a>
                     </div>
                 </div>
             </div>

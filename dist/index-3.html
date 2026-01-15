@@ -33,50 +33,7 @@
   </div>
   <!--==================== Preloader End ====================-->
 
-  <!-- ========================== Settings Panel start ==================================== -->
-<div class="settings-panel position-fixed top-50 translate-middle-y z-999 flex items-center">
-  <button type="button"
-    class="settings-button w-12 h-12 bg-main-600 text-white hover-bg-main-800 duration-100 flex justify-center items-center">
-    <i class="ph-fill ph-gear-six setting-icon text-2xl leading-none animation-rotate w-6 h-6"></i>
-    <i class="ph-bold ph-x close-icon text-2xl leading-none w-6 h-6"></i>
-  </button>
-
-  <div class="settings-panel__content bg-white px-6 py-13 flex flex-column gap-10 scroll-sm overflow-y-auto">
-    <div class="flex flex-column gap-10">
-      <div class="">
-        <h6 class="settings-panel__title text-center mb-6 text-uppercase">
-          Cursor
-        </h6>
-        <div class="settings-panel__buttons cursor__buttons flex gap-4">
-          <button type="button"
-            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1 active">
-            Animate
-          </button>
-          <button type="button"
-            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1">
-            Default
-          </button>
-        </div>
-      </div>
-      <div class="">
-        <h6 class="settings-panel__title text-center mb-6 text-uppercase">
-          Direction
-        </h6>
-        <div class="settings-panel__buttons flex gap-4">
-          <button type="button"
-            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1 active">
-            LTR
-          </button>
-          <button type="button"
-            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 duration-300 text-white text-base py-305 px-3 fw-medium active-scale-094 flex-grow-1">
-            RTL
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ========================== Settings Panel end ==================================== -->
+  
 
   <!--==================== Overlay Start ====================-->
   <div class="overlay"></div>
@@ -104,9 +61,9 @@
   <!-- Custom Cursor End -->
 
   <!-- ==================== Mobile Menu Start Here ==================== -->
-<div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white w-300-px h-screen overflow-y-auto p-6 z-999 -translate-x-full pb-68 ">
+<div class="mobile-menu d-lg-none d-block scroll-sm fixed bg-white w-300-px h-screen overflow-y-auto p-6 z-999 -translate-x-full pb-68 ">
 
-    <button type="button" class="close-button absolute end-0 top-0 me-2 mt-2 w-605 h-605 rounded-circle flex justify-center items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white"> 
+    <button type="button" class="close-button absolute end-0 top-0 me-2 mt-2 w-605 h-605 rounded-circle flex justify-center items-center text-neutral-900 bg-neutral-200 hover:bg-neutral-900 hover:text-white"> 
         <i class="ph ph-x"></i>
     </button>
 
@@ -119,59 +76,59 @@
 <ul class="nav-menu d-lg-flex items-center nav-menu--mobile d-block mt-8">
     <li class="nav-menu__item has-submenu activePage">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Home</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Home</a>
         
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Pages</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Pages</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="pricing-plan.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Pricing
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="about.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     About Us
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="app-intigration.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     App Integration
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="intigration-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Integration Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="policy-privacy.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Privacy Policy
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="faq.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     FAQ
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="project-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Project Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="service-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Service Details
                 </a>
             </li>
@@ -179,30 +136,30 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Shop</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Shop</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="cart.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Cart
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="checkout.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Checkout
                 </a>
             </li>
@@ -210,18 +167,18 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-heading py-9 fw-semibold w-full">Blog</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-heading py-9 font-semibold w-full">Blog</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog Details
                 </a>
             </li>
@@ -229,12 +186,12 @@
     </li>
     <li class="nav-menu__item">
         <a href="contact.html"
-            class="nav-menu__link hover--translate-y-1 text-heading py-9 fw-semibold w-full">Contact</a>
+            class="nav-menu__link hover:-translate-y-1 text-heading py-9 font-semibold w-full">Contact</a>
     </li>
 </ul>
 <!-- Nav menu End  -->
         </div>
-        <a href="register.html" class="btn btn-main-two hover-style-two button--stroke d-sm-none inline-flex items-center justify-center gap-5 group active--translate-y-2 px-8 rounded-pill mt-6" data-block="button">
+        <a href="register.html" class="btn btn-main-two hover:style-two button--stroke d-sm-none inline-flex items-center justify-center gap-5 group active--translate-y-2 px-8 rounded-pill mt-6" data-block="button">
             <span class="button__flair"></span>
             <span class="button__label">Sign Up Now</span>
         </a>
@@ -252,7 +209,7 @@
       <nav class="flex items-center justify-between relative">
         <!-- Logo Start -->
         <div class="logo">
-          <a href="index.html" class="link hover--translate-y-1 active--translate-y-scale-9">
+          <a href="index.html" class="link hover:-translate-y-1 active--translate-y-scale-9">
             <img src="assets/images/logo/logo-white-two.png" alt="Logo" class="max-w-200-px">
           </a>
         </div>
@@ -264,7 +221,7 @@
 <ul class="nav-menu d-lg-flex items-center gap-7">
     <li class="nav-menu__item has-submenu activePage">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-white py-9 fw-semibold w-full">Home</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-white py-9 font-semibold w-full">Home</a>
         <!-- mega menu start -->
 <div
     class="mega-menu p-6 rounded-lg scroll-sm nav-submenu absolute start-0 top-100 w-max bg-white rounded-md z-99">
@@ -278,19 +235,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -298,7 +255,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">IT
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">IT
                         Solution</a>
                 </div>
             </div>
@@ -312,19 +269,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index-2.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -332,7 +289,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index-2.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">Web
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">Web
                         Hosting</a>
                 </div>
             </div>
@@ -346,19 +303,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index-3.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -366,7 +323,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index-3.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">Task
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">Task
                         Management</a>
                 </div>
             </div>
@@ -380,19 +337,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index-4.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -400,7 +357,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index-4.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">CRM
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">CRM
                         Software
                     </a>
                 </div>
@@ -415,19 +372,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index-5.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -435,7 +392,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index-5.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">App
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">App
                         Landing</a>
                 </div>
             </div>
@@ -449,19 +406,19 @@
                     </a>
                     <div class="d-lg-flex d-none">
                         <div
-                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 scale-08 group-hover-item-scale-1 rounded-lg pointer-event-none">
+                            class="mega-menu-item__overlay absolute top-0 start-0 w-full h-100 flex justify-center items-center invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1 scale-08 group-hover:item-scale-1 rounded-lg pointer-event-none">
                         </div>
                         <div
-                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-column gap-4 invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1">
+                            class="mega-menu-item__buttons absolute top-0 start-0 w-full h-100 flex justify-center items-center flex-col gap-4 invisible opacity-0 group-hover:item-visible group-hover:item-opacity-1">
                             <a href="index-6.html" target="_blank"
-                                class="btn btn-main hover-style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
+                                class="btn btn-main hover:style-one button--stroke active-scale-094 duration-100 inline-flex items-center justify-center gap-705 group active--translate-y-2 p-1 ps-8 rounded-pill group-item"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Live Preview</span>
                                 <span
                                     class="w-12 h-12 bg-white text-main-600 text-xl rounded-circle flex justify-center items-center relative duration-500">
                                     <i
-                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover-item-rotate-0-deg duration-300"></i>
+                                        class="ph-bold ph-arrow-right rotate--45-deg group-hover:item-rotate-0-deg duration-300"></i>
                                 </span>
                             </a>
                         </div>
@@ -469,7 +426,7 @@
                 </div>
                 <div class="mt-4 text-center">
                     <a href="index-6.html"
-                        class="text-heading hover-text-main-600 fw-semibold text-md text-capitalize line-clamp-1">Payment
+                        class="text-heading hover:text-main-600 font-semibold text-md capitalize line-clamp-1">Payment
                         Solution</a>
                 </div>
             </div>
@@ -483,7 +440,7 @@
                     </span>
                 </div>
                 <div class="mt-4 text-center">
-                    <span class="text-heading fw-semibold text-md text-capitalize line-clamp-1">Home 7</span>
+                    <span class="text-heading font-semibold text-md capitalize line-clamp-1">Home 7</span>
                 </div>
             </div>
         </div>
@@ -493,54 +450,54 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-white py-9 fw-semibold w-full">Pages</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-white py-9 font-semibold w-full">Pages</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="pricing-plan.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Pricing
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="about.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     About Us
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="app-intigration.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     App Integration
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="intigration-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Integration Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="policy-privacy.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Privacy Policy
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="faq.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     FAQ
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="project-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Project Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="service-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Service Details
                 </a>
             </li>
@@ -548,12 +505,12 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-white py-9 fw-semibold w-full">Portfolio</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-white py-9 font-semibold w-full">Portfolio</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="javascript:void(0)"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Portfolio
                 </a>
             </li>
@@ -561,30 +518,30 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-white py-9 fw-semibold w-full">Shop</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-white py-9 font-semibold w-full">Shop</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="shop-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Shop Details
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="cart.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Cart
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="checkout.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Checkout
                 </a>
             </li>
@@ -592,18 +549,18 @@
     </li>
     <li class="nav-menu__item has-submenu relative">
         <a href="javascript:void(0)"
-            class="nav-menu__link hover--translate-y-1 pe-5 text-white py-9 fw-semibold w-full">Blog</a>
+            class="nav-menu__link hover:-translate-y-1 pe-5 text-white py-9 font-semibold w-full">Blog</a>
         <ul
             class="nav-submenu scroll-sm absolute start-0 top-100 w-max bg-white rounded-md overflow-y-auto p-2 mt-4 duration-200 z-99">
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog
                 </a>
             </li>
             <li class="nav-submenu__item d-block rounded duration-200 relative">
                 <a href="blog-details.html"
-                    class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">
+                    class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">
                     Blog Details
                 </a>
             </li>
@@ -611,7 +568,7 @@
     </li>
     <li class="nav-menu__item">
         <a href="contact.html"
-            class="nav-menu__link hover--translate-y-1 text-white py-9 fw-semibold w-full">Contact</a>
+            class="nav-menu__link hover:-translate-y-1 text-white py-9 font-semibold w-full">Contact</a>
     </li>
 </ul>
 <!-- Nav menu Three End  -->
@@ -625,11 +582,11 @@
               <span class="text-spring-green flex leading-none">
                 <i class="ph-bold ph-user"></i>
               </span>
-              <span class="fw-semibold text-sm">Sign in</span>
+              <span class="font-semibold text-sm">Sign in</span>
             </a>
 
             <a href="register.html"
-              class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main-two hover-style-two button--stroke d-lg-flex d-none items-center justify-center gap-5 group active--translate-y-2 px-xl-4 px-3 rounded-md py-405 fw-bold"
+              class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main-two hover:style-two button--stroke d-lg-flex d-none items-center justify-center gap-5 group active--translate-y-2 px-xl-4 px-3 rounded-md py-405 font-bold"
               data-block="button">
               <span class="button__flair"></span>
               <div class="flex items-center gap-2 z-1">
@@ -660,9 +617,9 @@
     <div class="row gy-5">
       <div class="col-lg-6">
         <div class="banner-three-content max-w-570-px">
-          <h1 class="splitTextStyleOne text-white text-capitalize leading-none">
+          <h1 class="splitTextStyleOne text-white capitalize leading-none">
             Simplify task
-            <span class="text-gradient-teal font-dm-serif fst-italic fw-normal">management</span>
+            <span class="text-gradient-teal font-dm-serif fst-italic font-normal">management</span>
             and prioritize work
           </h1>
           <p class="splitTextStyleOne text-white text-lg mt-8">
@@ -674,7 +631,7 @@
           <div class="flex items-center gap-7 mt-11" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom" data-aos-duration="800">
             <a href="javascript:void(0)"
-              class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-md py-6 fw-bold"
+              class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-md py-6 font-bold"
               data-block="button">
               <span class="button__flair"></span>
               <div class="flex items-center gap-2 z-1">
@@ -778,13 +735,13 @@
     <div class="container">
         <div class="flex items-center justify-between gap-6 mb-12">
             <div class="max-w-620-px">
-                <h2 class="splitTextStyleOne text-heading text-capitalize"> Task management 
-                    <span class="font-dm-serif fst-italic fw-normal text-gradient-teal"> features </span>
+                <h2 class="splitTextStyleOne text-heading capitalize"> Task management 
+                    <span class="font-dm-serif fst-italic font-normal text-gradient-teal"> features </span>
                     & capabilities
                 </h2>
             </div>
             <div class="" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                <p class="splitTextStyleOne text-neutral-500 mt-8 max-w-490-px fw-medium">Sassly-CRM in the past allowing you to focus more on your business simply enjoy your newfound legal time to reflect leaving pen</p>
+                <p class="splitTextStyleOne text-neutral-500 mt-8 max-w-490-px font-medium">Sassly-CRM in the past allowing you to focus more on your business simply enjoy your newfound legal time to reflect leaving pen</p>
             </div>
         </div>
         
@@ -792,29 +749,29 @@
             <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                 <div class="rounded-xl bg-goldenrod p-7 h-100">
                     <div class="pt-8 pb-10 ps-4"> 
-                        <div class="relative h-100 flex flex-column">
-                            <span class="z-3 relative px-11 py-205 fw-bold text-white gradient-bg-six rounded-pill transform-rotate--14-deg">Project management</span>
-                            <span class="z-2 relative px-11 py-205 fw-bold text-heading bg-yellow rounded-pill">Performance tracking</span>
-                            <span class="z-1 relative px-6 py-205 fw-bold text-white gradient-bg-five rounded-pill transform-rotate-8-deg">Seamless integrations tools</span>
+                        <div class="relative h-100 flex flex-col">
+                            <span class="z-3 relative px-11 py-205 font-bold text-white gradient-bg-six rounded-pill transform-rotate--14-deg">Project management</span>
+                            <span class="z-2 relative px-11 py-205 font-bold text-heading bg-yellow rounded-pill">Performance tracking</span>
+                            <span class="z-1 relative px-6 py-205 font-bold text-white gradient-bg-five rounded-pill transform-rotate-8-deg">Seamless integrations tools</span>
                         </div>
                     </div>
                     
                     <div class="bg-white rounded-lg common-shadow-twelve py-5 px-6">
                         <div class="flex items-center justify-between">
-                            <span class="fw-bold text-sm">Labels</span>
+                            <span class="font-bold text-sm">Labels</span>
                             <div class="dropdown">
                                 <button type="button" class="text-neutral-400" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="ph-fill ph-dots-three-outline"></i>
                                 </button>
                                 <ul class="dropdown-menu border-0 min-w-max p-4 common-shadow-eight">
                                     <li class="p-0">
-                                        <a href="javascript:void(0)" class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">Action</a>
+                                        <a href="javascript:void(0)" class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">Action</a>
                                     </li>
                                     <li class="p-0">
-                                        <a href="javascript:void(0)" class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">Another action</a>
+                                        <a href="javascript:void(0)" class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">Another action</a>
                                     </li>
                                     <li class="p-0">
-                                        <a href="javascript:void(0)" class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-full d-block py-2 px-305 rounded">Something else here</a>
+                                        <a href="javascript:void(0)" class="nav-submenu__link hover:bg-neutral-200 text-heading font-semibold w-full d-block py-2 px-305 rounded">Something else here</a>
                                     </li>
                                 </ul>
                             </div>
@@ -824,7 +781,7 @@
                             <div class="flex items-center justify-between pb-3 mb-3 border-bottom border-neutral-100">
                                 <label for="Copywriting" class="flex items-center gap-405">
                                     <span class="text-neutral-400 flex"><i class="ph-fill ph-tag"></i></span>
-                                    <span class="text-heading fw-medium text-sm">Copywriting</span>
+                                    <span class="text-heading font-medium text-sm">Copywriting</span>
                                 </label>
                                 <div class="form-check common-check-two">
                                     <input class="form-check-input me-0 float-none w-6 h-6 rounded shadow-none bg-main-50" type="checkbox" id="Copywriting">
@@ -833,7 +790,7 @@
                             <div class="flex items-center justify-between pb-3 mb-3 border-bottom border-neutral-100">
                                 <label for="UIDesign" class="flex items-center gap-405">
                                     <span class="text-neutral-400 flex"><i class="ph-fill ph-tag"></i></span>
-                                    <span class="text-heading fw-medium text-sm">UI Design</span>
+                                    <span class="text-heading font-medium text-sm">UI Design</span>
                                 </label>
                                 <div class="form-check common-check-two">
                                     <input class="form-check-input me-0 float-none w-6 h-6 rounded shadow-none bg-main-50" type="checkbox" id="UIDesign">
@@ -842,7 +799,7 @@
                             <div class="flex items-center justify-between">
                                 <label for="Illustrations" class="flex items-center gap-405">
                                     <span class="text-neutral-400 flex"><i class="ph-fill ph-tag"></i></span>
-                                    <span class="text-heading fw-medium text-sm">Illustrations</span>
+                                    <span class="text-heading font-medium text-sm">Illustrations</span>
                                 </label>
                                 <div class="form-check common-check-two">
                                     <input class="form-check-input me-0 float-none w-6 h-6 rounded shadow-none bg-main-50" type="checkbox" id="Illustrations">
@@ -854,13 +811,13 @@
                     <div class="flex items-center justify-between gap-3 mt-4">
                         <div class="flex items-center gap-2">
                             <div class="flex items-center">
-                                <div class="w-9 h-9 rounded-circle overflow-hidden duration-300 hover-scale-14 hover-z-9 relative z-2 border border-white border-3">
+                                <div class="w-9 h-9 rounded-circle overflow-hidden duration-300 hover:scale-14 hover:z-9 relative z-2 border border-white border-3">
                                     <img src="assets/images/thumbs/client-img1.png" alt="Client Image" class="w-full h-100 object-fit-cover">
                                 </div>
-                                <div class="w-9 h-9 rounded-circle overflow-hidden duration-300 hover-scale-14 hover-z-9 relative -ms-10-px z-1 border border-white border-3">
+                                <div class="w-9 h-9 rounded-circle overflow-hidden duration-300 hover:scale-14 hover:z-9 relative -ms-10-px z-1 border border-white border-3">
                                     <img src="assets/images/thumbs/client-img2.png" alt="Client Image" class="w-full h-100 object-fit-cover">
                                 </div>
-                                <div class="w-9 h-9 rounded-circle overflow-hidden duration-300 hover-scale-14 hover-z-9 relative -ms-10-px border border-white border-3">
+                                <div class="w-9 h-9 rounded-circle overflow-hidden duration-300 hover:scale-14 hover:z-9 relative -ms-10-px border border-white border-3">
                                     <img src="assets/images/thumbs/client-img3.png" alt="Client Image" class="w-full h-100 object-fit-cover">
                                 </div>
                             </div>
@@ -868,7 +825,7 @@
                         </div>
                         <div class="">
                             <input type="file" id="uploadPhoto" hidden>
-                            <label for="uploadPhoto" class="w-7 h-7 rounded-circle flex justify-center items-center border border-neutral-300 border-dashed border-2 text-sm bg-white text-neutral-300 cursor-pointer hover-bg-main-600 hover-text-white hover-border-main-600">
+                            <label for="uploadPhoto" class="w-7 h-7 rounded-circle flex justify-center items-center border border-neutral-300 border-dashed border-2 text-sm bg-white text-neutral-300 cursor-pointer hover:bg-main-600 hover:text-white hover:border-main-600">
                                 <i class="ph-bold ph-plus"></i>
                             </label>
                         </div>
@@ -879,25 +836,25 @@
             <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
                 <div class="row gy-4">
                     <div class="col-lg-12">
-                        <div class="group-item rounded-xl border border-neutral-200 pt-12 pb-15 px-9 bg-neutral-50 hover-gradient-bg-five group animation-item duration-300 relative z-1">
+                        <div class="group-item rounded-xl border border-neutral-200 pt-12 pb-15 px-9 bg-neutral-50 hover:gradient-bg-five group animation-item duration-300 relative z-1">
                             <div class="flex items-center justify-between gap-2">
-                                <h5 class="group-hover-text-white duration-300 max-w-194-px splitTextStyleOne">Asynchronous Meetings</h5>
-                                <span class="group-hover-item-text-invert duration-300 animate__heartBeat">
+                                <h5 class="group-hover:text-white duration-300 max-w-194-px splitTextStyleOne">Asynchronous Meetings</h5>
+                                <span class="group-hover:item-text-invert duration-300 animate__heartBeat">
                                     <img src="assets/images/icons/features-three-icon1.svg" alt="Icon">
                                 </span>
                             </div>
-                            <p class="text-neutral-500 max-w-278-px mt-10 group-hover-text-white duration-300">We are committed to your success. Our platform is built to drive</p>
+                            <p class="text-neutral-500 max-w-278-px mt-10 group-hover:text-white duration-300">We are committed to your success. Our platform is built to drive</p>
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="group-item rounded-xl border border-neutral-200 pt-12 pb-15 px-9 bg-neutral-50 hover-gradient-bg-five group animation-item duration-300 relative z-1">
+                        <div class="group-item rounded-xl border border-neutral-200 pt-12 pb-15 px-9 bg-neutral-50 hover:gradient-bg-five group animation-item duration-300 relative z-1">
                             <div class="flex items-center justify-between gap-2">
-                                <h5 class="group-hover-text-white duration-300 max-w-194-px splitTextStyleOne">Monitoring your Time</h5>
-                                <span class="group-hover-item-text-invert duration-300 animate__heartBeat">
+                                <h5 class="group-hover:text-white duration-300 max-w-194-px splitTextStyleOne">Monitoring your Time</h5>
+                                <span class="group-hover:item-text-invert duration-300 animate__heartBeat">
                                     <img src="assets/images/icons/features-three-icon2.svg" alt="Icon">
                                 </span>
                             </div>
-                            <p class="text-neutral-500 max-w-278-px mt-10 group-hover-text-white duration-300">We are committed to your success. Our platform is built to drive</p>
+                            <p class="text-neutral-500 max-w-278-px mt-10 group-hover:text-white duration-300">We are committed to your success. Our platform is built to drive</p>
                         </div>
                     </div>
                 </div>
@@ -905,25 +862,25 @@
             <div class="col-lg-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
                 <div class="row gy-4">
                     <div class="col-lg-12 col-sm-6">
-                        <div class="group-item rounded-xl border border-neutral-200 pt-12 pb-15 px-9 bg-neutral-50 hover-gradient-bg-five group animation-item duration-300 relative z-1">
+                        <div class="group-item rounded-xl border border-neutral-200 pt-12 pb-15 px-9 bg-neutral-50 hover:gradient-bg-five group animation-item duration-300 relative z-1">
                             <div class="flex items-center justify-between gap-2">
-                                <h5 class="group-hover-text-white duration-300 max-w-194-px splitTextStyleOne">built-in Automation</h5>
-                                <span class="group-hover-item-text-invert duration-300 animate__heartBeat">
+                                <h5 class="group-hover:text-white duration-300 max-w-194-px splitTextStyleOne">built-in Automation</h5>
+                                <span class="group-hover:item-text-invert duration-300 animate__heartBeat">
                                     <img src="assets/images/icons/features-three-icon3.svg" alt="Icon">
                                 </span>
                             </div>
-                            <p class="text-neutral-500 max-w-278-px mt-10 group-hover-text-white duration-300">We are committed to your success. Our platform is built to drive</p>
+                            <p class="text-neutral-500 max-w-278-px mt-10 group-hover:text-white duration-300">We are committed to your success. Our platform is built to drive</p>
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-6">
-                        <div class="group-item rounded-xl border border-neutral-200 pt-12 pb-15 px-9 bg-neutral-50 hover-gradient-bg-five group animation-item duration-300 relative z-1">
+                        <div class="group-item rounded-xl border border-neutral-200 pt-12 pb-15 px-9 bg-neutral-50 hover:gradient-bg-five group animation-item duration-300 relative z-1">
                             <div class="flex items-center justify-between gap-2">
-                                <h5 class="group-hover-text-white duration-300 max-w-194-px splitTextStyleOne">Remote-Friendly Collaboration</h5>
-                                <span class="group-hover-item-text-invert duration-300 animate__heartBeat">
+                                <h5 class="group-hover:text-white duration-300 max-w-194-px splitTextStyleOne">Remote-Friendly Collaboration</h5>
+                                <span class="group-hover:item-text-invert duration-300 animate__heartBeat">
                                     <img src="assets/images/icons/features-three-icon4.svg" alt="Icon">
                                 </span>
                             </div>
-                            <p class="text-neutral-500 max-w-278-px mt-10 group-hover-text-white duration-300">We are committed to your success. Our platform is built to drive</p>
+                            <p class="text-neutral-500 max-w-278-px mt-10 group-hover:text-white duration-300">We are committed to your success. Our platform is built to drive</p>
                         </div>
                     </div>
                 </div>
@@ -941,22 +898,22 @@
     
     <div class="container">
         <div class="mb-8 text-center max-w-570-px mx-auto">
-            <div class="bg-white py-3 px-305 rounded-pill fw-medium text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max border border-spring-green" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+            <div class="bg-white py-3 px-305 rounded-pill font-medium capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max border border-spring-green" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                 <div class="text-gradient-teal">
                     Up to <span class="text-yellow text-stroke-yellow">70%</span> off managed cloud hosting
                 </div>
             </div>
             <h2 class="splitTextStyleOne text-white">
                 Essential for
-                <span class="font-dm-serif fst-italic fw-normal">workplaces.</span> 
+                <span class="font-dm-serif fst-italic font-normal">workplaces.</span> 
                 Great for any team.
             </h2>
-            <p class="splitTextStyleOne text-neutral-300 mt-8 max-w-570-px fw-medium text-lg">Sassly-CRM in the past allowing you to focus more on your business simply enjoy your newfound legal time to reflect leaving pen</p>
+            <p class="splitTextStyleOne text-neutral-300 mt-8 max-w-570-px font-medium text-lg">Sassly-CRM in the past allowing you to focus more on your business simply enjoy your newfound legal time to reflect leaving pen</p>
         </div>
 
         <div class="border border-white-01 rounded-2xl p-sm-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="900">
             <div class="background-img bg-img rounded-2xl bg-position-top-center" data-background-image="assets/images/shapes/dashboard-screen.png">
-                <div class="p-7 pt-16 flex gap-13 flex-lg-row flex-column">
+                <div class="p-7 pt-16 flex gap-13 flex-lg-row flex-col">
 
                     <!-- Sidebar Start -->
                     <div class="bg-neutral-100 rounded-2xl p-4 max-w-330-px flex-shrink-0">
@@ -966,32 +923,32 @@
                             </a>
                         </div>
                         <div class="">
-                            <div class="nav flex-column gradient-bg nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link animation-item py-505 px-9 text-lg fw-bold text-heading rounded-xl flex items-center gap-4 active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                            <div class="nav flex-col gradient-bg nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link animation-item py-505 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4 active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                     <span class="icon active-white animate__heartBeat">
                                         <img src="assets/images/icons/workplace-tab-icon1.svg" alt="Icon">
                                     </span>
                                     All Teams
                                 </button>
-                                <button class="nav-link animation-item py-505 px-9 text-lg fw-bold text-heading rounded-xl flex items-center gap-4" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                <button class="nav-link animation-item py-505 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                                     <span class="icon active-white animate__heartBeat">
                                         <img src="assets/images/icons/workplace-tab-icon2.svg" alt="Icon">
                                     </span>
                                     Security
                                 </button>
-                                <button class="nav-link animation-item py-505 px-9 text-lg fw-bold text-heading rounded-xl flex items-center gap-4" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">
+                                <button class="nav-link animation-item py-505 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">
                                     <span class="icon active-white animate__heartBeat">
                                         <img src="assets/images/icons/workplace-tab-icon3.svg" alt="Icon">
                                     </span>
                                     Technology
                                 </button>
-                                <button class="nav-link animation-item py-505 px-9 text-lg fw-bold text-heading rounded-xl flex items-center gap-4" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                <button class="nav-link animation-item py-505 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
                                     <span class="icon active-white animate__heartBeat">
                                         <img src="assets/images/icons/workplace-tab-icon4.svg" alt="Icon">
                                     </span>
                                     Infrastructure
                                 </button>
-                                <button class="nav-link animation-item py-505 px-9 text-lg fw-bold text-heading rounded-xl flex items-center gap-4" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <button class="nav-link animation-item py-505 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                     <span class="icon active-white animate__heartBeat">
                                         <img src="assets/images/icons/workplace-tab-icon5.svg" alt="Icon">
                                     </span>
@@ -1051,47 +1008,47 @@
       <div class="col-lg-6">
         <div class="automation-content">
           <div
-            class="bg-white py-3 px-305 rounded-pill fw-medium text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max border border-spring-green"
+            class="bg-white py-3 px-305 rounded-pill font-medium capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max border border-spring-green"
             data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
             <div class="text-gradient-teal">
               Up to <span class="text-yellow text-stroke-yellow">70%</span> off
               managed cloud hosting
             </div>
           </div>
-          <h2 class="splitTextStyleOne text-heading text-capitalize">
+          <h2 class="splitTextStyleOne text-heading capitalize">
             Supercharge
-            <span class="font-dm-serif fst-italic fw-normal text-gradient-teal">daily work</span>
+            <span class="font-dm-serif fst-italic font-normal text-gradient-teal">daily work</span>
             with built-in automation
           </h2>
-          <p class="splitTextStyleOne text-neutral-500 mt-8 max-w-570-px fw-medium text-lg">
+          <p class="splitTextStyleOne text-neutral-500 mt-8 max-w-570-px font-medium text-lg">
             Sassly-CRM in the past allowing you to focus more on your business
             simply enjoy your newfound legal time to reflect leaving pen
           </p>
 
-          <div class="mt-9 flex flex-column align-items-start gap-6">
+          <div class="mt-9 flex flex-col align-items-start gap-6">
             <div
               class="ps-5 pe-12 py-3 flex items-center gap-4 bg-neutral-100 rounded-pill animation-item"
               data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
               <img src="assets/images/icons/check-star.png" alt="Check Icon" class="animate__bounce">
-              <span class="fw-bold text-heading">Workflow streamlining</span>
+              <span class="font-bold text-heading">Workflow streamlining</span>
             </div>
             <div
               class="ps-5 pe-12 py-3 flex items-center gap-4 bg-neutral-100 rounded-pill animation-item"
               data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
               <img src="assets/images/icons/check-star.png" alt="Check Icon" class="animate__bounce">
-              <span class="fw-bold text-heading">Expedite onboarding with clear prioritization</span>
+              <span class="font-bold text-heading">Expedite onboarding with clear prioritization</span>
             </div>
             <div
               class="ps-5 pe-12 py-3 flex items-center gap-4 bg-neutral-100 rounded-pill animation-item"
               data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
               <img src="assets/images/icons/check-star.png" alt="Check Icon" class="animate__bounce">
-              <span class="fw-bold text-heading">Collaborate on ideas 7x faster</span>
+              <span class="font-bold text-heading">Collaborate on ideas 7x faster</span>
             </div>
           </div>
           <div class="flex items-center gap-7 mt-12" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom" data-aos-duration="800">
             <a href="javascript:void(0)"
-              class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-0 py-6 fw-bold"
+              class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-0 py-6 font-bold"
               data-block="button">
               <span class="button__flair"></span>
               <div class="flex items-center gap-2 z-1">
@@ -1125,18 +1082,18 @@
             </div>
             <div class="col-lg-6 ps-lg-5">
                 <div class="task-manager__content">
-                    <div class="bg-white py-3 px-305 rounded-pill fw-medium text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max border border-spring-green" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+                    <div class="bg-white py-3 px-305 rounded-pill font-medium capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max border border-spring-green" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                         <div class="text-gradient-teal">
                             Up to <span class="text-yellow text-stroke-yellow">70%</span> off managed cloud hosting
                         </div>
                     </div>
-                    <h2 class="splitTextStyleOne text-heading text-capitalize">
+                    <h2 class="splitTextStyleOne text-heading capitalize">
                         Powerful & life-saving
-                        <span class="font-dm-serif fst-italic fw-normal text-gradient-teal">task manager</span> 
+                        <span class="font-dm-serif fst-italic font-normal text-gradient-teal">task manager</span> 
                     </h2>
-                    <p class="splitTextStyleOne text-neutral-500 mt-8 max-w-570-px fw-medium text-lg">Sassly-CRM in the past allowing you to focus more on your business simply enjoy your newfound legal time to reflect leaving pen</p>
+                    <p class="splitTextStyleOne text-neutral-500 mt-8 max-w-570-px font-medium text-lg">Sassly-CRM in the past allowing you to focus more on your business simply enjoy your newfound legal time to reflect leaving pen</p>
 
-                    <div class="mt-13 flex flex-column gap-12">
+                    <div class="mt-13 flex flex-col gap-12">
                         <div class="flex align-items-start gap-10 animation-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                             <span class="mt-105 animate__wobble">
                                 <img src="assets/images/icons/task-manager-icon1.svg" alt="Icon">
@@ -1169,14 +1126,14 @@
     <div class="container max-w-1570-px">
 
         <div class="max-w-602-px text-center mx-auto mb-13">
-            <div class="bg-white py-3 px-305 rounded-pill fw-medium text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max border border-spring-green" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+            <div class="bg-white py-3 px-305 rounded-pill font-medium capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max border border-spring-green" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                 <div class="text-gradient-teal">
                     Up to <span class="text-yellow text-stroke-yellow">70%</span> off managed cloud hosting
                 </div>
             </div>
-            <h2 class="splitTextStyleOne text-heading text-capitalize text-capitalize">
+            <h2 class="splitTextStyleOne text-heading capitalize capitalize">
                 Plan, execute and 
-                <span class="font-dm-serif fst-italic fw-normal text-gradient-teal">track projects</span> 
+                <span class="font-dm-serif fst-italic font-normal text-gradient-teal">track projects</span> 
                 of any size
             </h2>
         </div>
@@ -1248,7 +1205,7 @@
             <!-- ================================ Testimonials Three section start ===================================== -->
 <section class="testimonials-three">
     <div class="container max-w-1290-px">
-        <div class="bg-main-three rounded-2xl overflow-hidden py-16 px-11 flex items-center flex-md-row flex-column gap-74-px">
+        <div class="bg-main-three rounded-2xl overflow-hidden py-16 px-11 flex items-center flex-md-row flex-col gap-74-px">
             <div class="max-w-400-px w-full">
                 <img src="assets/images/thumbs/testimonials-three-thumbs.png" alt="Testimonials Thumb"  data-aos="zoom-in" data-aos-duration="800">
             </div>
@@ -1261,15 +1218,15 @@
                             <span class="mb-705">
                                 <img src="assets/images/icons/ratings.svg" alt="" class="">
                             </span>
-                            <p class="text-30-px fw-normal text-white max-w-672-px leading-145">Sasstech hires great people from a widely variety of backgrounds, which simply makes our company stronger, and we couldn't be prouder of that. elevating your optimizing Business  Growth.</p>
+                            <p class="text-30-px font-normal text-white max-w-672-px leading-145">Sasstech hires great people from a widely variety of backgrounds, which simply makes our company stronger, and we couldn't be prouder of that. elevating your optimizing Business  Growth.</p>
                             <span class="d-block w-full h-px mt-12 mb-4 bg-white-08"></span>
                             <div class="px-705 py-2 bg-white-06 inline-flex items-center gap-6">
                                 <div class="w-17 h-17 rounded-circle overflow-hidden">
                                     <img src="assets/images/thumbs/client-img.png" alt="Client Thumb">
                                 </div>
                                 <div class="">
-                                    <h6 class="text-white fw-medium mb-1">James anderson </h6>
-                                    <div class="text-white fw-medium text-base">
+                                    <h6 class="text-white font-medium mb-1">James anderson </h6>
+                                    <div class="text-white font-medium text-base">
                                         <strong class="text-spring-green">Ceo</strong> and Founder
                                     </div>
                                 </div>
@@ -1281,15 +1238,15 @@
                             <span class="mb-705">
                                 <img src="assets/images/icons/ratings.svg" alt="" class="">
                             </span>
-                            <p class="text-30-px fw-normal text-white max-w-672-px leading-145">Sasstech hires great people from a widely variety of backgrounds, which simply makes our company stronger, and we couldn't be prouder of that. elevating your optimizing Business  Growth.</p>
+                            <p class="text-30-px font-normal text-white max-w-672-px leading-145">Sasstech hires great people from a widely variety of backgrounds, which simply makes our company stronger, and we couldn't be prouder of that. elevating your optimizing Business  Growth.</p>
                             <span class="d-block w-full h-px mt-12 mb-4 bg-white-08"></span>
                             <div class="px-705 py-2 bg-white-06 inline-flex items-center gap-6">
                                 <div class="w-17 h-17 rounded-circle overflow-hidden">
                                     <img src="assets/images/thumbs/client-img.png" alt="Client Thumb">
                                 </div>
                                 <div class="">
-                                    <h6 class="text-white fw-medium mb-1">James anderson </h6>
-                                    <div class="text-white fw-medium text-base">
+                                    <h6 class="text-white font-medium mb-1">James anderson </h6>
+                                    <div class="text-white font-medium text-base">
                                         <strong class="text-spring-green">Ceo</strong> and Founder
                                     </div>
                                 </div>
@@ -1311,9 +1268,9 @@
     <div class="relative distraction__inner">
       <div
         class="max-w-602-px w-full text-center mx-auto absolute z-1 start-50 translate-middle-x top-0 mt-5 pt-lg-5 pt-4">
-        <h2 class="splitTextStyleOne text-heading text-capitalize text-capitalize">
+        <h2 class="splitTextStyleOne text-heading capitalize capitalize">
           Avoid
-          <span class="font-dm-serif fst-italic fw-normal text-gradient-teal">distractions</span>
+          <span class="font-dm-serif fst-italic font-normal text-gradient-teal">distractions</span>
           with app integrations
         </h2>
       </div>
@@ -1349,7 +1306,7 @@
         class="flex items-center justify-center gap-7 absolute z-1 start-50 translate-middle-x bottom-0 mb-2 w-full"
         data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
         <a href="javascript:void(0)"
-          class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-md py-6 fw-bold"
+          class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-md py-6 font-bold"
           data-block="button">
           <span class="button__flair"></span>
           <div class="flex items-center gap-2 z-1">
@@ -1369,69 +1326,69 @@
 <section class="pricing-plan-three py-120">
     <div class="container">
         <div class="max-w-602-px text-center mx-auto mb-13">
-            <div class="bg-white py-3 px-305 rounded-pill fw-medium text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max border border-spring-green" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+            <div class="bg-white py-3 px-305 rounded-pill font-medium capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max border border-spring-green" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                 <div class="text-gradient-teal">
                     Up to <span class="text-yellow text-stroke-yellow">70%</span> off managed cloud hosting
                 </div>
             </div>
-            <h2 class="splitTextStyleOne text-heading text-capitalize text-capitalize">
+            <h2 class="splitTextStyleOne text-heading capitalize capitalize">
                 flexible pricing
-                <span class="font-dm-serif fst-italic fw-normal text-gradient-teal">plan</span> 
+                <span class="font-dm-serif fst-italic font-normal text-gradient-teal">plan</span> 
                 that include business
             </h2>
         </div>
         
         <div class="row gy-4">
             <div class="col-xl-4 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
-                <div class="relative bg-neutral-100 px-7 py-16 bg-white hover-border-main-600">
+                <div class="relative bg-neutral-100 px-7 py-16 bg-white hover:border-main-600">
                     <div class="">
                         <div class="ps-205">
                             <h5 class="mb-1">Basic plan</h5>
                             <p class="text-neutral-500">Customized anything in anytime</p>
                             <span class="d-block h-px bg-neutral-200 my-6"></span>
                             <div class="flex items-center justify-between gap-1 mb-10">
-                                <h2 class="mb-0">$1.99<span class="text-xl fw-medium">/Yearly</span> </h2>
+                                <h2 class="mb-0">$1.99<span class="text-xl font-medium">/Yearly</span> </h2>
                             </div>
                         </div>
-                        <a href="login.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke flex items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-md py-6 fw-bold" data-block="button">
+                        <a href="login.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke flex items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-md py-6 font-bold" data-block="button">
                             <span class="button__flair"></span>
                             <div class="flex items-center gap-2 z-1">
                                 <span class="button__label">Start Free Trial</span>
                             </div>
                         </a>
-                        <span class="text-heading mt-3 text-center d-block fw-medium">Renews at $9.88/month</span>
+                        <span class="text-heading mt-3 text-center d-block font-medium">Renews at $9.88/month</span>
 
                         <div class="ps-205">
-                            <div class="flex flex-column gap-5 mt-10">
+                            <div class="flex flex-col gap-5 mt-10">
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Real-time tracking and notifications</span>
+                                    <span class="text-heading font-semibold text-base">Real-time tracking and notifications</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="620" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Real-time analytics</span>
+                                    <span class="text-heading font-semibold text-base">Real-time analytics</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="640" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Drag and drop templates</span>
+                                    <span class="text-heading font-semibold text-base">Drag and drop templates</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="660" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Project Management</span>
+                                    <span class="text-heading font-semibold text-base">Project Management</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="680" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">24/7 email and chat support</span>
+                                    <span class="text-heading font-semibold text-base">24/7 email and chat support</span>
                                 </div>
                             </div>
                         </div>
@@ -1439,55 +1396,55 @@
                 </div>
             </div>
             <div class="col-xl-4 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                <div class="relative bg-neutral-100 px-7 py-16 bg-white hover-border-main-600">
+                <div class="relative bg-neutral-100 px-7 py-16 bg-white hover:border-main-600">
                     <div class="">
                         <div class="ps-205">
                             <h5 class="mb-1">Premium plan</h5>
                             <p class="text-neutral-500">Customized anything in anytime</p>
                             <span class="d-block h-px bg-neutral-200 my-6"></span>
                             <div class="flex items-center justify-between gap-1 mb-10">
-                                <h2 class="mb-0">$9.99<span class="text-xl fw-medium">/Yearly</span> </h2>
+                                <h2 class="mb-0">$9.99<span class="text-xl font-medium">/Yearly</span> </h2>
                             </div>
                         </div>
-                        <a href="login.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke flex items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-md py-6 fw-bold" data-block="button">
+                        <a href="login.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke flex items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-md py-6 font-bold" data-block="button">
                             <span class="button__flair"></span>
                             <div class="flex items-center gap-2 z-1">
                                 <span class="button__label">Start Free Trial</span>
                             </div>
                         </a>
-                        <span class="text-heading mt-3 text-center d-block fw-medium">Renews at $9.88/month</span>
+                        <span class="text-heading mt-3 text-center d-block font-medium">Renews at $9.88/month</span>
 
                         <div class="ps-205">
-                            <div class="flex flex-column gap-5 mt-10">
+                            <div class="flex flex-col gap-5 mt-10">
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Real-time tracking and notifications</span>
+                                    <span class="text-heading font-semibold text-base">Real-time tracking and notifications</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="620" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Real-time analytics</span>
+                                    <span class="text-heading font-semibold text-base">Real-time analytics</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="640" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Drag and drop templates</span>
+                                    <span class="text-heading font-semibold text-base">Drag and drop templates</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="660" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Project Management</span>
+                                    <span class="text-heading font-semibold text-base">Project Management</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="680" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">24/7 email and chat support</span>
+                                    <span class="text-heading font-semibold text-base">24/7 email and chat support</span>
                                 </div>
                             </div>
                         </div>
@@ -1495,55 +1452,55 @@
                 </div>
             </div>
             <div class="col-xl-4 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="900" >
-                <div class="relative bg-neutral-100 px-7 py-16 bg-white hover-border-main-600">
+                <div class="relative bg-neutral-100 px-7 py-16 bg-white hover:border-main-600">
                     <div class="">
                         <div class="ps-205">
                             <h5 class="mb-1">Pro plan</h5>
                             <p class="text-neutral-500">Customized anything in anytime</p>
                             <span class="d-block h-px bg-neutral-200 my-6"></span>
                             <div class="flex items-center justify-between gap-1 mb-10">
-                                <h2 class="mb-0">$19.99<span class="text-xl fw-medium">/Yearly</span> </h2>
+                                <h2 class="mb-0">$19.99<span class="text-xl font-medium">/Yearly</span> </h2>
                             </div>
                         </div>
-                        <a href="login.html" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke flex items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-md py-6 fw-bold" data-block="button">
+                        <a href="login.html" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke flex items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-md py-6 font-bold" data-block="button">
                             <span class="button__flair"></span>
                             <div class="flex items-center gap-2 z-1">
                                 <span class="button__label">Start Free Trial</span>
                             </div>
                         </a>
-                        <span class="text-heading mt-3 text-center d-block fw-medium">Renews at $9.88/month</span>
+                        <span class="text-heading mt-3 text-center d-block font-medium">Renews at $9.88/month</span>
 
                         <div class="ps-205">
-                            <div class="flex flex-column gap-5 mt-10">
+                            <div class="flex flex-col gap-5 mt-10">
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Real-time tracking and notifications</span>
+                                    <span class="text-heading font-semibold text-base">Real-time tracking and notifications</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="620" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Real-time analytics</span>
+                                    <span class="text-heading font-semibold text-base">Real-time analytics</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="640" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Drag and drop templates</span>
+                                    <span class="text-heading font-semibold text-base">Drag and drop templates</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="660" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">Project Management</span>
+                                    <span class="text-heading font-semibold text-base">Project Management</span>
                                 </div>
                                 <div class="flex items-center gap-305" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="680" >
                                     <span class="w-7 h-7 bg-main-50 rounded-circle flex justify-center items-center text-sm">
                                         <i class="text-gradient-teal ph-bold ph-check"></i>
                                     </span>
-                                    <span class="text-heading fw-semibold text-base">24/7 email and chat support</span>
+                                    <span class="text-heading font-semibold text-base">24/7 email and chat support</span>
                                 </div>
                             </div>
                         </div>
@@ -1567,7 +1524,7 @@
             <img src="assets/images/thumbs/task-management-img.png" alt="Image" class="absolute end-0 top-0 me-5 mt-5 d-lg-block d-none">
             
             <div class="mb-8 text-center max-w-570-px mx-auto">
-                <div class="py-3 px-305 rounded-pill fw-medium text-capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max text-white bg-white-13" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
+                <div class="py-3 px-305 rounded-pill font-medium capitalize leading-none inline-flex items-center gap-2 mb-405 min-w-max text-white bg-white-13" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" >
                     <div class="">
                         Up to <span class="text-yellow text-stroke-yellow">70%</span> off managed cloud hosting
                     </div>
@@ -1577,7 +1534,7 @@
                 </h3>
 
                 <div class="d-block">
-                    <a href="javascript:void(0)" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-0 py-6 fw-bold mt-7" data-block="button">
+                    <a href="javascript:void(0)" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-13 rounded-0 py-6 font-bold mt-7" data-block="button">
                         <span class="button__flair"></span>
                         <div class="flex items-center gap-2 z-1">
                             <span class="button__label">Download for free</span>
@@ -1586,13 +1543,13 @@
                 </div>
                 <div class="d-none">
                     <div class="flex items-center gap-4 justify-center flex-wrap">
-                        <a href="javascript:void(0)" class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main hover-style-one button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-705 rounded-2xl py-6 fw-bold mt-7" data-block="button">
+                        <a href="javascript:void(0)" class="hover:-translate-y-1 active--translate-y-scale-9 btn btn-main hover:style-one button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-705 rounded-2xl py-6 font-bold mt-7" data-block="button">
                             <span class="button__flair"></span>
                             <div class="flex items-center gap-2 z-1">
                                 <span class="button__label">Get Started Trial</span>
                             </div>
                         </a>
-                        <a href="javascript:void(0)" class="hover--translate-y-1 active--translate-y-scale-9 btn hover-style-two button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-705 rounded-2xl py-6 fw-bold mt-7" data-block="button">
+                        <a href="javascript:void(0)" class="hover:-translate-y-1 active--translate-y-scale-9 btn hover:style-two button--stroke inline-flex items-center justify-center gap-5 group active--translate-y-2 px-705 rounded-2xl py-6 font-bold mt-7" data-block="button">
                             <span class="button__flair"></span>
                             <div class="flex items-center gap-2 z-1">
                                 <span class="button__label">Get Started Trial</span>
@@ -1604,16 +1561,16 @@
             </div>
             <div class="pt-8 text-center"> 
                 <div class="myContainer relative flex flex-wrap items-center justify-center gap-6 pt-16 overflow-hidden w-full px-6">
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-white gradient-bg-six rounded-pill">Project management</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-paste rounded-pill">Technology</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-yellow rounded-pill">Project management</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-orange rounded-pill">Technology</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-orange rounded-pill">Project management</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-paste rounded-pill">Project management</span>
-                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 fw-semibold text-heading bg-pink rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-white gradient-bg-six rounded-pill">Project management</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-paste rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-yellow rounded-pill">Project management</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-orange rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-orange rounded-pill">Project management</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading gradient-bg-six rounded-pill">Technology</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-paste rounded-pill">Project management</span>
+                    <span class="drag-rotate-element cursor-grab min-w-max z-1 px-9 py-2 font-semibold text-heading bg-pink rounded-pill">Technology</span>
                 </div>
             </div>
         </div>
@@ -1628,89 +1585,89 @@
             <div class="row gy-5">
                 <div class="col-xl-3 col-sm-4 col-xs-6" data-aos="fade-up" data-aos-duration="600">
                     <div class="">
-                        <h5 class="fw-medium mb-8 splitTextStyleOne">Collaborate</h5>
-                        <ul class="flex flex-column gap-4">
+                        <h5 class="font-medium mb-8 splitTextStyleOne">Collaborate</h5>
+                        <ul class="flex flex-col gap-4">
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Partners</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Partners</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Partners Program</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Partners Program</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Affiliate Program</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Affiliate Program</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Community</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Community</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">HR Partner Program</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">HR Partner Program</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-2 col-sm-4 col-xs-6" data-aos="fade-up" data-aos-duration="700">
                     <div class="">
-                        <h5 class="fw-medium mb-8 splitTextStyleOne">My account</h5>
-                        <ul class="flex flex-column gap-4">
+                        <h5 class="font-medium mb-8 splitTextStyleOne">My account</h5>
+                        <ul class="flex flex-col gap-4">
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Company</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Company</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Customer Success</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Customer Success</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Resources</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Resources</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Talk an Expert</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Talk an Expert</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-2 col-sm-4 col-xs-6" data-aos="fade-up" data-aos-duration="800">
                     <div class="">
-                        <h5 class="fw-medium mb-8 splitTextStyleOne">Service</h5>
-                        <ul class="flex flex-column gap-4">
+                        <h5 class="font-medium mb-8 splitTextStyleOne">Service</h5>
+                        <ul class="flex flex-col gap-4">
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Software Development</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Software Development</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Cloud Services</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Cloud Services</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">AI Machine Learning</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">AI Machine Learning</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Data Security</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Data Security</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="hover-arrow-start text-neutral-600 hover-text-heading hover-underline hover--translate-y-1 active--translate-y-scale-9 fw-bold">Software Development</a>
+                                <a href="javascript:void(0)" class="hover:arrow-start text-neutral-600 hover:text-heading hover:underline hover:-translate-y-1 active--translate-y-scale-9 font-bold">Software Development</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6" data-aos="fade-up" data-aos-duration="900">
                     <div class="ps-xl-5">
-                        <a href="index.html" class="link hover--translate-y-1 active--translate-y-scale-9 mb-10">
+                        <a href="index.html" class="link hover:-translate-y-1 active--translate-y-scale-9 mb-10">
                             <img src="assets/images/logo/logo-three.png" alt="">
                         </a>
-                        <form action="#" class="flex flex-md-row flex-column gap-5 form-submit">
+                        <form action="#" class="flex flex-md-row flex-col gap-5 form-submit">
                             <div class="relative flex-grow-1">
                                 <input type="email" class="h-14 rounded-lg bg-white ps-12 border border-transparent focus-border-main-600 text-heading focus-outline-0 w-full pe-6" placeholder="Email Address" required>
                                 <span class="text-heading text-lg absolute top-50 start-0 -translate-y-50 ms-5 flex">
                                     <i class="ph ph-envelope-simple"></i>
                                 </span>
                             </div>
-                            <button type="submit" class="btn btn-main hover-style-one button--stroke inline-flex items-center justify-center gap-2 group active--translate-y-2 fw-semibold flex-shrink-0 hover--translate-y-1 active--translate-y-scale-9" data-block="button">
+                            <button type="submit" class="btn btn-main hover:style-one button--stroke inline-flex items-center justify-center gap-2 group active--translate-y-2 font-semibold flex-shrink-0 hover:-translate-y-1 active--translate-y-scale-9" data-block="button">
                                 <span class="button__flair"></span>
                                 <span class="button__label">Sign Up</span>
-                                <span class="text-white text-sm rounded flex justify-center items-center relative group-hover-text-main-600 duration-500">
+                                <span class="text-white text-sm rounded flex justify-center items-center relative group-hover:text-main-600 duration-500">
                                     <i class="ph-bold ph-caret-right"></i>
                                 </span>
                             </button>
                         </form>
-                        <p class="text-heading fw-semibold mt-9">By subscribing, you're accept
-                            <a href="javascript:void(0)" class="text-heading text-decoration-underline hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9">Privacy Policy</a>
+                        <p class="text-heading font-semibold mt-9">By subscribing, you're accept
+                            <a href="javascript:void(0)" class="text-heading text-decoration-underline hover:text-main-600 hover:-translate-y-1 active--translate-y-scale-9">Privacy Policy</a>
                         </p>
                     </div>
                 </div>
@@ -1724,16 +1681,16 @@
         <div class="border-top border-neutral-200 border-0 py-8">
             <div class="container container-two">
                 <div class="flex items-center justify-between gap-4 flex-wrap">
-                    <p class="text-heading text-line-1 fw-semibold"> 
+                    <p class="text-heading text-line-1 font-semibold"> 
                         &copy; 2025 
-                        <a href="https://themeforest.net/user/wowtheme7" class="fw-bold text-gradient-teal hover-underline hover--translate-y-1 active--translate-y-scale-9">WowTheme7</a>
+                        <a href="https://themeforest.net/user/wowtheme7" class="font-bold text-gradient-teal hover:underline hover:-translate-y-1 active--translate-y-scale-9">WowTheme7</a>
                         - IT Services. All rights reserved.
                     </p>
                     <div class="flex items-center gap-6">
-                        <a href="javascript:void(0)" class="text-neutral-600 fw-semibold hover-text-heading hover-text-neutral-900 hover-underline hover--translate-y-1 active--translate-y-scale-9">Faqs</a>
-                        <a href="javascript:void(0)" class="text-neutral-600 fw-semibold hover-text-heading hover-text-neutral-900 hover-underline hover--translate-y-1 active--translate-y-scale-9">Setting</a>
-                        <a href="javascript:void(0)" class="text-neutral-600 fw-semibold hover-text-heading hover-text-neutral-900 hover-underline hover--translate-y-1 active--translate-y-scale-9">Privacy</a>
-                        <a href="javascript:void(0)" class="text-neutral-600 fw-semibold hover-text-heading hover-text-neutral-900 hover-underline hover--translate-y-1 active--translate-y-scale-9">Contact</a>
+                        <a href="javascript:void(0)" class="text-neutral-600 font-semibold hover:text-heading hover:text-neutral-900 hover:underline hover:-translate-y-1 active--translate-y-scale-9">Faqs</a>
+                        <a href="javascript:void(0)" class="text-neutral-600 font-semibold hover:text-heading hover:text-neutral-900 hover:underline hover:-translate-y-1 active--translate-y-scale-9">Setting</a>
+                        <a href="javascript:void(0)" class="text-neutral-600 font-semibold hover:text-heading hover:text-neutral-900 hover:underline hover:-translate-y-1 active--translate-y-scale-9">Privacy</a>
+                        <a href="javascript:void(0)" class="text-neutral-600 font-semibold hover:text-heading hover:text-neutral-900 hover:underline hover:-translate-y-1 active--translate-y-scale-9">Contact</a>
                     </div>
                 </div>
             </div>
