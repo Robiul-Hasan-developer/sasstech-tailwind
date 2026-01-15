@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-neutral-50: oklch(98.5% 0 0);
     --color-neutral-100: oklch(97% 0 0);
     --color-neutral-200: oklch(92.2% 0 0);
@@ -52,6 +51,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-heading: oklch(0.21 0.09 282.79);
   }
 }
 @layer base {
@@ -260,14 +260,17 @@
   .bottom-100 {
     bottom: calc(var(--spacing) * 100);
   }
-  .z-1 {
-    z-index: 1;
+  .-z-\[1\] {
+    z-index: calc(1 * -1);
   }
   .z-2 {
     z-index: 2;
   }
   .z-3 {
     z-index: 3;
+  }
+  .z-10 {
+    z-index: 10;
   }
   .z-99 {
     z-index: 99;
@@ -635,6 +638,9 @@
   .h-705 {
     height: calc(var(--spacing) * 705);
   }
+  .h-full {
+    height: 100%;
+  }
   .h-px {
     height: 1px;
   }
@@ -863,6 +869,9 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
+  .rounded-\[50rem\] {
+    border-radius: 50rem;
+  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -944,14 +953,14 @@
   .bg-neutral-700 {
     background-color: var(--color-neutral-700);
   }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
-  }
   .bg-transparent {
     background-color: transparent;
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .object-top {
     object-position: top;
@@ -1126,6 +1135,9 @@
   }
   .py-705 {
     padding-block: calc(var(--spacing) * 705);
+  }
+  .py-\[120px\] {
+    padding-block: 120px;
   }
   .ps-0 {
     padding-inline-start: calc(var(--spacing) * 0);
@@ -1410,6 +1422,9 @@
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
   }
+  .text-heading {
+    color: var(--color-heading);
+  }
   .text-neutral-200 {
     color: var(--color-neutral-200);
   }
@@ -1611,6 +1626,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-heading {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-heading);
       }
     }
   }

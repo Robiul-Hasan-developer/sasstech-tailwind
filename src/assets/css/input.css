@@ -1,2 +1,8 @@
 
 @import "tailwindcss";
+
+
+@theme {
+  --color-heading: oklch(0.21 0.09 282.79);
+}
+/* oklch(0.21 0.09 282.79) */
