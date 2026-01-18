@@ -341,6 +341,9 @@
   .my-205 {
     margin-block: calc(var(--spacing) * 205);
   }
+  .my-\[2\.5\] {
+    margin-block: 2.5;
+  }
   .ms-2 {
     margin-inline-start: calc(var(--spacing) * 2);
   }
@@ -361,6 +364,12 @@
   }
   .ms-705 {
     margin-inline-start: calc(var(--spacing) * 705);
+  }
+  .ms-\[2\.5\] {
+    margin-inline-start: 2.5;
+  }
+  .ms-\[7\.5\] {
+    margin-inline-start: 7.5;
   }
   .me-0 {
     margin-inline-end: calc(var(--spacing) * 0);
@@ -391,6 +400,9 @@
   }
   .me-705 {
     margin-inline-end: calc(var(--spacing) * 705);
+  }
+  .me-\[7\.5\] {
+    margin-inline-end: 7.5;
   }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
@@ -553,6 +565,21 @@
   }
   .mb-\[1\.5\] {
     margin-bottom: 1.5;
+  }
+  .mb-\[2\.5\] {
+    margin-bottom: 2.5;
+  }
+  .mb-\[3\.5\] {
+    margin-bottom: 3.5;
+  }
+  .mb-\[4\.5\] {
+    margin-bottom: 4.5;
+  }
+  .mb-\[6\.5\] {
+    margin-bottom: 6.5;
+  }
+  .mb-\[7\.5\] {
+    margin-bottom: 7.5;
   }
   .line-clamp-1 {
     overflow: hidden;
