@@ -1242,6 +1242,9 @@
   .p-12 {
     padding: calc(var(--spacing) * 12);
   }
+  .\!px-9 {
+    padding-inline: calc(var(--spacing) * 9) !important;
+  }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
   }
@@ -1301,6 +1304,9 @@
   }
   .px-405 {
     padding-inline: calc(var(--spacing) * 405);
+  }
+  .\!py-5 {
+    padding-block: calc(var(--spacing) * 5) !important;
   }
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
@@ -2020,6 +2026,17 @@
         --tw-shadow: 0 0 #0000;
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       }
+    }
+  }
+  .active\:-translate-y-2 {
+    &:active {
+      --tw-translate-y: calc(var(--spacing) * -2);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .active\:text-white {
+    &:active {
+      color: var(--color-white);
     }
   }
   .sm\:py-\[100px\] {
