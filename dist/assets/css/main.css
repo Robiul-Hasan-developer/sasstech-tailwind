@@ -765,6 +765,45 @@
   .max-w-5 {
     max-width: calc(var(--spacing) * 5);
   }
+  .max-w-\[118px\] {
+    max-width: 118px;
+  }
+  .max-w-\[150px\] {
+    max-width: 150px;
+  }
+  .max-w-\[154px\] {
+    max-width: 154px;
+  }
+  .max-w-\[172px\] {
+    max-width: 172px;
+  }
+  .max-w-\[194px\] {
+    max-width: 194px;
+  }
+  .max-w-\[295px\] {
+    max-width: 295px;
+  }
+  .max-w-\[1290px\] {
+    max-width: 1290px;
+  }
+  .max-w-\[1400px\] {
+    max-width: 1400px;
+  }
+  .max-w-\[1552px\] {
+    max-width: 1552px;
+  }
+  .max-w-\[1570px\] {
+    max-width: 1570px;
+  }
+  .max-w-\[1720px\] {
+    max-width: 1720px;
+  }
+  .max-w-\[1800px\] {
+    max-width: 1800px;
+  }
+  .max-w-\[1820px\] {
+    max-width: 1820px;
+  }
   .min-w-max {
     min-width: max-content;
   }
