@@ -690,6 +690,24 @@
   .h-screen {
     height: 100vh;
   }
+  .max-h-\[110px\] {
+    max-height: 110px;
+  }
+  .max-h-\[260px\] {
+    max-height: 260px;
+  }
+  .max-h-\[295px\] {
+    max-height: 295px;
+  }
+  .max-h-\[397px\] {
+    max-height: 397px;
+  }
+  .max-h-\[410px\] {
+    max-height: 410px;
+  }
+  .max-h-\[588px\] {
+    max-height: 588px;
+  }
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
