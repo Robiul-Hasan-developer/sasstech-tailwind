@@ -2028,6 +2028,17 @@
       }
     }
   }
+  .focus\:border-main-600 {
+    &:focus {
+      border-color: var(--color-main-600);
+    }
+  }
+  .focus\:outline-0 {
+    &:focus {
+      outline-style: var(--tw-outline-style);
+      outline-width: 0px;
+    }
+  }
   .active\:-translate-y-2 {
     &:active {
       --tw-translate-y: calc(var(--spacing) * -2);
