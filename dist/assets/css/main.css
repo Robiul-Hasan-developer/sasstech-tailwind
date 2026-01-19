@@ -1197,6 +1197,9 @@
   .py-17 {
     padding-block: calc(var(--spacing) * 17);
   }
+  .py-\[80px\] {
+    padding-block: 80px;
+  }
   .py-\[120px\] {
     padding-block: 120px;
   }
@@ -1368,6 +1371,12 @@
   .pt-705 {
     padding-top: calc(var(--spacing) * 705);
   }
+  .pt-\[80px\] {
+    padding-top: 80px;
+  }
+  .pt-\[120px\] {
+    padding-top: 120px;
+  }
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
   }
@@ -1427,6 +1436,12 @@
   }
   .pb-705 {
     padding-bottom: calc(var(--spacing) * 705);
+  }
+  .pb-\[80px\] {
+    padding-bottom: 80px;
+  }
+  .pb-\[120px\] {
+    padding-bottom: 120px;
   }
   .text-center {
     text-align: center;
@@ -1861,6 +1876,36 @@
         --tw-shadow: 0 0 #0000;
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       }
+    }
+  }
+  .sm\:py-\[100px\] {
+    @media (width >= 40rem) {
+      padding-block: 100px;
+    }
+  }
+  .sm\:pt-\[100px\] {
+    @media (width >= 40rem) {
+      padding-top: 100px;
+    }
+  }
+  .sm\:pb-\[100px\] {
+    @media (width >= 40rem) {
+      padding-bottom: 100px;
+    }
+  }
+  .lg\:py-\[120px\] {
+    @media (width >= 64rem) {
+      padding-block: 120px;
+    }
+  }
+  .lg\:pt-\[120px\] {
+    @media (width >= 64rem) {
+      padding-top: 120px;
+    }
+  }
+  .lg\:pb-\[120px\] {
+    @media (width >= 64rem) {
+      padding-bottom: 120px;
     }
   }
 }
