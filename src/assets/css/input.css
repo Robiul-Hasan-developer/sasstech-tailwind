@@ -28,10 +28,10 @@
   --color-main-two-950: #070515;
 }
 
-.sdg {
-  color: #150e3e;
-}
-
 img {
   @apply max-w-full;
+}
+
+.container {
+  @apply max-w-[1400px] w-full mx-auto px-4;
 }
