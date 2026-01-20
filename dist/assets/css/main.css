@@ -648,6 +648,9 @@
   .h-705 {
     height: calc(var(--spacing) * 705);
   }
+  .h-\[75px\] {
+    height: 75px;
+  }
   .h-\[84px\] {
     height: 84px;
   }
@@ -782,6 +785,9 @@
   }
   .w-705 {
     width: calc(var(--spacing) * 705);
+  }
+  .w-\[75px\] {
+    width: 75px;
   }
   .w-\[84px\] {
     width: 84px;
@@ -1116,8 +1122,17 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
+  .rounded-\[28px\] {
+    border-radius: 28px;
+  }
+  .rounded-\[40px\] {
+    border-radius: 40px;
+  }
   .rounded-\[50\%\] {
     border-radius: 50%;
+  }
+  .rounded-\[50px\] {
+    border-radius: 50px;
   }
   .rounded-\[50rem\] {
     border-radius: 50rem;
