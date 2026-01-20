@@ -11,7 +11,7 @@
             <!-- Logo End  -->
 
             <!-- Menu Start  -->
-            <div class="header-menu d-lg-block d-none">
+            <div class="header-menu lg:block hidden">
                 @@include('../partials/_nav-menu.html', {
                 "class" : "gap-14"
                 })
@@ -21,12 +21,12 @@
             <!-- Header Right start -->
             <div class="flex items-center gap-6">
                 <a href="register.html"
-                    class="hover:-translate-y-1 active:-translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex d-none items-center justify-center gap-5 group active:-translate-y-2 px-9 rounded-[50rem] py-4 font-semibold common-shadow-inset-one"
+                    class="hover:-translate-y-1 active:-translate-y-scale-9 btn btn-main hover:style-one button--stroke d-sm-inline-flex hidden items-center justify-center gap-5 group active:-translate-y-2 px-9 rounded-[50rem] py-4 font-semibold common-shadow-inset-one"
                     data-block="button">
                     <span class="button__flair"></span>
                     <span class="button__label">Sign Up Now</span>
                 </a>
-                <button type="button" class="toggle-mobileMenu leading-none d-lg-none text-neutral-800 text-9">
+                <button type="button" class="toggle-mobileMenu leading-none lg:hidden text-neutral-800 text-9">
                     <i class="ph ph-list"></i>
                 </button>
             </div>
