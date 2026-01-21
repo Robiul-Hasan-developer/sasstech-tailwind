@@ -52,6 +52,85 @@ p {
   @apply max-w-[1400px] w-full mx-auto px-4;
 }
 
-a, span {
+a,
+span {
   @apply inline-block;
 }
+
+/* Custom Classes start */
+.bg-black {
+  @apply bg-[#1c1c1c];
+}
+
+.bg-green {
+  @apply bg-[#00b67a];
+}
+
+.bg-pink {
+  @apply bg-[#fd1774];
+}
+
+.bg-pink-dark {
+  @apply bg-[#f5f5f8];
+}
+
+.bg-pink-light {
+  @apply bg-[#f97289];
+}
+
+.bg-pink-lighter {
+  @apply bg-[#f9728924];
+}
+
+.bg-sky {
+  @apply bg-[#41a5fa];
+}
+
+.bg-sky-deep {
+  @apply bg-[#1b89aa];
+}
+
+.bg-dark-deep {
+  @apply bg-[#31336b];
+}
+
+.bg-purple-600-light {
+  @apply bg-[#f5f5f8];
+}
+
+.bg-paste {
+  @apply bg-[#3af062];
+}
+
+.bg-paste-light {
+  @apply bg-[#3af0622b];
+}
+
+.bg-spring-green {
+  @apply bg-[#30e87a];
+}
+
+.bg-goldenrod {
+  @apply bg-[#d19d3d17];
+}
+
+.bg-deep-green {
+  @apply bg-[#0a8a22];
+}
+
+.section-bg-one {
+  @apply bg-[#f5f5f8];
+}
+
+.section-bg-two {
+  @apply bg-[#f3f8f8];
+}
+
+.section-bg-three {
+  @apply bg-[#f0f0fc];
+}
+
+.bg-pink-more-light {
+  @apply bg-[#fbf6ee];
+}
+/* Custom Classes end */
