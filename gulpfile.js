@@ -715,6 +715,216 @@
 
 
 
+// import browserSync from "browser-sync";
+// import { spawn } from "child_process";
+// import { deleteAsync } from "del";
+// import gulp from "gulp";
+// import fileInclude from "gulp-file-include";
+
+// const bs = browserSync.create();
+
+// // --------------------------------------------------
+// // PATHS
+// // --------------------------------------------------
+// const paths = {
+//   html: {
+//     src: "src/html/pages/**/*.html",
+//     watch: "src/html/**/*.html",
+//     dest: "dist/",
+//   },
+
+//   css: {
+//     vendor: [
+//       "src/assets/css/**/*.css",
+//       "!src/assets/css/input.css",
+//     ],
+//     watch: "src/assets/css/**/*.css",
+//     dest: "dist/assets/css/",
+//   },
+
+//   js: {
+//     src: "src/assets/js/**/*.js",
+//     watch: "src/assets/js/**/*.js",
+//     dest: "dist/assets/js/",
+//   },
+
+//   images: {
+//     src: "src/assets/images/**/*",
+//     watch: "src/assets/images/**/*",
+//     dest: "dist/assets/images/",
+//   },
+// };
+
+// // --------------------------------------------------
+// // CLEAN
+// // --------------------------------------------------
+// export const clean = () => deleteAsync(["dist"]);
+
+// // --------------------------------------------------
+// // HTML (partials)
+// // --------------------------------------------------
+// export function html() {
+//   return gulp
+//     .src(paths.html.src)
+//     .pipe(
+//       fileInclude({
+//         prefix: "@@",
+//         basepath: "src/html/partials/",
+//       })
+//     )
+//     .pipe(gulp.dest(paths.html.dest))
+//     .pipe(bs.stream());
+// }
+
+// // --------------------------------------------------
+// // VENDOR CSS (copy only)
+// // --------------------------------------------------
+// export function css() {
+//   return gulp
+//     .src(paths.css.vendor)
+//     .pipe(gulp.dest(paths.css.dest))
+//     .pipe(bs.stream());
+// }
+
+// // --------------------------------------------------
+// // JS (copy)
+// // --------------------------------------------------
+// export function js() {
+//   return gulp
+//     .src(paths.js.src)
+//     .pipe(gulp.dest(paths.js.dest))
+//     .on("end", bs.reload);
+// }
+
+// // --------------------------------------------------
+// // IMAGES (🔥 BINARY SAFE)
+// // --------------------------------------------------
+// export function images() {
+//   return gulp
+//     .src(paths.images.src, { encoding: false }) // 🔥 REQUIRED
+//     .pipe(gulp.dest(paths.images.dest))
+//     .on("end", bs.reload);
+// }
+
+// // --------------------------------------------------
+// // TAILWIND WATCH (JIT FIX)
+// // --------------------------------------------------
+// let tailwindProcess;
+
+// export function tailwindWatch(cb) {
+//   if (tailwindProcess) return cb();
+
+//   tailwindProcess = spawn(
+//     "npx",
+//     [
+//       "tailwindcss",
+//       "-i",
+//       "src/assets/css/input.css",
+//       "-o",
+//       "dist/assets/css/main.css",
+//       "--watch",
+//     ],
+//     { stdio: "inherit", shell: true }
+//   );
+
+//   cb();
+// }
+
+// // --------------------------------------------------
+// // DELETE FROM DIST WHEN SOURCE IS DELETED
+// // --------------------------------------------------
+// function deleteFromDist(srcPath) {
+//   const distPath = srcPath.replace(/^src\//, "dist/");
+//   deleteAsync(distPath).then(() => {
+//     bs.reload();
+//   });
+// }
+
+// // --------------------------------------------------
+// // SERVE + WATCH
+// // --------------------------------------------------
+// export function serve() {
+//   bs.init({
+//     server: { baseDir: "dist" },
+//     notify: false,
+//   });
+
+//   // HTML
+//   gulp.watch(paths.html.watch).on("change", html);
+
+//   // CSS
+//   gulp.watch(paths.css.watch)
+//     .on("add", css)
+//     .on("change", css)
+//     .on("unlink", deleteFromDist);
+
+//   // JS
+//   gulp.watch(paths.js.watch)
+//     .on("add", js)
+//     .on("change", js)
+//     .on("unlink", deleteFromDist);
+
+//   // IMAGES
+//   gulp.watch(paths.images.watch)
+//     .on("add", images)
+//     .on("change", images)
+//     .on("unlink", deleteFromDist);
+// }
+
+// // --------------------------------------------------
+// // DEV
+// // --------------------------------------------------
+// export const dev = gulp.series(
+//   clean,
+//   gulp.parallel(html, css, js, images, tailwindWatch),
+//   serve
+// );
+
+// // --------------------------------------------------
+// // BUILD (PRODUCTION)
+// // --------------------------------------------------
+// export const build = gulp.series(
+//   clean,
+//   html,
+//   css,
+//   js,
+//   images,
+//   function buildTailwind(cb) {
+//     spawn(
+//       "npx",
+//       [
+//         "tailwindcss",
+//         "-i",
+//         "src/assets/css/input.css",
+//         "-o",
+//         "dist/assets/css/main.css",
+//         "--minify",
+//       ],
+//       { stdio: "inherit", shell: true }
+//     ).on("close", cb);
+//   }
+// );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import browserSync from "browser-sync";
 import { spawn } from "child_process";
 import { deleteAsync } from "del";
@@ -761,7 +971,7 @@ const paths = {
 export const clean = () => deleteAsync(["dist"]);
 
 // --------------------------------------------------
-// HTML (partials)
+// HTML
 // --------------------------------------------------
 export function html() {
   return gulp
@@ -769,7 +979,7 @@ export function html() {
     .pipe(
       fileInclude({
         prefix: "@@",
-        basepath: "src/html/partials/",
+        basepath: "src/html/partials",
       })
     )
     .pipe(gulp.dest(paths.html.dest))
@@ -777,17 +987,17 @@ export function html() {
 }
 
 // --------------------------------------------------
-// VENDOR CSS (copy only)
+// COPY VENDOR CSS (NO OVERWRITE)
 // --------------------------------------------------
-export function css() {
+export function vendorCSS() {
   return gulp
-    .src(paths.css.vendor)
+    .src(paths.css.vendor, { allowEmpty: true })
     .pipe(gulp.dest(paths.css.dest))
     .pipe(bs.stream());
 }
 
 // --------------------------------------------------
-// JS (copy)
+// JS
 // --------------------------------------------------
 export function js() {
   return gulp
@@ -797,17 +1007,17 @@ export function js() {
 }
 
 // --------------------------------------------------
-// IMAGES (🔥 BINARY SAFE)
+// IMAGES (BINARY SAFE)
 // --------------------------------------------------
 export function images() {
   return gulp
-    .src(paths.images.src, { encoding: false }) // 🔥 REQUIRED
+    .src(paths.images.src, { encoding: false })
     .pipe(gulp.dest(paths.images.dest))
     .on("end", bs.reload);
 }
 
 // --------------------------------------------------
-// TAILWIND WATCH (JIT FIX)
+// TAILWIND WATCH (ONLY main.css)
 // --------------------------------------------------
 let tailwindProcess;
 
@@ -831,17 +1041,15 @@ export function tailwindWatch(cb) {
 }
 
 // --------------------------------------------------
-// DELETE FROM DIST WHEN SOURCE IS DELETED
+// DELETE FROM DIST
 // --------------------------------------------------
-function deleteFromDist(srcPath) {
-  const distPath = srcPath.replace(/^src\//, "dist/");
-  deleteAsync(distPath).then(() => {
-    bs.reload();
-  });
+function deleteFromDist(path) {
+  const distPath = path.replace(/^src\//, "dist/");
+  deleteAsync(distPath).then(() => bs.reload());
 }
 
 // --------------------------------------------------
-// SERVE + WATCH
+// SERVE
 // --------------------------------------------------
 export function serve() {
   bs.init({
@@ -849,22 +1057,18 @@ export function serve() {
     notify: false,
   });
 
-  // HTML
   gulp.watch(paths.html.watch).on("change", html);
 
-  // CSS
   gulp.watch(paths.css.watch)
-    .on("add", css)
-    .on("change", css)
+    .on("add", vendorCSS)
+    .on("change", vendorCSS)
     .on("unlink", deleteFromDist);
 
-  // JS
   gulp.watch(paths.js.watch)
     .on("add", js)
     .on("change", js)
     .on("unlink", deleteFromDist);
 
-  // IMAGES
   gulp.watch(paths.images.watch)
     .on("add", images)
     .on("change", images)
@@ -876,17 +1080,17 @@ export function serve() {
 // --------------------------------------------------
 export const dev = gulp.series(
   clean,
-  gulp.parallel(html, css, js, images, tailwindWatch),
+  gulp.parallel(html, vendorCSS, js, images, tailwindWatch),
   serve
 );
 
 // --------------------------------------------------
-// BUILD (PRODUCTION)
+// BUILD
 // --------------------------------------------------
 export const build = gulp.series(
   clean,
   html,
-  css,
+  vendorCSS,
   js,
   images,
   function buildTailwind(cb) {

@@ -43,10 +43,15 @@
 img {
   @apply max-w-full;
 }
+
 p {
   @apply leading-[2];
 }
 
 .container {
   @apply max-w-[1400px] w-full mx-auto px-4;
+}
+
+a, span {
+  @apply inline-block;
 }

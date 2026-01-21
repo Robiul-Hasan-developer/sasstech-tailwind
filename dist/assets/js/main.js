@@ -147,7 +147,7 @@
             <i class="${messageIcon}"></i>
           </span>
           <div class="flex-grow-1">
-            <div class="flex align-items-start justify-between mb-1">
+            <div class="flex items-start justify-between mb-1">
               <h6 class="toast-message__title">${messageTitle}</h6>
               <button type="button" class="toast-message__close">
                 <i class="ph-bold ph-x"></i>
@@ -867,7 +867,7 @@
 
     // ========================= Delete Item Js start ===================
     $(document).on("click", ".delete-button", function () {
-      $(this).closest(".delete-item").addClass("d-none");
+      $(this).closest(".delete-item").addClass("hidden");
 
       toastMessage(
         "danger",
