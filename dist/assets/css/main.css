@@ -56,7 +56,6 @@
     --default-mono-font-family: var(--font-mono);
     --color-heading: oklch(0.21 0.09 282.79);
     --color-main-50: #eef4ff;
-    --color-main-100: #dbe7ff;
     --color-main-600: #1351d8;
     --color-main-800: #0d3385;
     --color-main-two-600: #150e3e;
@@ -2003,13 +2002,6 @@
       }
     }
   }
-  .hover\:bg-main-100 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-main-100);
-      }
-    }
-  }
   .hover\:bg-main-600 {
     &:hover {
       @media (hover: hover) {
@@ -2462,6 +2454,48 @@ a, span {
 }
 .bg-pink-more-light {
   background-color: #fbf6ee;
+}
+.nav-submenu {
+  visibility: hidden;
+  min-width: 190px;
+  transform-origin: top;
+  --tw-scale-y: 0%;
+  scale: var(--tw-scale-x) var(--tw-scale-y);
+  opacity: 0%;
+  --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgba(0,0,0,0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgba(0,0,0,0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 400ms;
+  transition-duration: 400ms;
+  --tw-ease: var(--ease-in-out);
+  transition-timing-function: var(--ease-in-out);
+}
+@media (min-width: 992px) {
+  .nav-submenu {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: calc(var(--spacing) * 0);
+  z-index: 99;
+  max-height: 540px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--color-white);
+  --tw-shadow: 0 20px 30px var(--tw-shadow-color, rgba(0,0,0,0.2));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.has-submenu:hover .nav-submenu {
+  visibility: visible;
+  --tw-scale-y: 100%;
+  scale: var(--tw-scale-x) var(--tw-scale-y);
+  opacity: 100%;
 }
 @property --tw-translate-x {
   syntax: "*";
