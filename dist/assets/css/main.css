@@ -1084,6 +1084,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .gap-0 {
     gap: calc(var(--spacing) * 0);
   }
@@ -2168,6 +2171,36 @@
       display: none;
     }
   }
+  .sm\:inline-flex {
+    @media (width >= 40rem) {
+      display: inline-flex;
+    }
+  }
+  .sm\:grow-0 {
+    @media (width >= 40rem) {
+      flex-grow: 0;
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .sm\:flex-nowrap {
+    @media (width >= 40rem) {
+      flex-wrap: nowrap;
+    }
+  }
+  .sm\:justify-start {
+    @media (width >= 40rem) {
+      justify-content: flex-start;
+    }
+  }
+  .sm\:p-6 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 6);
+    }
+  }
   .sm\:py-\[100px\] {
     @media (width >= 40rem) {
       padding-block: 100px;
@@ -2178,9 +2211,39 @@
       padding-top: 100px;
     }
   }
+  .sm\:pb-0 {
+    @media (width >= 40rem) {
+      padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .sm\:pb-\[100px\] {
     @media (width >= 40rem) {
       padding-bottom: 100px;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:flex-nowrap {
+    @media (width >= 48rem) {
+      flex-wrap: nowrap;
+    }
+  }
+  .md\:py-0 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:absolute {
+    @media (width >= 64rem) {
+      position: absolute;
+    }
+  }
+  .lg\:me-12 {
+    @media (width >= 64rem) {
+      margin-inline-end: calc(var(--spacing) * 12);
     }
   }
   .lg\:block {
@@ -2196,6 +2259,11 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:flex-nowrap {
+    @media (width >= 64rem) {
+      flex-wrap: nowrap;
     }
   }
   .lg\:px-6 {
@@ -2216,6 +2284,11 @@
   .lg\:ps-12 {
     @media (width >= 64rem) {
       padding-inline-start: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:pe-6 {
+    @media (width >= 64rem) {
+      padding-inline-end: calc(var(--spacing) * 6);
     }
   }
   .lg\:pe-12 {
@@ -2248,6 +2321,21 @@
       display: flex;
     }
   }
+  .xl\:flex-row {
+    @media (width >= 80rem) {
+      flex-direction: row;
+    }
+  }
+  .xl\:flex-nowrap {
+    @media (width >= 80rem) {
+      flex-wrap: nowrap;
+    }
+  }
+  .xl\:px-6 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
   .xl\:px-8 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 8);
@@ -2266,6 +2354,11 @@
   .\32 xl\:px-10 {
     @media (width >= 96rem) {
       padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .\32 xl\:px-12 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 12);
     }
   }
 }
