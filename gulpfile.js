@@ -505,15 +505,6 @@
 //   }
 // );
 
-
-
-
-
-
-
-
-
-
 // import browserSync from "browser-sync";
 // import { spawn } from "child_process";
 // import { deleteAsync } from "del";
@@ -694,26 +685,6 @@
 //     ).on("close", cb);
 //   }
 // );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import browserSync from "browser-sync";
 // import { spawn } from "child_process";
@@ -905,26 +876,6 @@
 //   }
 // );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import browserSync from "browser-sync";
 import { spawn } from "child_process";
 import { deleteAsync } from "del";
@@ -943,12 +894,21 @@ const paths = {
     dest: "dist/",
   },
 
+  // css: {
+  //   vendor: [
+  //     "src/assets/css/**/*.css",
+  //     "!src/assets/css/input.css",
+  //   ],
+  //   watch: "src/assets/css/**/*.css",
+  //   dest: "dist/assets/css/",
+  // },
+
   css: {
-    vendor: [
+    src: [
       "src/assets/css/**/*.css",
-      "!src/assets/css/input.css",
+      "!src/assets/css/input.css", // Tailwind input only
     ],
-    watch: "src/assets/css/**/*.css",
+    watch: ["src/assets/css/**/*.css", "!src/assets/css/input.css"],
     dest: "dist/assets/css/",
   },
 
@@ -980,7 +940,7 @@ export function html() {
       fileInclude({
         prefix: "@@",
         basepath: "src/html/partials",
-      })
+      }),
     )
     .pipe(gulp.dest(paths.html.dest))
     .pipe(bs.stream());
@@ -989,11 +949,18 @@ export function html() {
 // --------------------------------------------------
 // COPY VENDOR CSS (NO OVERWRITE)
 // --------------------------------------------------
+// export function vendorCSS() {
+//   return gulp
+//     .src(paths.css.vendor, { allowEmpty: true })
+//     .pipe(gulp.dest(paths.css.dest))
+//     .pipe(bs.stream());
+// }
+
 export function vendorCSS() {
   return gulp
-    .src(paths.css.vendor, { allowEmpty: true })
+    .src(paths.css.src, { allowEmpty: true })
     .pipe(gulp.dest(paths.css.dest))
-    .pipe(bs.stream());
+    .pipe(bs.stream({ match: "**/*.css" }));
 }
 
 // --------------------------------------------------
@@ -1034,7 +1001,7 @@ export function tailwindWatch(cb) {
       "dist/assets/css/main.css",
       "--watch",
     ],
-    { stdio: "inherit", shell: true }
+    { stdio: "inherit", shell: true },
   );
 
   cb();
@@ -1043,36 +1010,66 @@ export function tailwindWatch(cb) {
 // --------------------------------------------------
 // DELETE FROM DIST
 // --------------------------------------------------
-function deleteFromDist(path) {
-  const distPath = path.replace(/^src\//, "dist/");
+// function deleteFromDist(path) {
+//   const distPath = path.replace(/^src\//, "dist/");
+//   deleteAsync(distPath).then(() => bs.reload());
+// }
+
+function deleteFromDist(filePath) {
+  // NEVER delete Tailwind output
+  if (filePath.includes("input.css")) return;
+
+  const distPath = filePath.replace(/^src\//, "dist/");
+
   deleteAsync(distPath).then(() => bs.reload());
 }
 
 // --------------------------------------------------
 // SERVE
 // --------------------------------------------------
+// export function serve() {
+//   bs.init({
+//     server: { baseDir: "dist" },
+//     notify: false,
+//   });
+
+//   gulp.watch(paths.html.watch).on("change", html);
+
+//   gulp
+//     .watch(paths.css.watch)
+//     .on("add", vendorCSS)
+//     .on("change", vendorCSS)
+//     .on("unlink", deleteFromDist);
+
+//   gulp
+//     .watch(paths.js.watch)
+//     .on("add", js)
+//     .on("change", js)
+//     .on("unlink", deleteFromDist);
+
+//   gulp
+//     .watch(paths.images.watch)
+//     .on("add", images)
+//     .on("change", images)
+//     .on("unlink", deleteFromDist);
+// }
+
 export function serve() {
   bs.init({
     server: { baseDir: "dist" },
     notify: false,
   });
 
-  gulp.watch(paths.html.watch).on("change", html);
+  gulp.watch(paths.html.watch, html);
 
-  gulp.watch(paths.css.watch)
+  gulp
+    .watch(paths.css.watch)
     .on("add", vendorCSS)
     .on("change", vendorCSS)
     .on("unlink", deleteFromDist);
 
-  gulp.watch(paths.js.watch)
-    .on("add", js)
-    .on("change", js)
-    .on("unlink", deleteFromDist);
-
-  gulp.watch(paths.images.watch)
-    .on("add", images)
-    .on("change", images)
-    .on("unlink", deleteFromDist);
+  gulp.watch(paths.js.watch, js);
+  gulp.watch(paths.images.watch, images);
 }
 
 // --------------------------------------------------
@@ -1081,7 +1078,7 @@ export function serve() {
 export const dev = gulp.series(
   clean,
   gulp.parallel(html, vendorCSS, js, images, tailwindWatch),
-  serve
+  serve,
 );
 
 // --------------------------------------------------
@@ -1104,7 +1101,7 @@ export const build = gulp.series(
         "dist/assets/css/main.css",
         "--minify",
       ],
-      { stdio: "inherit", shell: true }
+      { stdio: "inherit", shell: true },
     ).on("close", cb);
-  }
+  },
 );
