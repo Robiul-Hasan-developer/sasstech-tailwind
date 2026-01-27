@@ -171,4 +171,11 @@ span {
 .has-submenu:hover .nav-submenu {
   @apply visible opacity-100 scale-y-100;
 }
+
+.top-features-slider > div {
+  @apply inline-flex items-center gap-4 ms-8;
+}
+.js-marquee {
+  @apply flex items-center gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-[68px];
+}
 /* Menu Css end */
