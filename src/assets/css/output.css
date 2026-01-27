@@ -289,9 +289,6 @@
   .z-999 {
     z-index: 999;
   }
-  .col-6 {
-    grid-column: 6;
-  }
   .col-span-6 {
     grid-column: span 6 / span 6;
   }
@@ -1060,23 +1057,14 @@
   .min-w-max {
     min-width: max-content;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .flex-shrink-0 {
     flex-shrink: 0;
-  }
-  .flex-grow {
-    flex-grow: 1;
   }
   .flex-grow-1 {
     flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1108,9 +1096,6 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -1137,9 +1122,6 @@
   }
   .justify-end {
     justify-content: flex-end;
-  }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
   }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
@@ -1570,9 +1552,6 @@
   .ps-6 {
     padding-inline-start: calc(var(--spacing) * 6);
   }
-  .ps-7 {
-    padding-inline-start: calc(var(--spacing) * 7);
-  }
   .ps-7\.5 {
     padding-inline-start: calc(var(--spacing) * 7.5);
   }
@@ -1609,14 +1588,8 @@
   .pe-1 {
     padding-inline-end: calc(var(--spacing) * 1);
   }
-  .pe-2 {
-    padding-inline-end: calc(var(--spacing) * 2);
-  }
   .pe-2\.5 {
     padding-inline-end: calc(var(--spacing) * 2.5);
-  }
-  .pe-3 {
-    padding-inline-end: calc(var(--spacing) * 3);
   }
   .pe-3\.5 {
     padding-inline-end: calc(var(--spacing) * 3.5);
@@ -1632,9 +1605,6 @@
   }
   .pe-6 {
     padding-inline-end: calc(var(--spacing) * 6);
-  }
-  .pe-7 {
-    padding-inline-end: calc(var(--spacing) * 7);
   }
   .pe-7\.5 {
     padding-inline-end: calc(var(--spacing) * 7.5);
@@ -1931,9 +1901,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .placeholder-neutral-600 {
     &::placeholder {
       color: var(--color-neutral-600);
@@ -1959,10 +1926,6 @@
   .shadow-none {
     --tw-shadow: 0 0 #0000;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -2267,6 +2230,16 @@
       grid-column: span 6 / span 6;
     }
   }
+  .sm\:col-span-8 {
+    @media (width >= 40rem) {
+      grid-column: span 8 / span 8;
+    }
+  }
+  .sm\:col-span-12 {
+    @media (width >= 40rem) {
+      grid-column: span 12 / span 12;
+    }
+  }
   .sm\:block {
     @media (width >= 40rem) {
       display: block;
@@ -2365,6 +2338,11 @@
   .md\:col-span-7 {
     @media (width >= 48rem) {
       grid-column: span 7 / span 7;
+    }
+  }
+  .md\:col-span-8 {
+    @media (width >= 48rem) {
+      grid-column: span 8 / span 8;
     }
   }
   .md\:mx-6 {
@@ -2467,6 +2445,21 @@
       grid-column: span 7 / span 7;
     }
   }
+  .lg\:col-span-8 {
+    @media (width >= 64rem) {
+      grid-column: span 8 / span 8;
+    }
+  }
+  .lg\:col-span-9 {
+    @media (width >= 64rem) {
+      grid-column: span 9 / span 9;
+    }
+  }
+  .lg\:col-span-12 {
+    @media (width >= 64rem) {
+      grid-column: span 12 / span 12;
+    }
+  }
   .lg\:mx-8 {
     @media (width >= 64rem) {
       margin-inline: calc(var(--spacing) * 8);
@@ -2500,11 +2493,6 @@
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-cols-6 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
     }
   }
   .lg\:flex-nowrap {
@@ -2641,6 +2629,21 @@
   .xl\:col-span-6 {
     @media (width >= 80rem) {
       grid-column: span 6 / span 6;
+    }
+  }
+  .xl\:col-span-8 {
+    @media (width >= 80rem) {
+      grid-column: span 8 / span 8;
+    }
+  }
+  .xl\:col-span-10 {
+    @media (width >= 80rem) {
+      grid-column: span 10 / span 10;
+    }
+  }
+  .xl\:col-span-11 {
+    @media (width >= 80rem) {
+      grid-column: span 11 / span 11;
     }
   }
   .xl\:mx-10 {
@@ -2803,6 +2806,16 @@
   .xl\:text-\[36\] {
     @media (width >= 80rem) {
       color: 36;
+    }
+  }
+  .\32 xl\:col-span-10 {
+    @media (width >= 96rem) {
+      grid-column: span 10 / span 10;
+    }
+  }
+  .\32 xl\:col-span-11 {
+    @media (width >= 96rem) {
+      grid-column: span 11 / span 11;
     }
   }
   .\32 xl\:mx-\[48px\] {
@@ -3214,11 +3227,6 @@ a, span {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -3295,6 +3303,11 @@ a, span {
   inherits: false;
   initial-value: 1;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -3324,7 +3337,6 @@ a, span {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -3343,6 +3355,7 @@ a, span {
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-outline-style: solid;
     }
   }
 }
