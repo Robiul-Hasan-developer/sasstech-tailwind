@@ -2471,6 +2471,11 @@
       position: absolute;
     }
   }
+  .lg\:col-span-2 {
+    @media (width >= 64rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
   .lg\:col-span-3 {
     @media (width >= 64rem) {
       grid-column: span 3 / span 3;
@@ -2672,6 +2677,16 @@
       font-size: 36px;
     }
   }
+  .xl\:col-span-2 {
+    @media (width >= 80rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .xl\:col-span-3 {
+    @media (width >= 80rem) {
+      grid-column: span 3 / span 3;
+    }
+  }
   .xl\:col-span-4 {
     @media (width >= 80rem) {
       grid-column: span 4 / span 4;
@@ -2685,6 +2700,11 @@
   .xl\:col-span-6 {
     @media (width >= 80rem) {
       grid-column: span 6 / span 6;
+    }
+  }
+  .xl\:col-span-7 {
+    @media (width >= 80rem) {
+      grid-column: span 7 / span 7;
     }
   }
   .xl\:col-span-8 {
@@ -2867,6 +2887,11 @@
   .\32 xl\:col-span-4 {
     @media (width >= 96rem) {
       grid-column: span 4 / span 4;
+    }
+  }
+  .\32 xl\:col-span-6 {
+    @media (width >= 96rem) {
+      grid-column: span 6 / span 6;
     }
   }
   .\32 xl\:col-span-8 {
