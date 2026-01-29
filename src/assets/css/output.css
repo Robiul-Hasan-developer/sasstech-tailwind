@@ -2677,6 +2677,11 @@
       grid-column: span 4 / span 4;
     }
   }
+  .xl\:col-span-5 {
+    @media (width >= 80rem) {
+      grid-column: span 5 / span 5;
+    }
+  }
   .xl\:col-span-6 {
     @media (width >= 80rem) {
       grid-column: span 6 / span 6;
@@ -2857,6 +2862,16 @@
   .xl\:text-\[36\] {
     @media (width >= 80rem) {
       color: 36;
+    }
+  }
+  .\32 xl\:col-span-4 {
+    @media (width >= 96rem) {
+      grid-column: span 4 / span 4;
+    }
+  }
+  .\32 xl\:col-span-8 {
+    @media (width >= 96rem) {
+      grid-column: span 8 / span 8;
     }
   }
   .\32 xl\:col-span-10 {
