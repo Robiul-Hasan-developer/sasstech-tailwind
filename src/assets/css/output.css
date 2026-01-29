@@ -2396,6 +2396,11 @@
       margin-inline: calc(var(--spacing) * 6);
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
