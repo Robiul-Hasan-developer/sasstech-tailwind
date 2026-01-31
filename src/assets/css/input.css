@@ -39,12 +39,6 @@
   --color-main-two-900: #0b0821;
   --color-main-two-950: #070515;
 
-  --heading-one: clamp(2.125rem, -0.0733rem + 5.5vw, 4.4375rem);
-  --heading-two: clamp(1.875rem, 0.7133rem + 2.8846vw, 3.75rem);
-  --heading-three: clamp(1.75rem, 0.3353rem + 2.1661vw, 3rem);
-  --heading-four: clamp(1.5rem, 0.5569rem + 1.444vw, 1.875rem);
-  --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.5rem);
-  --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
 }
 
 img {
@@ -66,42 +60,41 @@ span {
 
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @apply leading-[1.2]'
-    /* font-family: var(--heading-font);
-    color: var(--black);
-    line-height: 1.2;
-    font-weight: 700; */
+  @apply leading-[1.2];
 }
 
-h1,
+ h1,
 .h1 {
-  font-size: var(--heading-one);
+  font-size: clamp(2.125rem, -0.0733rem + 5.5vw, 4.4375rem);
 }
 
 h2,
 .h2 {
-  font-size: var(--heading-two);
+  font-size: clamp(1.875rem, 0.7133rem + 2.8846vw, 3.75rem);
 }
 
 h3,
 .h3 {
-  font-size: var(--heading-three);
+  font-size: clamp(1.75rem, 0.3353rem + 2.1661vw, 3rem);
 }
 
 h4,
 .h4 {
-  font-size: var(--heading-four);
+  font-size: clamp(1.5rem, 0.5569rem + 1.444vw, 1.875rem);
 }
 
 h5,
 .h5 {
-  font-size: var(--heading-five);
+  font-size: clamp(1.125rem, 1.2rem + 0.722vw, 1.5rem);
 }
 
 h6,
 .h6 {
-  font-size: var(--heading-six);
+  font-size: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
 }
+
+ 
+ 
 
 h1 > a,
 h2 > a,
@@ -109,11 +102,7 @@ h3 > a,
 h4 > a,
 h5 > a,
 h6 > a {
-  font-weight: inherit;
-  font-size: inherit;
-  color: inherit;
-  transition: 0.2s linear;
-  line-height: inherit;
+  @apply text-[inherit] duration-200 leading-[inherit];
 }
 
 h1 > a:hover,

@@ -60,12 +60,6 @@
     --color-main-800: #0d3385;
     --color-main-two-600: #150e3e;
     --color-main-two-700: #120c36;
-    --heading-one: clamp(2.125rem, -0.0733rem + 5.5vw, 4.4375rem);
-    --heading-two: clamp(1.875rem, 0.7133rem + 2.8846vw, 3.75rem);
-    --heading-three: clamp(1.75rem, 0.3353rem + 2.1661vw, 3rem);
-    --heading-four: clamp(1.5rem, 0.5569rem + 1.444vw, 1.875rem);
-    --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.5rem);
-    --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
   }
 }
 @layer base {
@@ -1076,8 +1070,8 @@
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-x-50 {
-    --tw-translate-x: calc(var(--spacing) * 50);
+  .translate-x-\[-50\%\] {
+    --tw-translate-x: -50%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-50 {
@@ -3080,36 +3074,33 @@ p {
   padding-inline: calc(var(--spacing) * 4);
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  margin: 0;
-  font-family: var(--heading-font);
-  color: var(--black);
+  --tw-leading: 1.2;
   line-height: 1.2;
-  font-weight: 700;
 }
 h1, .h1 {
-  font-size: var(--heading-one);
+  font-size: clamp(2.125rem, -0.0733rem + 5.5vw, 4.4375rem);
 }
 h2, .h2 {
-  font-size: var(--heading-two);
+  font-size: clamp(1.875rem, 0.7133rem + 2.8846vw, 3.75rem);
 }
 h3, .h3 {
-  font-size: var(--heading-three);
+  font-size: clamp(1.75rem, 0.3353rem + 2.1661vw, 3rem);
 }
 h4, .h4 {
-  font-size: var(--heading-four);
+  font-size: clamp(1.5rem, 0.5569rem + 1.444vw, 1.875rem);
 }
 h5, .h5 {
-  font-size: var(--heading-five);
+  font-size: clamp(1.125rem, 1.2rem + 0.722vw, 1.5rem);
 }
 h6, .h6 {
-  font-size: var(--heading-six);
+  font-size: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
 }
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
-  font-weight: inherit;
-  font-size: inherit;
-  color: inherit;
-  transition: 0.2s linear;
+  --tw-leading: inherit;
   line-height: inherit;
+  color: inherit;
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
 }
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
   color: var(--main-600);
