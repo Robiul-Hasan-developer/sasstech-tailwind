@@ -184,7 +184,7 @@ h6 > a:hover {
 /* Custom Classes end */
 
 /* ========================== Button Css Start =============== */
-.button__label {
+/* .button__label {
     position: relative;
     text-align: center;
     transition: color 0.05s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -235,7 +235,47 @@ h6 > a:hover {
     border-radius: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+} */
+
+/* Button Label */
+.button__label {
+  @apply relative text-center transition-colors duration-[50ms] ease-[cubic-bezier(0.645,0.045,0.355,1)];
 }
+
+/* Stroke Button Hover Text Color */
+.button--stroke:hover {
+  @apply text-[#0e100f];
+}
+
+/* Stroke Border */
+.button--stroke::after {
+  content: "";
+  @apply absolute inset-0 border-2 border-[#fffce1] rounded-[inherit] pointer-events-none;
+}
+
+/* Flair Scaling (default hidden) */
+.button--stroke .button__flair {
+  @apply scale-0 origin-top-left;
+}
+
+/* Label Transition on Stroke Button */
+.button--stroke .button__label {
+  @apply transition-colors duration-150 ease-[cubic-bezier(0.645,0.045,0.355,1)];
+}
+
+/* Flair Wrapper */
+.button__flair {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+/* Flair Circle */
+.button__flair::before {
+  content: "";
+  @apply absolute top-0 left-0 w-[200%] aspect-square bg-[#fffce1] rounded-full 
+         -translate-x-1/2 -translate-y-1/2 pointer-events-none;
+}
+
+
 
 .btn {
     border: 0;

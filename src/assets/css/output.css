@@ -1990,6 +1990,13 @@
   .backface-hidden {
     backface-visibility: hidden;
   }
+  .group-hover\:visible {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        visibility: visible;
+      }
+    }
+  }
   .group-hover\:bg-main-600 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -2036,6 +2043,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         color: var(--color-yellow-600);
+      }
+    }
+  }
+  .group-hover\:opacity-\[1\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 1;
       }
     }
   }
@@ -3169,48 +3183,61 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
 .button__label {
   position: relative;
   text-align: center;
-  transition: color 0.05s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 50ms;
+  transition-duration: 50ms;
+  --tw-ease: cubic-bezier(0.645,0.045,0.355,1);
+  transition-timing-function: cubic-bezier(0.645,0.045,0.355,1);
 }
 .button--stroke:hover {
   color: #0e100f;
 }
 .button--stroke::after {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 0.125rem solid #fffce1;
-  border-radius: inherit;
   pointer-events: none;
+  position: absolute;
+  inset: calc(var(--spacing) * 0);
+  border-radius: inherit;
+  border-style: var(--tw-border-style);
+  border-width: 2px;
+  border-color: #fffce1;
 }
 .button--stroke .button__flair {
-  transform: scale(0);
   transform-origin: 0 0;
+  --tw-scale-x: 0%;
+  --tw-scale-y: 0%;
+  --tw-scale-z: 0%;
+  scale: var(--tw-scale-x) var(--tw-scale-y);
 }
 .button--stroke .button__label {
-  transition: color 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 150ms;
+  transition-duration: 150ms;
+  --tw-ease: cubic-bezier(0.645,0.045,0.355,1);
+  transition-timing-function: cubic-bezier(0.645,0.045,0.355,1);
 }
 .button__flair {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   pointer-events: none;
+  position: absolute;
+  inset: calc(var(--spacing) * 0);
 }
 .button__flair::before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  aspect-ratio: 1/1;
-  background-color: #fffce1;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
   pointer-events: none;
+  position: absolute;
+  top: calc(var(--spacing) * 0);
+  left: calc(var(--spacing) * 0);
+  aspect-ratio: 1 / 1;
+  width: 200%;
+  --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+  --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  border-radius: calc(infinity * 1px);
+  background-color: #fffce1;
 }
 .btn {
   border: 0;
