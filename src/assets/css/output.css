@@ -211,6 +211,9 @@
   }
 }
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
   .collapse {
     visibility: collapse;
   }
@@ -1057,23 +1060,14 @@
   .min-w-max {
     min-width: max-content;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .flex-shrink-0 {
     flex-shrink: 0;
-  }
-  .flex-grow {
-    flex-grow: 1;
   }
   .flex-grow-1 {
     flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1131,9 +1125,6 @@
   }
   .justify-end {
     justify-content: flex-end;
-  }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
   }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
@@ -1216,9 +1207,6 @@
   .overflow-y-auto {
     overflow-y: auto;
   }
-  .\!rounded-\[50rem\] {
-    border-radius: 50rem !important;
-  }
   .rounded {
     border-radius: 0.25rem;
   }
@@ -1239,9 +1227,6 @@
   }
   .rounded-\[50px\] {
     border-radius: 50px;
-  }
-  .rounded-\[50rem\] {
-    border-radius: 50rem;
   }
   .rounded-\[50rem\]\! {
     border-radius: 50rem !important;
@@ -1334,6 +1319,9 @@
   .border-white {
     border-color: var(--color-white);
   }
+  .bg-\[\#000000b8\] {
+    background-color: #000000b8;
+  }
   .bg-\[\#ffffff21\] {
     background-color: #ffffff21;
   }
@@ -1385,9 +1373,6 @@
   .object-top {
     object-position: top;
   }
-  .\!p-1 {
-    padding: calc(var(--spacing) * 1) !important;
-  }
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
@@ -1429,12 +1414,6 @@
   }
   .p-12 {
     padding: calc(var(--spacing) * 12);
-  }
-  .\!px-6 {
-    padding-inline: calc(var(--spacing) * 6) !important;
-  }
-  .\!px-9 {
-    padding-inline: calc(var(--spacing) * 9) !important;
   }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
@@ -1501,9 +1480,6 @@
   }
   .px-17 {
     padding-inline: calc(var(--spacing) * 17);
-  }
-  .\!py-5 {
-    padding-block: calc(var(--spacing) * 5) !important;
   }
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
@@ -1586,9 +1562,6 @@
   .py-\[100px\] {
     padding-block: 100px;
   }
-  .\!ps-8 {
-    padding-inline-start: calc(var(--spacing) * 8) !important;
-  }
   .ps-0 {
     padding-inline-start: calc(var(--spacing) * 0);
   }
@@ -1606,9 +1579,6 @@
   }
   .ps-6 {
     padding-inline-start: calc(var(--spacing) * 6);
-  }
-  .ps-7 {
-    padding-inline-start: calc(var(--spacing) * 7);
   }
   .ps-7\.5 {
     padding-inline-start: calc(var(--spacing) * 7.5);
@@ -1649,14 +1619,8 @@
   .pe-1 {
     padding-inline-end: calc(var(--spacing) * 1);
   }
-  .pe-2 {
-    padding-inline-end: calc(var(--spacing) * 2);
-  }
   .pe-2\.5 {
     padding-inline-end: calc(var(--spacing) * 2.5);
-  }
-  .pe-3 {
-    padding-inline-end: calc(var(--spacing) * 3);
   }
   .pe-3\.5 {
     padding-inline-end: calc(var(--spacing) * 3.5);
@@ -1672,9 +1636,6 @@
   }
   .pe-6 {
     padding-inline-end: calc(var(--spacing) * 6);
-  }
-  .pe-7 {
-    padding-inline-end: calc(var(--spacing) * 7);
   }
   .pe-7\.5 {
     padding-inline-end: calc(var(--spacing) * 7.5);
@@ -1974,9 +1935,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .placeholder-neutral-600 {
     &::placeholder {
       color: var(--color-neutral-600);
@@ -2002,10 +1960,6 @@
   .shadow-none {
     --tw-shadow: 0 0 #0000;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -3204,6 +3158,9 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
   color: var(--main-600);
 }
+a {
+  transition: .2s ease-in-out;
+}
 .bg-black {
   background-color: #1c1c1c;
 }
@@ -3462,6 +3419,27 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
     gap: 68px;
   }
 }
+.left-right-gradient::before, .left-right-gradient::after {
+  position: absolute;
+  inset-inline-start: calc(var(--spacing) * 0);
+  top: calc(var(--spacing) * 0);
+  z-index: 2;
+  height: 100%;
+  width: 48px;
+  --tw-gradient-position: to right in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+  --tw-gradient-from: var(--color-white);
+  --tw-gradient-to: transparent;
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+.left-right-gradient::after {
+  inset-inline-start: auto;
+  inset-inline-end: calc(var(--spacing) * 0);
+  --tw-scale-x: -1;
+  scale: var(--tw-scale-x) var(--tw-scale-y);
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -3579,11 +3557,6 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -3660,6 +3633,58 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   inherits: false;
   initial-value: 1;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-content {
+  syntax: "*";
+  inherits: false;
+  initial-value: "";
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -3689,7 +3714,6 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -3708,6 +3732,17 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-outline-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-content: "";
     }
   }
 }

@@ -107,6 +107,10 @@ h6 > a:hover {
   color: var(--main-600);
 }
 
+a {
+  transition: .2s ease-in-out;
+}
+
 /* Custom Classes start */
 .bg-black {
   @apply bg-[#1c1c1c];
@@ -186,60 +190,6 @@ h6 > a:hover {
 /* Custom Classes end */
 
 /* ========================== Button Css Start =============== */
-/* .button__label {
-    position: relative;
-    text-align: center;
-    transition: color 0.05s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.button--stroke:hover {
-    color: #0e100f;
-}
-
-.button--stroke::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 0.125rem solid #fffce1;
-    border-radius: inherit;
-    pointer-events: none;
-}
-
-.button--stroke .button__flair {
-    transform: scale(0);
-    transform-origin: 0 0;
-}
-
-.button--stroke .button__label {
-    transition: color 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.button__flair {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-}
-
-.button__flair::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    aspect-ratio: 1/1;
-    background-color: #fffce1;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-} */
-
-/* Button Label */
 .button__label {
   @apply relative text-center transition-colors duration-[50ms] ease-[cubic-bezier(0.645,0.045,0.355,1)];
 }
@@ -397,7 +347,16 @@ h6 > a:hover {
 .top-features-slider > div {
   @apply inline-flex items-center gap-4 ms-8;
 }
+
 .js-marquee {
   @apply flex items-center gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-[68px];
 }
+
+.left-right-gradient::before, .left-right-gradient::after {
+  @apply absolute w-[48px] h-full start-0 top-0 z-[2] content-[''] bg-gradient-to-r from-white to-transparent;
+}
+.left-right-gradient::after {
+  @apply start-auto end-0 scale-x-[-1]
+}
+
 /* Menu Css end */
