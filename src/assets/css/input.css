@@ -40,7 +40,6 @@
   --color-main-two-950: #070515;
 
   --color-heading: #150e3e;
-
 }
 
 img {
@@ -55,11 +54,22 @@ p {
   @apply max-w-[1400px] w-full mx-auto px-4;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   @apply leading-[1.2];
 }
 
- h1,
+h1,
 .h1 {
   font-size: clamp(2.125rem, -0.0733rem + 5.5vw, 4.4375rem);
 }
@@ -108,7 +118,7 @@ h6 > a:hover {
 }
 
 a {
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 /* Custom Classes start */
@@ -225,7 +235,9 @@ a {
   @apply border-0 text-white leading-[1] ps-8 py-4.5 relative overflow-hidden rounded-md z-[1] duration-200;
 }
 
-.btn:hover, .btn:focus, .btn:focus-visible {
+.btn:hover,
+.btn:focus,
+.btn:focus-visible {
   @apply !shadow-none;
 }
 
@@ -261,27 +273,31 @@ a {
     @apply bg-main-two-600;
 } */
 
-.hover-style-one:hover.button--stroke::after, .hover-style-one:active.button--stroke::after {
+.hover-style-one:hover.button--stroke::after,
+.hover-style-one:active.button--stroke::after {
   @apply border-transparent;
 }
 
 .hover-style-one .button__flair::before {
-  @apply bg-main-two-600;;
+  @apply bg-main-two-600;
 }
 
-.hover-style-two:hover.button--stroke::after, .hover-style-two:active.button--stroke::after {
+.hover-style-two:hover.button--stroke::after,
+.hover-style-two:active.button--stroke::after {
   @apply border-transparent;
 }
 
 .hover-style-two .button__flair::before {
-    @apply bg-main-600;
+  @apply bg-main-600;
 }
 
-.hover-style-three:hover, .hover-style-three:active {
-    @apply !text-heading;
+.hover-style-three:hover,
+.hover-style-three:active {
+  @apply !text-heading;
 }
 
-.hover-style-three:hover.button--stroke::after, .hover-style-three:active.button--stroke::after {
+.hover-style-three:hover.button--stroke::after,
+.hover-style-three:active.button--stroke::after {
   @apply border-transparent;
 }
 
@@ -289,11 +305,13 @@ a {
   @apply bg-white;
 }
 
-.hover-style-five:hover, .hover-style-five:active {
-     @apply !text-heading;
+.hover-style-five:hover,
+.hover-style-five:active {
+  @apply !text-heading;
 }
 
-.hover-style-five:hover.button--stroke::after, .hover-style-five:active.button--stroke::after {
+.hover-style-five:hover.button--stroke::after,
+.hover-style-five:active.button--stroke::after {
   @apply border-transparent;
 }
 
@@ -305,7 +323,6 @@ a {
   @apply border-orange-600 text-orange-600;
 }
 /* =========================== Button Css End =================== */
-
 
 /* Menu CSS start */
 .nav-submenu {
@@ -344,6 +361,36 @@ a {
   @apply visible opacity-100 scale-y-100;
 }
 
+.has-submenu > a {
+  @apply relative;
+}
+
+.has-submenu > a::before {
+  @apply absolute content-["\e136"] end-0 top-[50%] translate-y-[-50%] font-["Phosphor"] font-bold text-neutral-400 text-xs duration-300;
+}
+
+.has-submenu.activePage > a,
+.has-submenu.activePage > a::before {
+  @apply text-main-600;
+}
+.has-submenu:hover a::before {
+  @apply translate-y-[-50%] rotate-[360deg];
+}
+
+.header.fixed-header {
+  @apply fixed z-[9] top-0 w-full start-0;
+  animation: slideDown 0.35s ease-out;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* Menu Css end */
+
 .top-features-slider > div {
   @apply inline-flex items-center gap-4 ms-8;
 }
@@ -352,11 +399,10 @@ a {
   @apply flex items-center gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-[68px];
 }
 
-.left-right-gradient::before, .left-right-gradient::after {
+.left-right-gradient::before,
+.left-right-gradient::after {
   @apply absolute w-[48px] h-full start-0 top-0 z-[2] content-[''] bg-gradient-to-r from-white to-transparent;
 }
 .left-right-gradient::after {
-  @apply start-auto end-0 scale-x-[-1]
+  @apply start-auto end-0 scale-x-[-1];
 }
-
-/* Menu Css end */
