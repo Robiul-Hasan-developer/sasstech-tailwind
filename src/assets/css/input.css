@@ -39,6 +39,8 @@
   --color-main-two-900: #0b0821;
   --color-main-two-950: #070515;
 
+  --color-heading: #150e3e;
+
 }
 
 img {
@@ -242,136 +244,115 @@ h6 > a:hover {
   @apply relative text-center transition-colors duration-[50ms] ease-[cubic-bezier(0.645,0.045,0.355,1)];
 }
 
-/* Stroke Button Hover Text Color */
 .button--stroke:hover {
   @apply text-[#0e100f];
 }
 
-/* Stroke Border */
 .button--stroke::after {
   content: "";
   @apply absolute inset-0 border-2 border-[#fffce1] rounded-[inherit] pointer-events-none;
 }
 
-/* Flair Scaling (default hidden) */
 .button--stroke .button__flair {
   @apply scale-0 origin-top-left;
 }
 
-/* Label Transition on Stroke Button */
 .button--stroke .button__label {
   @apply transition-colors duration-150 ease-[cubic-bezier(0.645,0.045,0.355,1)];
 }
 
-/* Flair Wrapper */
 .button__flair {
   @apply absolute inset-0 pointer-events-none;
 }
 
-/* Flair Circle */
 .button__flair::before {
   content: "";
   @apply absolute top-0 left-0 w-[200%] aspect-square bg-[#fffce1] rounded-full 
          -translate-x-1/2 -translate-y-1/2 pointer-events-none;
 }
 
-
-
 .btn {
-    border: 0;
-    color: hsl(var(--white));
-    line-height: 1;
-    padding-inline: 32px;
-    padding-block: 18px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 6px;
-    z-index: 1;
-    transition: 0.2s linear;
+  @apply border-0 text-white leading-[1] ps-8 py-4.5 relative overflow-hidden rounded-md z-[1] duration-200;
 }
 
 .btn:hover, .btn:focus, .btn:focus-visible {
-    box-shadow: none !important;
+  @apply !shadow-none;
 }
 
 .btn-main {
-    background-color: var(--main-600) !important;
-    color: hsl(var(--white)) !important;
+  @apply bg-main-600 !text-white;
 }
 
 .btn-main.button--stroke::after {
-    border-color: transparent;
+  @apply border-transparent;
 }
 
 .btn-main-two {
-    background-color: var(--main-two-600) !important;
-    color: hsl(var(--white)) !important;
+  @apply bg-main-two-600 !text-white;
 }
 
 .btn-main-two.button--stroke::after {
-    border-color: transparent;
+  @apply border-transparent;
 }
 
 .btn-white {
-    background-color: hsl(var(--white)) !important;
-    color: var(--heading-color) !important;
+  @apply bg-white !text-heading;
 }
 
 .btn-white:hover {
-    color: hsl(var(--white)) !important;
+  @apply !text-white;
 }
 
 .btn-white.button--stroke::after {
-    border-color: transparent;
+  @apply border-transparent;
 }
 
-.hover-style-one:hover, .hover-style-one:active {
-    background-color: var(--main-600);
-}
+/* .hover-style-one:hover, .hover-style-one:active {
+    @apply bg-main-two-600;
+} */
 
 .hover-style-one:hover.button--stroke::after, .hover-style-one:active.button--stroke::after {
-    border-color: transparent;
+  @apply border-transparent;
 }
 
 .hover-style-one .button__flair::before {
-    background-color: var(--main-two-600);
+  @apply bg-main-two-600;;
 }
 
 .hover-style-two:hover.button--stroke::after, .hover-style-two:active.button--stroke::after {
-    border-color: transparent;
+  @apply border-transparent;
 }
 
 .hover-style-two .button__flair::before {
-    background-color: var(--main-600);
+    @apply bg-main-600;
 }
 
 .hover-style-three:hover, .hover-style-three:active {
-    color: var(--main-two-600) !important;
+    @apply !text-heading;
 }
 
 .hover-style-three:hover.button--stroke::after, .hover-style-three:active.button--stroke::after {
-    border-color: transparent;
+  @apply border-transparent;
 }
 
 .hover-style-three .button__flair::before {
-    background-color: #fff;
+  @apply bg-white;
 }
 
 .hover-style-five:hover, .hover-style-five:active {
-    color: var(--main-two-600) !important;
+     @apply !text-heading;
 }
 
 .hover-style-five:hover.button--stroke::after, .hover-style-five:active.button--stroke::after {
-    border-color: transparent;
+  @apply border-transparent;
 }
 
 .hover-style-five .button__flair::before {
-    background-color: hsl(var(--orange));
+  @apply bg-orange-600;
 }
 
 .btn-orange-outline {
-    border: 1px solid hsl(var(--orange));
-    color: hsl(var(--orange));
+  @apply border-orange-600 text-orange-600;
 }
 /* =========================== Button Css End =================== */
 

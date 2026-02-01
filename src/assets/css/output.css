@@ -54,7 +54,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-heading: oklch(0.21 0.09 282.79);
+    --color-heading: #150e3e;
     --color-main-50: #eef4ff;
     --color-main-600: #1351d8;
     --color-main-800: #0d3385;
@@ -1204,6 +1204,9 @@
   .overflow-y-auto {
     overflow-y: auto;
   }
+  .\!rounded-\[50rem\] {
+    border-radius: 50rem !important;
+  }
   .rounded {
     border-radius: 0.25rem;
   }
@@ -1366,6 +1369,9 @@
   }
   .object-top {
     object-position: top;
+  }
+  .\!p-1 {
+    padding: calc(var(--spacing) * 1) !important;
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
@@ -1549,6 +1555,9 @@
   }
   .py-\[100px\] {
     padding-block: 100px;
+  }
+  .\!ps-8 {
+    padding-inline-start: calc(var(--spacing) * 8) !important;
   }
   .ps-0 {
     padding-inline-start: calc(var(--spacing) * 0);
@@ -3240,80 +3249,81 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   background-color: #fffce1;
 }
 .btn {
-  border: 0;
-  color: hsl(var(--white));
-  line-height: 1;
-  padding-inline: 32px;
-  padding-block: 18px;
   position: relative;
-  overflow: hidden;
-  border-radius: 6px;
   z-index: 1;
-  transition: 0.2s linear;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border-style: var(--tw-border-style);
+  border-width: 0px;
+  padding-block: calc(var(--spacing) * 4.5);
+  padding-inline-start: calc(var(--spacing) * 8);
+  --tw-leading: 1;
+  line-height: 1;
+  color: var(--color-white);
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
 }
 .btn:hover, .btn:focus, .btn:focus-visible {
-  box-shadow: none !important;
+  --tw-shadow: 0 0 #0000 !important;
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
 }
 .btn-main {
-  background-color: var(--main-600) !important;
-  color: hsl(var(--white)) !important;
+  background-color: var(--color-main-600);
+  color: var(--color-white) !important;
 }
 .btn-main.button--stroke::after {
   border-color: transparent;
 }
 .btn-main-two {
-  background-color: var(--main-two-600) !important;
-  color: hsl(var(--white)) !important;
+  background-color: var(--color-main-two-600);
+  color: var(--color-white) !important;
 }
 .btn-main-two.button--stroke::after {
   border-color: transparent;
 }
 .btn-white {
-  background-color: hsl(var(--white)) !important;
-  color: var(--heading-color) !important;
+  background-color: var(--color-white);
+  color: var(--color-heading) !important;
 }
 .btn-white:hover {
-  color: hsl(var(--white)) !important;
+  color: var(--color-white) !important;
 }
 .btn-white.button--stroke::after {
   border-color: transparent;
-}
-.hover-style-one:hover, .hover-style-one:active {
-  background-color: var(--main-600);
 }
 .hover-style-one:hover.button--stroke::after, .hover-style-one:active.button--stroke::after {
   border-color: transparent;
 }
 .hover-style-one .button__flair::before {
-  background-color: var(--main-two-600);
+  background-color: var(--color-main-two-600);
 }
 .hover-style-two:hover.button--stroke::after, .hover-style-two:active.button--stroke::after {
   border-color: transparent;
 }
 .hover-style-two .button__flair::before {
-  background-color: var(--main-600);
+  background-color: var(--color-main-600);
 }
 .hover-style-three:hover, .hover-style-three:active {
-  color: var(--main-two-600) !important;
+  color: var(--color-heading) !important;
 }
 .hover-style-three:hover.button--stroke::after, .hover-style-three:active.button--stroke::after {
   border-color: transparent;
 }
 .hover-style-three .button__flair::before {
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 .hover-style-five:hover, .hover-style-five:active {
-  color: var(--main-two-600) !important;
+  color: var(--color-heading) !important;
 }
 .hover-style-five:hover.button--stroke::after, .hover-style-five:active.button--stroke::after {
   border-color: transparent;
 }
 .hover-style-five .button__flair::before {
-  background-color: hsl(var(--orange));
+  background-color: var(--color-orange-600);
 }
 .btn-orange-outline {
-  border: 1px solid hsl(var(--orange));
-  color: hsl(var(--orange));
+  border-color: var(--color-orange-600);
+  color: var(--color-orange-600);
 }
 .nav-submenu {
   visibility: hidden;
