@@ -1057,23 +1057,14 @@
   .min-w-max {
     min-width: max-content;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .flex-shrink-0 {
     flex-shrink: 0;
-  }
-  .flex-grow {
-    flex-grow: 1;
   }
   .flex-grow-1 {
     flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1131,9 +1122,6 @@
   }
   .justify-end {
     justify-content: flex-end;
-  }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
   }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
@@ -1271,14 +1259,6 @@
   .border-4 {
     border-style: var(--tw-border-style);
     border-width: 4px;
-  }
-  .border-s-0 {
-    border-inline-start-style: var(--tw-border-style);
-    border-inline-start-width: 0px;
-  }
-  .border-e-0 {
-    border-inline-end-style: var(--tw-border-style);
-    border-inline-end-width: 0px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
@@ -1588,9 +1568,6 @@
   .ps-6 {
     padding-inline-start: calc(var(--spacing) * 6);
   }
-  .ps-7 {
-    padding-inline-start: calc(var(--spacing) * 7);
-  }
   .ps-7\.5 {
     padding-inline-start: calc(var(--spacing) * 7.5);
   }
@@ -1627,14 +1604,8 @@
   .pe-1 {
     padding-inline-end: calc(var(--spacing) * 1);
   }
-  .pe-2 {
-    padding-inline-end: calc(var(--spacing) * 2);
-  }
   .pe-2\.5 {
     padding-inline-end: calc(var(--spacing) * 2.5);
-  }
-  .pe-3 {
-    padding-inline-end: calc(var(--spacing) * 3);
   }
   .pe-3\.5 {
     padding-inline-end: calc(var(--spacing) * 3.5);
@@ -1650,9 +1621,6 @@
   }
   .pe-6 {
     padding-inline-end: calc(var(--spacing) * 6);
-  }
-  .pe-7 {
-    padding-inline-end: calc(var(--spacing) * 7);
   }
   .pe-7\.5 {
     padding-inline-end: calc(var(--spacing) * 7.5);
@@ -1952,9 +1920,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .placeholder-neutral-600 {
     &::placeholder {
       color: var(--color-neutral-600);
@@ -1980,10 +1945,6 @@
   .shadow-none {
     --tw-shadow: 0 0 #0000;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -3205,6 +3166,128 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
 .bg-pink-more-light {
   background-color: #fbf6ee;
 }
+.button__label {
+  position: relative;
+  text-align: center;
+  transition: color 0.05s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.button--stroke:hover {
+  color: #0e100f;
+}
+.button--stroke::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0.125rem solid #fffce1;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.button--stroke .button__flair {
+  transform: scale(0);
+  transform-origin: 0 0;
+}
+.button--stroke .button__label {
+  transition: color 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.button__flair {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.button__flair::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  aspect-ratio: 1/1;
+  background-color: #fffce1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.btn {
+  border: 0;
+  color: hsl(var(--white));
+  line-height: 1;
+  padding-inline: 32px;
+  padding-block: 18px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  z-index: 1;
+  transition: 0.2s linear;
+}
+.btn:hover, .btn:focus, .btn:focus-visible {
+  box-shadow: none !important;
+}
+.btn-main {
+  background-color: var(--main-600) !important;
+  color: hsl(var(--white)) !important;
+}
+.btn-main.button--stroke::after {
+  border-color: transparent;
+}
+.btn-main-two {
+  background-color: var(--main-two-600) !important;
+  color: hsl(var(--white)) !important;
+}
+.btn-main-two.button--stroke::after {
+  border-color: transparent;
+}
+.btn-white {
+  background-color: hsl(var(--white)) !important;
+  color: var(--heading-color) !important;
+}
+.btn-white:hover {
+  color: hsl(var(--white)) !important;
+}
+.btn-white.button--stroke::after {
+  border-color: transparent;
+}
+.hover-style-one:hover, .hover-style-one:active {
+  background-color: var(--main-600);
+}
+.hover-style-one:hover.button--stroke::after, .hover-style-one:active.button--stroke::after {
+  border-color: transparent;
+}
+.hover-style-one .button__flair::before {
+  background-color: var(--main-two-600);
+}
+.hover-style-two:hover.button--stroke::after, .hover-style-two:active.button--stroke::after {
+  border-color: transparent;
+}
+.hover-style-two .button__flair::before {
+  background-color: var(--main-600);
+}
+.hover-style-three:hover, .hover-style-three:active {
+  color: var(--main-two-600) !important;
+}
+.hover-style-three:hover.button--stroke::after, .hover-style-three:active.button--stroke::after {
+  border-color: transparent;
+}
+.hover-style-three .button__flair::before {
+  background-color: #fff;
+}
+.hover-style-five:hover, .hover-style-five:active {
+  color: var(--main-two-600) !important;
+}
+.hover-style-five:hover.button--stroke::after, .hover-style-five:active.button--stroke::after {
+  border-color: transparent;
+}
+.hover-style-five .button__flair::before {
+  background-color: hsl(var(--orange));
+}
+.btn-orange-outline {
+  border: 1px solid hsl(var(--orange));
+  color: hsl(var(--orange));
+}
 .nav-submenu {
   visibility: hidden;
   min-width: 190px;
@@ -3387,11 +3470,6 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -3468,6 +3546,11 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   inherits: false;
   initial-value: 1;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -3497,7 +3580,6 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -3516,6 +3598,7 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-outline-style: solid;
     }
   }
 }

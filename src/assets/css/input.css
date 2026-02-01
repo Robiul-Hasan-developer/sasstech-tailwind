@@ -53,12 +53,6 @@ p {
   @apply max-w-[1400px] w-full mx-auto px-4;
 }
 
-/* a,
-span {
-  @apply inline-block;
-} */
-
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   @apply leading-[1.2];
 }
@@ -92,9 +86,6 @@ h6,
 .h6 {
   font-size: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
 }
-
- 
- 
 
 h1 > a,
 h2 > a,
@@ -191,6 +182,159 @@ h6 > a:hover {
   @apply bg-[#fbf6ee];
 }
 /* Custom Classes end */
+
+/* ========================== Button Css Start =============== */
+.button__label {
+    position: relative;
+    text-align: center;
+    transition: color 0.05s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.button--stroke:hover {
+    color: #0e100f;
+}
+
+.button--stroke::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 0.125rem solid #fffce1;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.button--stroke .button__flair {
+    transform: scale(0);
+    transform-origin: 0 0;
+}
+
+.button--stroke .button__label {
+    transition: color 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.button__flair {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.button__flair::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    aspect-ratio: 1/1;
+    background-color: #fffce1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.btn {
+    border: 0;
+    color: hsl(var(--white));
+    line-height: 1;
+    padding-inline: 32px;
+    padding-block: 18px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    z-index: 1;
+    transition: 0.2s linear;
+}
+
+.btn:hover, .btn:focus, .btn:focus-visible {
+    box-shadow: none !important;
+}
+
+.btn-main {
+    background-color: var(--main-600) !important;
+    color: hsl(var(--white)) !important;
+}
+
+.btn-main.button--stroke::after {
+    border-color: transparent;
+}
+
+.btn-main-two {
+    background-color: var(--main-two-600) !important;
+    color: hsl(var(--white)) !important;
+}
+
+.btn-main-two.button--stroke::after {
+    border-color: transparent;
+}
+
+.btn-white {
+    background-color: hsl(var(--white)) !important;
+    color: var(--heading-color) !important;
+}
+
+.btn-white:hover {
+    color: hsl(var(--white)) !important;
+}
+
+.btn-white.button--stroke::after {
+    border-color: transparent;
+}
+
+.hover-style-one:hover, .hover-style-one:active {
+    background-color: var(--main-600);
+}
+
+.hover-style-one:hover.button--stroke::after, .hover-style-one:active.button--stroke::after {
+    border-color: transparent;
+}
+
+.hover-style-one .button__flair::before {
+    background-color: var(--main-two-600);
+}
+
+.hover-style-two:hover.button--stroke::after, .hover-style-two:active.button--stroke::after {
+    border-color: transparent;
+}
+
+.hover-style-two .button__flair::before {
+    background-color: var(--main-600);
+}
+
+.hover-style-three:hover, .hover-style-three:active {
+    color: var(--main-two-600) !important;
+}
+
+.hover-style-three:hover.button--stroke::after, .hover-style-three:active.button--stroke::after {
+    border-color: transparent;
+}
+
+.hover-style-three .button__flair::before {
+    background-color: #fff;
+}
+
+.hover-style-five:hover, .hover-style-five:active {
+    color: var(--main-two-600) !important;
+}
+
+.hover-style-five:hover.button--stroke::after, .hover-style-five:active.button--stroke::after {
+    border-color: transparent;
+}
+
+.hover-style-five .button__flair::before {
+    background-color: hsl(var(--orange));
+}
+
+.btn-orange-outline {
+    border: 1px solid hsl(var(--orange));
+    color: hsl(var(--orange));
+}
+/* =========================== Button Css End =================== */
+
 
 /* Menu CSS start */
 .nav-submenu {
