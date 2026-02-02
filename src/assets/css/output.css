@@ -2405,6 +2405,11 @@
       display: none;
     }
   }
+  .sm\:inline-block {
+    @media (width >= 40rem) {
+      display: inline-block;
+    }
+  }
   .sm\:inline-flex {
     @media (width >= 40rem) {
       display: inline-flex;
