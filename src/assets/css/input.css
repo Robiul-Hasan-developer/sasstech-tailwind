@@ -326,28 +326,18 @@ a {
 
 /* Menu CSS start */
 .nav-submenu {
-  @apply min-w-[190px]
-    invisible
-    opacity-0
-    scale-y-0
-    origin-top
-    transition-all
-    duration-[400ms]
-    ease-in-out
-    shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-4px_rgba(0,0,0,0.1)];
+  @apply min-w-[190px] lg:transition-all lg:duration-[400ms] lg:ease-in-out;
 }
 
-/* Desktop only (992px is custom, not Tailwind default) */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .nav-submenu {
-    @apply max-h-[400px] overflow-y-auto;
+    @apply max-h-[400px] overflow-y-auto invisible opacity-0 scale-y-0 origin-top;
   }
 }
 
 .mega-menu {
-  @apply absolute
-    top-full
-    left-0
+  @apply top-full
+    start-0
     w-full
     bg-white
     z-[99]

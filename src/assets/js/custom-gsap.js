@@ -102,7 +102,7 @@ const toggleMobileMenu = document.querySelector('.toggle-mobileMenu');
 const closeButton = document.querySelector('.close-button');
 const mobileSideOverlay = document.querySelector('.side-overlay');
 
-mmm.add("(max-width: 991px)", () => {
+mmm.add("(max-width: 1034px)", () => {
   
   mtl.to('.side-overlay', {
     opacity: 1,
