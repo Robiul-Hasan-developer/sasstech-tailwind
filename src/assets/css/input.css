@@ -199,6 +199,154 @@ a {
 }
 /* Custom Classes end */
 
+/* Box Shadow start */
+.common-shadow-one {
+  @apply shadow-[0_8px_22px_0px_rgba(0,0,0,0.04)];
+}
+
+.common-shadow-two {
+  @apply shadow-[0_30px_50px_0px_#12111614];
+}
+
+.common-shadow-three {
+  @apply shadow-[9px_-2px_19px_9px_rgba(0,0,0,0.02)];
+}
+
+.common-shadow-four {
+  @apply shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)];
+}
+
+.common-shadow-five {
+  @apply shadow-[0px_10px_100px_0px_rgba(0,0,0,0.05)];
+}
+
+.common-shadow-six {
+  @apply shadow-[0px_4px_30px_0px_#364F8314];
+}
+
+.common-shadow-seven {
+  @apply shadow-[0px_4px_32px_0px_#0000000A];
+}
+
+.common-shadow-eight {
+  @apply shadow-[0px_4px_32px_10px_#0000000D];
+}
+
+.common-shadow-nine {
+  @apply shadow-[0px_4px_21px_0px_#00000012];
+}
+
+.common-shadow-ten {
+  @apply shadow-[0px_4px_18px_0px_#0000000D];
+}
+
+.common-shadow-eleven {
+  @apply shadow-[0_30px_50px_0px_#0106141F];
+}
+
+.common-shadow-twelve {
+  @apply shadow-[0_10px_30px_0px_#3955781A];
+}
+
+.common-shadow-thirteen {
+  @apply shadow-[0px_12px_23px_0px_#3D3E4114];
+}
+
+.common-shadow-fourteen {
+  @apply shadow-[0px_10px_60px_0px_#8D8D8D1A];
+}
+
+.common-shadow-fifteen {
+  @apply shadow-[0px_4px_25px_0px_#00000014];
+}
+
+.common-shadow-sixteen {
+  @apply shadow-[0px_13px_19px_-2px_#2021240A];
+}
+
+.common-shadow-seventeen {
+  @apply shadow-[0px_7px_29px_0px_#0000000F];
+}
+
+.common-shadow-eighteen {
+  @apply shadow-[0px_4px_8px_0px_#0000000D];
+}
+
+.common-shadow-nineteen {
+  @apply shadow-[0px_4px_21px_0px_#0000000D];
+}
+
+.common-shadow-twenty {
+  @apply shadow-[0px_10px_15px_0px_#DDDDDD26];
+}
+
+.common-shadow-twentyOne {
+  @apply shadow-[0px_4px_30px_0px_#025A451A];
+}
+
+.common-shadow-twentyTwo {
+  @apply shadow-[0px_5.22px_19.84px_0px_#0000001F];
+}
+
+.common-shadow-twentyThree {
+  @apply shadow-[0px_4px_12px_0px_#0000000F];
+}
+
+.common-shadow-twentyFour {
+  @apply shadow-[0px_20px_50px_0px_#20212424];
+}
+
+.common-shadow-twentyFive {
+  @apply shadow-[0px_20px_20px_0px_#2021241A];
+}
+
+.common-shadow-twentySix {
+  @apply shadow-[0px_4px_42px_0px_#00000024];
+}
+
+.common-shadow-twentySeven {
+  @apply shadow-[0px_6px_17px_0px_#0000000D];
+}
+
+.common-shadow-twentyEight {
+  @apply shadow-[0px_4px_11px_0px_#0000000D];
+}
+
+.common-shadow-twentyNine {
+  @apply shadow-[0px_4px_4px_0px_#0000000D];
+}
+
+.common-shadow-thirty {
+  @apply shadow-[7px_7px_0px_#164333];
+}
+
+/* Inset shadow */
+.common-shadow-inset-one {
+  @apply shadow-[-2px_-2px_2px_0px_#070D1D4D_inset];
+}
+
+/* Hover shadows */
+.hover-common-shadow-four:hover {
+  @apply shadow-[0px_4px_15px_0px_rgba(0,0,0,0.09)];
+}
+
+.hover-common-shadow-fourteen:hover {
+  @apply shadow-[0px_10px_60px_0px_#8D8D8D1A];
+}
+
+.hover-common-shadow-sixteen:hover {
+  @apply shadow-[0px_14px_31px_-2px_#2021241A];
+}
+
+.hover-common-shadow-thirty:hover {
+  @apply shadow-[7px_7px_0px_#164333];
+}
+
+.hover-shadow-none:hover {
+  @apply shadow-none;
+}
+/* Box Shadow end */
+
 /* ========================== Button Css Start =============== */
 .button__label {
   @apply relative text-center transition-colors duration-[50ms] ease-[cubic-bezier(0.645,0.045,0.355,1)];
@@ -268,10 +416,6 @@ a {
 .btn-white.button--stroke::after {
   @apply border-transparent;
 }
-
-/* .hover-style-one:hover, .hover-style-one:active {
-    @apply bg-main-two-600;
-} */
 
 .hover-style-one:hover.button--stroke::after,
 .hover-style-one:active.button--stroke::after {
@@ -381,6 +525,7 @@ a {
 }
 /* Menu Css end */
 
+/* Top Feature section css start */
 .top-features-slider > div {
   @apply inline-flex items-center gap-4 ms-8;
 }
@@ -396,3 +541,42 @@ a {
 .left-right-gradient::after {
   @apply start-auto end-0 scale-x-[-1];
 }
+/* Top Feature section css End */
+
+/* Banner section css Start */
+.clip-path-one {
+  clip-path: polygon(0 0, 75% 0%, 100% 23%, 100% 100%, 0 100%, 0% 50%);
+}
+/* Banner section css End */
+
+/* About section css Start */
+.circle-border::before {
+  @apply absolute content-[""] border w-[calc(100%-50px)] h-[calc(100%-50px)]  border-[#ffffff26] rounded-[50%] top-[50%] start-[50%] translate-x-[-50%] translate-y-[-50%]
+}
+
+.radial-progress {
+  @apply h-auto max-w-[140px] rotate-[0deg] w-full;
+}
+
+.radial-progress circle {
+  @apply fill-none stroke-[#fff] stroke-[6] stroke-linecap-round;
+}
+
+.radial-progress circle.incomplete {
+  opacity: 0.1;
+}
+
+.radial-progress circle.complete {
+  stroke-dasharray: 219.9114857513;
+  stroke-dashoffset: 219.9114857513;
+  /* Full circumference */
+  stroke: var(--main-600);
+  transition: stroke-dashoffset 1.25s ease-out;
+}
+
+.radial-progress text {
+  fill: #fff;
+  text-anchor: middle;
+  transform: rotate(0deg);
+}
+/* About section css End */
