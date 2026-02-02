@@ -559,24 +559,23 @@ a {
 }
 
 .radial-progress circle {
-  @apply fill-none stroke-[#fff] stroke-[6] stroke-linecap-round;
+  @apply fill-none stroke-[#fff] stroke-[6];
 }
 
 .radial-progress circle.incomplete {
-  opacity: 0.1;
+  @apply opacity-[0.1];
 }
 
 .radial-progress circle.complete {
+  @apply stroke-main-600;
   stroke-dasharray: 219.9114857513;
   stroke-dashoffset: 219.9114857513;
-  /* Full circumference */
-  stroke: var(--main-600);
   transition: stroke-dashoffset 1.25s ease-out;
+  stroke-linecap: round;
 }
 
 .radial-progress text {
-  fill: #fff;
+  @apply fill-white translate-y-[20px] rotate-[360deg];
   text-anchor: middle;
-  transform: rotate(0deg);
 }
 /* About section css End */
