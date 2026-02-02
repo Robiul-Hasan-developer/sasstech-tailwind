@@ -556,6 +556,9 @@
   .-mb-\[40px\] {
     margin-bottom: calc(40px * -1);
   }
+  .-mb-px {
+    margin-bottom: -1px;
+  }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
@@ -1295,6 +1298,10 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
+  }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
   }
   .border-b-3 {
     border-bottom-style: var(--tw-border-style);
