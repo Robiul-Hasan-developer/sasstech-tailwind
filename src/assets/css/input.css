@@ -596,3 +596,9 @@ button {
     @apply bg-white border-s border-[5px]! border-t-0! border-e-0! border-b-0! border-main-600 rounded-xl;
 }
 /* FAQ section css End */
+
+/* Footer One section css Start */
+.gradient-overlay::before {
+  @apply absolute content-[""] w-full h-full start-0 top-0 bg-linear-to-t from-[#000000] to-[#0000003e];
+}
+/* Footer One section css End */

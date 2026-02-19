@@ -3810,6 +3810,23 @@ button {
   border-color: var(--color-main-600);
   background-color: var(--color-white);
 }
+.gradient-overlay::before {
+  position: absolute;
+  inset-inline-start: calc(var(--spacing) * 0);
+  top: calc(var(--spacing) * 0);
+  height: 100%;
+  width: 100%;
+  --tw-gradient-position: to top;
+  @supports (background-image: linear-gradient(in lab, red, red)) {
+    --tw-gradient-position: to top in oklab;
+  }
+  background-image: linear-gradient(var(--tw-gradient-stops));
+  --tw-gradient-from: #000000;
+  --tw-gradient-to: #0000003e;
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  --tw-content: "";
+  content: var(--tw-content);
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
