@@ -121,6 +121,10 @@ a {
   transition: 0.2s ease-in-out;
 }
 
+button {
+  @apply cursor-pointer;
+}
+
 /* Custom Classes start */
 .bg-black {
   @apply bg-[#1c1c1c];
