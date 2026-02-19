@@ -1873,6 +1873,9 @@
   .text-start {
     text-align: start;
   }
+  .font-\[inherit\] {
+    font-family: inherit;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -2314,6 +2317,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-main-600);
+      }
+    }
+  }
+  .hover\:text-main-600\! {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-main-600) !important;
       }
     }
   }
