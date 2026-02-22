@@ -1894,10 +1894,6 @@
     --tw-leading: 2.125;
     line-height: 2.125;
   }
-  .leading-none {
-    --tw-leading: 1;
-    line-height: 1;
-  }
   .leading-none\! {
     --tw-leading: 1 !important;
     line-height: 1 !important;
@@ -1973,6 +1969,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .text-white\! {
+    color: var(--color-white) !important;
   }
   .text-yellow-600 {
     color: var(--color-yellow-600);
@@ -3858,7 +3857,9 @@ button {
 }
 .home-two .home-two-header.fixed-header {
   position: fixed;
+  z-index: 999;
   margin-top: calc(var(--spacing) * 0);
+  background-color: var(--color-white);
 }
 .banner-two {
   padding-top: 148px;
@@ -3890,7 +3891,7 @@ button {
   --purple-s: 77%;
   --purple-l: 57%;
   --purple: var(--purple-h) var(--purple-s) var(--purple-l);
-  --heading-color: #150E3D;
+  --heading-color: #150e3d;
 }
 .home-two h1 {
   font-family: var(--urbanist);
