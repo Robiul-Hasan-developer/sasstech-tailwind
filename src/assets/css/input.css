@@ -739,9 +739,6 @@ button {
 
 .pricing-item .feature-list {
   @apply max-h-[330px] overflow-hidden transition-all;
-    /* max-height: 330px; */
-    /* overflow: hidden;
-    transition: max-height 0.5s ease-in-out; */
 }
 
 .pricing-item.expand .feature-list {

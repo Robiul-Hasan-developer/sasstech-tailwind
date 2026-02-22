@@ -224,17 +224,6 @@
   .visible {
     visibility: visible;
   }
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
-    border-width: 0;
-  }
   .absolute {
     position: absolute;
   }
@@ -381,9 +370,6 @@
   }
   .ms-2 {
     margin-inline-start: calc(var(--spacing) * 2);
-  }
-  .ms-3 {
-    margin-inline-start: calc(var(--spacing) * 3);
   }
   .ms-4 {
     margin-inline-start: calc(var(--spacing) * 4);
@@ -1273,9 +1259,6 @@
   .rounded-\[50rem\]\! {
     border-radius: 50rem !important;
   }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
-  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -2101,10 +2084,6 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
-  .select-none {
-    -webkit-user-select: none;
-    user-select: none;
-  }
   .backface-hidden {
     backface-visibility: hidden;
   }
@@ -2202,87 +2181,10 @@
       }
     }
   }
-  .peer-focus\:ring-4 {
-    &:is(:where(.peer):focus ~ *) {
-      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    }
-  }
-  .peer-focus\:outline-none {
-    &:is(:where(.peer):focus ~ *) {
-      --tw-outline-style: none;
-      outline-style: none;
-    }
-  }
   .placeholder\:text-lg {
     &::placeholder {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
-  .after\:absolute {
-    &::after {
-      content: var(--tw-content);
-      position: absolute;
-    }
-  }
-  .after\:start-\[2px\] {
-    &::after {
-      content: var(--tw-content);
-      inset-inline-start: 2px;
-    }
-  }
-  .after\:top-\[2px\] {
-    &::after {
-      content: var(--tw-content);
-      top: 2px;
-    }
-  }
-  .after\:h-4 {
-    &::after {
-      content: var(--tw-content);
-      height: calc(var(--spacing) * 4);
-    }
-  }
-  .after\:w-4 {
-    &::after {
-      content: var(--tw-content);
-      width: calc(var(--spacing) * 4);
-    }
-  }
-  .after\:rounded-full {
-    &::after {
-      content: var(--tw-content);
-      border-radius: calc(infinity * 1px);
-    }
-  }
-  .after\:bg-white {
-    &::after {
-      content: var(--tw-content);
-      background-color: var(--color-white);
-    }
-  }
-  .after\:transition-all {
-    &::after {
-      content: var(--tw-content);
-      transition-property: all;
-      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-      transition-duration: var(--tw-duration, var(--default-transition-duration));
-    }
-  }
-  .after\:content-\[\'\'\] {
-    &::after {
-      --tw-content: '';
-      content: var(--tw-content);
-    }
-  }
-  .peer-checked\:after\:translate-x-full {
-    &:is(:where(.peer):checked ~ *) {
-      &::after {
-        content: var(--tw-content);
-        --tw-translate-x: 100%;
-        translate: var(--tw-translate-x) var(--tw-translate-y);
-      }
     }
   }
   .hover\:z-\[99\] {
@@ -3395,17 +3297,6 @@
       text-align: right;
     }
   }
-  .rtl\:peer-checked\:after\:-translate-x-full {
-    &:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) {
-      &:is(:where(.peer):checked ~ *) {
-        &::after {
-          content: var(--tw-content);
-          --tw-translate-x: -100%;
-          translate: var(--tw-translate-x) var(--tw-translate-y);
-        }
-      }
-    }
-  }
 }
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
@@ -4347,15 +4238,15 @@ button {
   inherits: false;
   initial-value: 1;
 }
-@property --tw-content {
-  syntax: "*";
-  initial-value: "";
-  inherits: false;
-}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-content {
+  syntax: "*";
+  inherits: false;
+  initial-value: "";
 }
 @property --tw-gradient-position {
   syntax: "*";
@@ -4455,8 +4346,8 @@ button {
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
-      --tw-content: "";
       --tw-outline-style: solid;
+      --tw-content: "";
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
       --tw-gradient-via: #0000;
