@@ -13,47 +13,31 @@
             <p class="text-neutral-500 mt-5 splitTextStyleOne max-w-[570px] mx-auto">In today's competitive business,
                 the demand for efficient In today's competitive cost-effective IT solutions has never been more critic.
                 business</p>
-
-            <!-- <div class="text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                <ul class="animate-background-wrapper z-10 relative nav nav-pills active:text-white inline-flex bg-white common-shadow-four p-1 rounded-[50rem]! mb-0 mt-7" id="pills-tabTwo" role="tablist">
-
-                    <li class="background style-two"></li>
-                    
-                    <li class="nav-item flex-grow-1" role="presentation">
-                        <button class="nav-link w-full active:scale-094 rounded-[50rem]! px-7.5 py-2.5 bg-transparent font-semibold text-neutral-600 hover:text-main-600 h-full line-clamp-1 active" id="pills-Monthly-tab" data-bs-toggle="pill" data-bs-target="#pills-Monthly" type="button" role="tab" aria-controls="pills-Monthly" aria-selected="true">Monthly</button>
-                    </li>
-                    <li class="nav-item flex-grow-1" role="presentation">
-                        <button class="nav-link w-full active:scale-094 rounded-[50rem]! px-7.5 py-2.5 bg-transparent font-semibold text-neutral-600 hover:text-main-600 h-full line-clamp-1" id="pills-Annually-tab" data-bs-toggle="pill" data-bs-target="#pills-Annually" type="button" role="tab" aria-controls="pills-Annually" aria-selected="false"> 
-                            Annually
-                        </button>
-                    </li>
-                </ul>
-            </div> -->
-        </div>
-
-        <div class="flex justify-center">
-            <div class="z-10 relative inline-flex border border-neutral-200 rounded-[50rem]! mb-6 overflow-hidden">
-                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab-two"
-                    data-tabs-toggle="#default-tab-two-content" role="tablist">
-                    <li role="presentation" class="grow-[1]">
-                        <button
-                            class="inline-block py-4 px-6 w-full rounded-[50rem] aria-selected:bg-main-600 aria-selected:text-white"
-                            id="FindNewDomain-tab" data-tabs-target="#FindNewDomain" type="button" role="tab"
-                            aria-controls="FindNewDomain" aria-selected="false">Find New Domain</button>
-                    </li>
-                    <li role="presentation" class="grow-[1]">
-                        <button
-                            class="inline-block py-4 px-6 w-full rounded-[50rem] aria-selected:bg-main-600 aria-selected:text-white hover:text-fg-brand hover:border-brand"
-                            id="GenerateDomainUsingAI-tab" data-tabs-target="#GenerateDomainUsingAI" type="button"
-                            role="tab" aria-controls="GenerateDomainUsingAI" aria-selected="false">Generate Domain Using
-                            AI</button>
-                    </li>
-                </ul>
+            <div class="flex justify-center mt-7">
+                <div
+                    class="z-10 relative inline-flex border border-neutral-200 rounded-[50rem]! mb-6 overflow-hidden p-1">
+                    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab-two"
+                        data-tabs-toggle="#default-tab-two-content" role="tablist">
+                        <li role="presentation" class="grow-[1]">
+                            <button
+                                class="inline-block py-2.5 px-6 w-full rounded-[50rem] aria-selected:bg-main-600 aria-selected:text-white"
+                                id="monthly-tab" data-tabs-target="#monthly" type="button" role="tab"
+                                aria-controls="monthly" aria-selected="false">Monthly</button>
+                        </li>
+                        <li role="presentation" class="grow-[1]">
+                            <button
+                                class="inline-block py-2.5 px-6 w-full rounded-[50rem] aria-selected:bg-main-600 aria-selected:text-white hover:text-fg-brand hover:border-brand"
+                                id="annually-tab" data-tabs-target="#annually" type="button" role="tab"
+                                aria-controls="annually" aria-selected="false">Annually</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+
         <div id="default-tab-two-content">
-            <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="FindNewDomain" role="tabpanel"
-                aria-labelledby="FindNewDomain-tab">
+            <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="monthly" role="tabpanel"
+                aria-labelledby="monthly-tab">
                 <div class="grid grid-cols-1 sm:grid-cols-12 gap-6">
                     <div class="col-span-12 sm:col-span-6 xl:col-span-4" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="600">
@@ -375,8 +359,8 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="GenerateDomainUsingAI" role="tabpanel"
-                aria-labelledby="GenerateDomainUsingAI-tab">
+            <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="annually" role="tabpanel"
+                aria-labelledby="annually-tab">
                 <div class="grid grid-cols-1 sm:grid-cols-12 gap-6">
                     <div class="col-span-12 sm:col-span-6 xl:col-span-4" data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-duration="600">
@@ -392,7 +376,7 @@
                                     </span>
                                     <h5 class="mb-8 font-bold">Basic plan</h5>
                                     <div class="flex items-center justify-between gap-1 mb-5">
-                                        <h2 class="mb-0 font-bold">$<span class="current-price">1.99</span><span
+                                        <h2 class="mb-0 font-bold">$<span class="current-price">10.99</span><span
                                                 class="text-xl pricing-duration">/Monthly</span> </h2>
                                         <div class="form-check form-switch mb-0">
                                             <input class="form-check-input pricing-item-toggle" type="checkbox"
@@ -498,7 +482,7 @@
                                     </span>
                                     <h5 class="mb-8 font-bold">Premium plan</h5>
                                     <div class="flex items-center justify-between gap-1 mb-5">
-                                        <h2 class="mb-0 font-bold">$<span class="current-price">10.99</span><span
+                                        <h2 class="mb-0 font-bold">$<span class="current-price">109.99</span><span
                                                 class="text-xl pricing-duration">/Monthly</span> </h2>
                                         <div class="form-check form-switch mb-0">
                                             <input class="form-check-input pricing-item-toggle" type="checkbox"
@@ -604,7 +588,7 @@
                                     </span>
                                     <h5 class="mb-8 font-bold">Pro plan</h5>
                                     <div class="flex items-center justify-between gap-1 mb-5">
-                                        <h2 class="mb-0 font-bold">$<span class="current-price">20.99</span><span
+                                        <h2 class="mb-0 font-bold">$<span class="current-price">209.99</span><span
                                                 class="text-xl pricing-duration">/Monthly</span> </h2>
                                         <div class="form-check form-switch mb-0">
                                             <input class="form-check-input pricing-item-toggle" type="checkbox"
