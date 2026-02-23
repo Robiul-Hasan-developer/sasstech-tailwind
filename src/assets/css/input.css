@@ -591,8 +591,12 @@ button {
 /* About section css End */
 
 /* FAQ section css Start */
-.accordion-item:has(button[aria-expanded="true"]) {
+.border-left-style .accordion-item:has(button[aria-expanded="true"]) {
   @apply bg-white border-s border-[5px]! border-t-0! border-e-0! border-b-0! border-main-600 rounded-xl;
+}
+.shadow-style .accordion-item:has(button[aria-expanded="true"]) {
+  @apply border-s-0 bg-white rounded-[0_0_20px_20px];
+  box-shadow: 0 20px 20px 0 #03041c14;
 }
 /* FAQ section css End */
 
@@ -729,20 +733,19 @@ button {
 }
 
 .active-domain {
-    box-shadow: 0px 4px 24px 0px #00000026 !important;
+  box-shadow: 0px 4px 24px 0px #00000026 !important;
 }
 
 .transition-timing-linear {
-    transition-timing-function: linear;
+  transition-timing-function: linear;
 }
-
 
 .pricing-item .feature-list {
   @apply max-h-[330px] overflow-hidden transition-all;
 }
 
 .pricing-item.expand .feature-list {
-  @apply max-h-[1000px]
+  @apply max-h-[1000px];
 }
 
 /* ============================ Home Two End ============================= */
