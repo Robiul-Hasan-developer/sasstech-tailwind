@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-orange-600: oklch(64.6% 0.222 41.116);
+    --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-yellow-600: oklch(68.1% 0.162 75.834);
     --color-purple-600: oklch(55.8% 0.288 302.321);
     --color-pink-600: oklch(59.2% 0.249 0.584);
@@ -1468,6 +1469,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
+  }
   .bg-yellow-600 {
     background-color: var(--color-yellow-600);
   }
@@ -1530,6 +1534,9 @@
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-3\! {
+    padding-inline: calc(var(--spacing) * 3) !important;
   }
   .px-3\.5 {
     padding-inline: calc(var(--spacing) * 3.5);
@@ -2074,6 +2081,9 @@
   .text-white\! {
     color: var(--color-white) !important;
   }
+  .text-yellow-500 {
+    color: var(--color-yellow-500);
+  }
   .text-yellow-600 {
     color: var(--color-yellow-600);
   }
@@ -2274,6 +2284,13 @@
       }
     }
   }
+  .group-hover\:text-yellow-500 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-yellow-500);
+      }
+    }
+  }
   .group-hover\:text-yellow-600 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -2468,6 +2485,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-white) !important;
+      }
+    }
+  }
+  .hover\:text-yellow-500 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-yellow-500);
       }
     }
   }
@@ -3133,6 +3157,11 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
+  .xl\:px-6\! {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 6) !important;
+    }
+  }
   .xl\:px-8 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 8);
@@ -3323,6 +3352,11 @@
   .\32 xl\:px-12 {
     @media (width >= 96rem) {
       padding-inline: calc(var(--spacing) * 12);
+    }
+  }
+  .\32 xl\:px-12\! {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 12) !important;
     }
   }
   .\32 xl\:px-13 {
