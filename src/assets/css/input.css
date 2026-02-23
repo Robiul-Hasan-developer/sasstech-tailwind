@@ -769,45 +769,10 @@ button {
 /* ============================ Home Two End ============================= */
 
 /* ============================ Home Three Start ============================= */
-/* .home-three .header.fixed-header {
-  position: fixed !important;
-  margin-block-start: 0;
-  background-color: #0f6555;
-}
-
-.gradient-bg-five {
-  background: linear-gradient(
-    69.92deg,
-    #003d3d 28.63%,
-    #00664e 87.07%,
-    #008c63 112.98%
-  );
-}
-.banner-three {
-  padding-block-start: 284px;
-  padding-block-end: 178px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-@media (max-width: 991px) {
-  .banner-three {
-    padding-block-start: 240px;
-  }
-}
-@media (max-width: 767px) {
-  .banner-three {
-    padding-block-start: 200px;
-    padding-block-end: 120px;
-  }
-} */
-
-/* Fixed Header */
 .home-three .header.fixed-header {
   @apply fixed top-0 bg-[#0f6555] mt-0;
 }
 
-
-/* Gradient Background */
 .gradient-bg-five {
   background: linear-gradient(
     69.92deg,
@@ -817,22 +782,30 @@ button {
   );
 }
 
-/* Banner Section */
 .banner-three {
   @apply pt-[284px] pb-[178px] rounded-bl-[30px] rounded-br-[30px];
 }
 
-/* Tablet */
 @media (max-width: 991px) {
   .banner-three {
     @apply pt-[240px];
   }
 }
 
-/* Mobile */
 @media (max-width: 767px) {
   .banner-three {
     @apply pt-[200px] pb-[120px];
   }
+}
+
+.text-gradient-teal {
+  @apply bg-gradient-to-l from-[#06766E] to-[#20BA8B] bg-clip-text text-transparent;
+}
+.home-three .btn-main {
+  background: linear-gradient(270deg, #06766e 0%, #20ba8b 100%);
+}
+.home-three .btn-main-two {
+  background-color: #30e87a !important;
+  color: var(--heading-color) !important;
 }
 /* ============================ Home Three End ============================= */
