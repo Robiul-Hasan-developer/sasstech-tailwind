@@ -779,20 +779,6 @@ button {
   --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
 }
 
-.home-three h1,
-.home-three .h1,
-.home-three h2,
-.home-three .h2,
-.home-three h3,
-.home-three .h3,
-.home-three h4,
-.home-three .h4,
-.home-three h5,
-.home-three .h5,
-.home-three h6,
-.home-three .h6 {
-  color: var(--heading-color);
-}
 
 .home-three h1,
 .home-three .h1 {
@@ -828,12 +814,14 @@ button {
   font-family: var(--dm-serif);
 }
 
-.home-three .text-heading {
-  color: var(--heading-color);
-}
 
 .home-three .header.fixed-header {
   @apply fixed top-0 bg-[#0f6555] mt-0;
+}
+
+.home-three .header.fixed-header .header-three__inner {
+    box-shadow: none;
+    background-color: transparent;
 }
 
 .gradient-bg-five {

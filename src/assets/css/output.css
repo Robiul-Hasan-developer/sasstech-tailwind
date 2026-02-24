@@ -57,6 +57,7 @@
     --default-mono-font-family: var(--font-mono);
     --color-heading: #150e3e;
     --color-main-50: #eef4ff;
+    --color-main-100: #dbe7ff;
     --color-main-600: #1351d8;
     --color-main-800: #0d3385;
     --color-main-two-600: #150e3e;
@@ -1423,6 +1424,9 @@
   }
   .bg-main-50 {
     background-color: var(--color-main-50);
+  }
+  .bg-main-100 {
+    background-color: var(--color-main-100);
   }
   .bg-main-600 {
     background-color: var(--color-main-600);
@@ -4179,9 +4183,6 @@ button {
   --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.5rem);
   --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
 }
-.home-three h1, .home-three .h1, .home-three h2, .home-three .h2, .home-three h3, .home-three .h3, .home-three h4, .home-three .h4, .home-three h5, .home-three .h5, .home-three h6, .home-three .h6 {
-  color: var(--heading-color);
-}
 .home-three h1, .home-three .h1 {
   font-size: var(--heading-one);
 }
@@ -4203,14 +4204,15 @@ button {
 .home-three .font-dm-serif {
   font-family: var(--dm-serif);
 }
-.home-three .text-heading {
-  color: var(--heading-color);
-}
 .home-three .header.fixed-header {
   position: fixed;
   top: calc(var(--spacing) * 0);
   margin-top: calc(var(--spacing) * 0);
   background-color: #0f6555;
+}
+.home-three .header.fixed-header .header-three__inner {
+  box-shadow: none;
+  background-color: transparent;
 }
 .gradient-bg-five {
   background: linear-gradient( 69.92deg, #003d3d 28.63%, #00664e 87.07%, #008c63 112.98% );
