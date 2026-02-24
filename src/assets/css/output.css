@@ -301,14 +301,8 @@
   .z-\[3\] {
     z-index: 3;
   }
-  .z-\[9\] {
-    z-index: 9;
-  }
   .z-\[91\] {
     z-index: 91;
-  }
-  .z-\[92\] {
-    z-index: 92;
   }
   .z-\[99\] {
     z-index: 99;
@@ -1306,6 +1300,12 @@
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .rounded-\[1\.5rem\] {
+    border-radius: 1.5rem;
+  }
+  .rounded-\[1\.5rem\]\! {
+    border-radius: 1.5rem !important;
   }
   .rounded-\[28px\] {
     border-radius: 28px;
@@ -2426,6 +2426,13 @@
     &:hover {
       @media (hover: hover) {
         border-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:bg-\[\#072032\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #072032;
       }
     }
   }
@@ -4763,6 +4770,21 @@ button {
 }
 .animated-upDown {
   animation: floatAnimation 3s ease-in-out infinite;
+}
+.bg-pink-more-light-half::before {
+  position: absolute;
+  inset-inline-start: calc(var(--spacing) * 0);
+  bottom: calc(var(--spacing) * 0);
+  z-index: 1;
+  height: 40%;
+  width: 100%;
+  background-color: #FBF6EE;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+.breadcrumb {
+  padding-top: 270px;
+  padding-bottom: 170px;
 }
 @property --tw-translate-x {
   syntax: "*";

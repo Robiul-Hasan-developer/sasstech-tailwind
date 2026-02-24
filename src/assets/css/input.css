@@ -1386,6 +1386,17 @@ button {
 .animated-upDown {
     animation: floatAnimation 3s ease-in-out infinite;
 }
-
 /* Animation Css End */
+
+.bg-pink-more-light-half::before {
+  @apply absolute content-[""] start-0 bottom-0 w-full h-[40%] bg-[#FBF6EE] z-[1];
+}
+
 /* ============================ Home Three End ============================= */
+
+
+/* ============================ Inner pages Css Start ============================= */
+.breadcrumb {
+  @apply pt-[270px] pb-[170px];
+}
+/* ============================ Inner pages Css End ============================= */
