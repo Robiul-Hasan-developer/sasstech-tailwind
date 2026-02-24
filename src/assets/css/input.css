@@ -41,7 +41,6 @@
 
   --color-heading: #150e3e;
   --color-spring-green: #30e87a;
-  
 }
 
 img {
@@ -771,6 +770,68 @@ button {
 /* ============================ Home Two End ============================= */
 
 /* ============================ Home Three Start ============================= */
+.home-three:root {
+  --heading-one: clamp(2.125rem, -0.0733rem + 5.5vw, 4.4375rem);
+  --heading-two: clamp(2rem, 0.3353rem + 2.1661vw, 3.5rem);
+  --heading-three: clamp(1.875rem, 0.7133rem + 2.8846vw, 3.125rem);
+  --heading-four: clamp(1.5rem, 0.5569rem + 1.444vw, 1.875rem);
+  --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.5rem);
+  --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
+}
+
+.home-three h1,
+.home-three .h1,
+.home-three h2,
+.home-three .h2,
+.home-three h3,
+.home-three .h3,
+.home-three h4,
+.home-three .h4,
+.home-three h5,
+.home-three .h5,
+.home-three h6,
+.home-three .h6 {
+  color: var(--heading-color);
+}
+
+.home-three h1,
+.home-three .h1 {
+  font-size: var(--heading-one);
+}
+
+.home-three h2,
+.home-three .h2 {
+  font-size: var(--heading-two);
+}
+
+.home-three h3,
+.home-three .h3 {
+  font-size: var(--heading-three);
+}
+
+.home-three h4,
+.home-three .h4 {
+  font-size: var(--heading-four);
+}
+
+.home-three h5,
+.home-three .h5 {
+  font-size: var(--heading-five);
+}
+
+.home-three h6,
+.home-three .h6 {
+  font-size: var(--heading-six);
+}
+
+.home-three .font-dm-serif {
+  font-family: var(--dm-serif);
+}
+
+.home-three .text-heading {
+  color: var(--heading-color);
+}
+
 .home-three .header.fixed-header {
   @apply fixed top-0 bg-[#0f6555] mt-0;
 }
@@ -810,25 +871,30 @@ button {
   @apply bg-spring-green text-heading!;
 }
 
-
 .home-three .hover-style-one .button__flair::before {
-    @apply bg-spring-green;
+  @apply bg-spring-green;
 }
 .home-three .hover-style-two .button__flair::before {
-    background: linear-gradient(270deg, #06766E 0%, #20BA8B 100%);
+  background: linear-gradient(270deg, #06766e 0%, #20ba8b 100%);
 }
 
-.gradient-bg-six, .pagination-style-three .swiper-pagination-bullet {
-    background: linear-gradient(270deg, #06766E 0%, #20BA8B 100%);
+.gradient-bg-six,
+.pagination-style-three .swiper-pagination-bullet {
+  background: linear-gradient(270deg, #06766e 0%, #20ba8b 100%);
 }
 .gradient-bg-five {
-    background: linear-gradient(69.92deg, #003D3D 28.63%, #00664E 87.07%, #008C63 112.98%);
+  background: linear-gradient(
+    69.92deg,
+    #003d3d 28.63%,
+    #00664e 87.07%,
+    #008c63 112.98%
+  );
 }
 
 @layer components {
   .hover-gradient-bg-five::before {
     @apply absolute content-[''] w-full h-full rounded-[inherit] invisible opacity-0 -z-[1] transition-all duration-300 ease-linear top-0 start-0;
-    background: linear-gradient(90deg, #06766E 0%, #20BA8B 100%);
+    background: linear-gradient(90deg, #06766e 0%, #20ba8b 100%);
   }
 
   .hover-gradient-bg-five:hover::before {
@@ -837,6 +903,21 @@ button {
 }
 
 .active-gradient-bg button[aria-selected="true"] {
-    background: linear-gradient(270deg, #06766E 0%, #20BA8B 100%);
+  background: linear-gradient(270deg, #06766e 0%, #20ba8b 100%);
+}
+
+.gradient-bg-80-percent::before {
+  @apply absolute content-[''] w-full h-[80%] -z-[1];
+  background: linear-gradient(
+    180deg,
+    rgba(231, 249, 247, 0) 0%,
+    rgba(240, 244, 250, 0.614257) 65.67%,
+    rgba(240, 244, 250, 0.79) 100%
+  );
+}
+
+
+.home-three .bg-main-three {
+    background-color: #06766e;
 }
 /* ============================ Home Three End ============================= */
