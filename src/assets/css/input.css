@@ -918,6 +918,6 @@ button {
 
 
 .home-three .bg-main-three {
-    background-color: #06766e;
+  @apply bg-[#06766e];
 }
 /* ============================ Home Three End ============================= */
