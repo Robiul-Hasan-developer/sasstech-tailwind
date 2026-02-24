@@ -835,4 +835,8 @@ button {
     @apply visible opacity-100;
   }
 }
+
+.active-gradient-bg button[aria-selected="true"] {
+    background: linear-gradient(270deg, #06766E 0%, #20BA8B 100%);
+}
 /* ============================ Home Three End ============================= */
