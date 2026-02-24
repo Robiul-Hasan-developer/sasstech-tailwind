@@ -40,6 +40,8 @@
   --color-main-two-950: #070515;
 
   --color-heading: #150e3e;
+  --color-spring-green: #30e87a;
+  
 }
 
 img {
@@ -805,7 +807,15 @@ button {
   background: linear-gradient(270deg, #06766e 0%, #20ba8b 100%);
 }
 .home-three .btn-main-two {
-  background-color: #30e87a !important;
-  color: var(--heading-color) !important;
+  @apply bg-spring-green text-heading!;
 }
+
+
+.home-three .hover-style-one .button__flair::before {
+    @apply bg-spring-green;
+}
+.home-three .hover-style-two .button__flair::before {
+    background: linear-gradient(270deg, #06766E 0%, #20BA8B 100%);
+}
+
 /* ============================ Home Three End ============================= */
