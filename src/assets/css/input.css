@@ -509,8 +509,9 @@ button {
 }
 
 .has-submenu.activePage > a,
+.activePage > .nav-submenu__link,
 .has-submenu.activePage > a::before {
-  @apply text-main-600;
+  @apply text-main-600!;
 }
 .has-submenu:hover a::before {
   @apply translate-y-[-50%] rotate-[360deg];
