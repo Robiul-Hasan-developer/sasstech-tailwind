@@ -4751,6 +4751,59 @@ button {
   padding-top: 270px;
   padding-bottom: 170px;
 }
+.positioned-image {
+  position: absolute;
+  z-index: calc(1 * -1);
+  max-width: 10%;
+}
+.positioned-image.one {
+  inset-inline-start: calc(var(--spacing) * 0);
+  top: 64px;
+}
+.positioned-image.two {
+  inset-inline-start: 26%;
+  top: 12px;
+}
+.positioned-image.three {
+  inset-inline-start: 48%;
+  top: 24px;
+}
+.positioned-image.four {
+  inset-inline-end: 26%;
+  top: 0;
+}
+.positioned-image.five {
+  inset-inline-end: 9%;
+  top: 64px;
+}
+.positioned-image.six {
+  inset-inline-end: 0;
+  top: 42%;
+}
+.positioned-image.seven {
+  inset-inline-end: 105px;
+  bottom: 16%;
+}
+.positioned-image.eight {
+  inset-inline-end: 23%;
+  bottom: 35px;
+}
+.positioned-image.nine {
+  inset-inline-end: calc(var(--spacing) * 0);
+  inset-inline-end: 46%;
+}
+.positioned-image.ten {
+  inset-inline-start: 25%;
+  bottom: 64px;
+}
+.positioned-image.eleven {
+  inset-inline-start: 68px;
+  bottom: 20%;
+}
+.positioned-image.twelve {
+  inset-inline-start: 10%;
+  top: 38%;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

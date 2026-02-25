@@ -1407,4 +1407,57 @@ button {
 .breadcrumb {
   @apply pt-[270px] pb-[170px];
 }
+
+.positioned-image {
+  @apply absolute max-w-[10%] -z-[1];
+}
+
+.positioned-image.one {
+  @apply top-[64px] start-0;
+}
+
+.positioned-image.two {
+  @apply top-[12px] start-[26%];
+}
+
+.positioned-image.three {
+  @apply top-[24px] start-[48%];
+}
+
+.positioned-image.four {
+  @apply top-[0] end-[26%];
+}
+
+.positioned-image.five {
+  @apply top-[64px] end-[9%];
+}
+
+.positioned-image.six {
+  @apply top-[42%] end-[0];
+}
+
+.positioned-image.seven {
+  @apply end-[105px] bottom-[16%];
+}
+
+.positioned-image.eight {
+  @apply end-[23%] bottom-[35px];
+}
+
+.positioned-image.nine {
+  @apply end-[46%] end-0;
+}
+
+.positioned-image.ten {
+  @apply start-[25%] bottom-[64px];
+}
+
+.positioned-image.eleven {
+  @apply start-[68px] bottom-[20%];
+}
+
+.positioned-image.twelve {
+  @apply top-[38%] start-[10%];
+}
+
 /* ============================ Inner pages Css End ============================= */
