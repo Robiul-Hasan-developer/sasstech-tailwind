@@ -1379,6 +1379,10 @@
     border-inline-start-style: var(--tw-border-style);
     border-inline-start-width: 1px;
   }
+  .border-s-4 {
+    border-inline-start-style: var(--tw-border-style);
+    border-inline-start-width: 4px;
+  }
   .border-e {
     border-inline-end-style: var(--tw-border-style);
     border-inline-end-width: 1px;
@@ -1398,6 +1402,10 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
+  }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
   }
   .border-b-3 {
     border-bottom-style: var(--tw-border-style);
@@ -2618,14 +2626,57 @@
       color: var(--color-white);
     }
   }
+  .aria-selected\:border-s-4 {
+    &[aria-selected="true"] {
+      border-inline-start-style: var(--tw-border-style);
+      border-inline-start-width: 4px;
+    }
+  }
+  .aria-selected\:border-main-600 {
+    &[aria-selected="true"] {
+      border-color: var(--color-main-600);
+    }
+  }
   .aria-selected\:bg-main-600 {
     &[aria-selected="true"] {
       background-color: var(--color-main-600);
     }
   }
+  .aria-selected\:bg-white {
+    &[aria-selected="true"] {
+      background-color: var(--color-white);
+    }
+  }
+  .aria-selected\:font-bold {
+    &[aria-selected="true"] {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
+  }
+  .aria-selected\:font-semibold {
+    &[aria-selected="true"] {
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+  .aria-selected\:text-black {
+    &[aria-selected="true"] {
+      color: var(--color-black);
+    }
+  }
   .aria-selected\:text-heading {
     &[aria-selected="true"] {
       color: var(--color-heading);
+    }
+  }
+  .aria-selected\:text-neutral-500 {
+    &[aria-selected="true"] {
+      color: var(--color-neutral-500);
+    }
+  }
+  .aria-selected\:text-neutral-600 {
+    &[aria-selected="true"] {
+      color: var(--color-neutral-600);
     }
   }
   .aria-selected\:text-white {
