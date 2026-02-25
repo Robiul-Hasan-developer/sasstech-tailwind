@@ -1045,6 +1045,9 @@
   .max-w-\[672px\] {
     max-width: 672px;
   }
+  .max-w-\[700px\] {
+    max-width: 700px;
+  }
   .max-w-\[724px\] {
     max-width: 724px;
   }
@@ -1083,6 +1086,9 @@
   }
   .max-w-\[1800px\] {
     max-width: 1800px;
+  }
+  .max-w-\[1800px\]\! {
+    max-width: 1800px !important;
   }
   .max-w-\[1820px\] {
     max-width: 1820px;
@@ -2865,6 +2871,11 @@
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-12 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
     }
   }
   .lg\:flex-row {
