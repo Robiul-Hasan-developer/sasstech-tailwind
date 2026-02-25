@@ -4838,6 +4838,18 @@ button {
   translate: var(--tw-translate-x) var(--tw-translate-y);
   opacity: 1;
 }
+.col-border-wrapper > div {
+  border-inline-end-style: var(--tw-border-style);
+  border-inline-end-width: 1px;
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+  border-color: var(--color-neutral-200);
+}
+@media (min-width: 1200px) {
+  .col-border-wrapper > .bordered-item:nth-child(8n + 5), .col-border-wrapper > .bordered-item:nth-child(8n + 6), .col-border-wrapper > .bordered-item:nth-child(8n + 7), .col-border-wrapper > .bordered-item:nth-child(8n + 8) {
+    border-block-end: 0;
+  }
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

@@ -1491,4 +1491,16 @@ button {
 .group-item:hover .list-social li {
   @apply opacity-[1] translate-x-[0px];
 }
+
+.col-border-wrapper > div {
+  @apply border-e border-neutral-200 border-b;
+}
+@media (min-width: 1200px) {
+  .col-border-wrapper > .bordered-item:nth-child(8n + 5),
+  .col-border-wrapper > .bordered-item:nth-child(8n + 6),
+  .col-border-wrapper > .bordered-item:nth-child(8n + 7),
+  .col-border-wrapper > .bordered-item:nth-child(8n + 8) {
+    border-block-end: 0;
+  }
+}
 /* ============================ Inner pages Css End ============================= */
