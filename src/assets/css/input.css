@@ -1460,4 +1460,13 @@ button {
   @apply top-[38%] start-[10%];
 }
 
+.bg-app-landing {
+    @apply bg-[#0c848d]!;
+    /* background-color: hsl(var(--app-landing)); */
+}
+
+.bg-hover-app-landing:hover {
+  @apply bg-[#0c848d]!;
+}
+
 /* ============================ Inner pages Css End ============================= */
