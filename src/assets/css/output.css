@@ -2398,6 +2398,13 @@
       }
     }
   }
+  .hover\:bg-main-600\! {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-main-600) !important;
+      }
+    }
+  }
   .hover\:bg-main-800 {
     &:hover {
       @media (hover: hover) {
@@ -4801,10 +4808,35 @@ button {
   top: 38%;
 }
 .bg-app-landing {
-  background-color: #0c848d !important;
+  background-color: #0c848d;
 }
 .bg-hover-app-landing:hover {
   background-color: #0c848d !important;
+}
+.list-social li {
+  --tw-translate-x: 20px;
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  opacity: 0%;
+  transition-property: 0.2s ease-in-out;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+.list-social li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.list-social li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.list-social li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.list-social li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.group-item:hover .list-social li {
+  --tw-translate-x: 0px;
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  opacity: 1;
 }
 @property --tw-translate-x {
   syntax: "*";
