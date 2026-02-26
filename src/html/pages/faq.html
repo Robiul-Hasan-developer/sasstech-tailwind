@@ -1,42 +1,51 @@
 @@include('../partials/_template-top.html', {
-    'pageClass': 'heading-black'
+'pageClass': 'heading-black'
 })
 
 <div id="smooth-wrapper">
-    
+
     @@include('../partials/_header-two.html', {
-        headerClass: 'py-0 top-0 start-0 end-0 w-full z-99 mt-9 absolute header-inner-page',
-        logoText: 'logo-four.png',
-        navMenu: '_nav-menu-three.html',
-        btnClass: 'rounded-xl! btn-main-two hover-style-two'
+    headerClass: 'py-0 top-0 start-0 end-0 w-full z-99 mt-9 absolute header-inner-page',
+    logoText: 'logo-four.png',
+    navMenu: '_nav-menu-three.html',
+    btnClass: 'rounded-xl! btn-main-two hover-style-two'
     })
 
     <div id="smooth-content">
         <!-- ================================ Integrated apps start ====================================== -->
         <section class="pt-[224px] section-bg-two pb-[80px] sm:pb-[100px] lg:pb-[120px] overflow-hidden">
             <div class="container max-w-[1290px]">
-                <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-6 justify-center">
-                    <div class="col-span-12 xl:col-span-8">
+                <div class="">
+                    <div class="max-w-[836px] mx-auto">
                         <div class="text-center">
-                            <h3 class="mb-6">Hello, what can we help you find?</h3>
-                            <p class="font-medium text-neutral-500">Docly is a fully featured knowledge base theme for WordPress.</p>
+                            <h3 class="mb-6 font-bold">Hello, what can we help you find?</h3>
+                            <p class="font-medium text-neutral-500">Docly is a fully featured knowledge base theme for
+                                WordPress.</p>
                             <form action="#" class="relative mt-11">
-                                <input type="text" class="px-10 py-7.5 bg-white rounded-[50rem]! border-transparent focus:border-main-600 focus:outline-0 w-full sm:pe-[200px] common-shadow-seventeen" placeholder="Search What You Want To Know">
-                                <button type="submit" class="btn btn-main hover-style-one button--stroke inline-flex items-center justify-center gap-2 group active:-translate-y-2 font-semibold flex-shrink-0 py-6 px-12 rounded-[50rem]! position-sm-in-box" data-block="button">
+                                <input type="text"
+                                    class="px-10 py-7.5 bg-white rounded-[50rem]! border duration-400 border-transparent focus:border-main-600 focus:outline-0 w-full sm:pe-[200px] common-shadow-seventeen"
+                                    placeholder="Search What You Want To Know">
+                                <button type="submit"
+                                    class="btn btn-main hover-style-one button--stroke inline-flex items-center justify-center gap-2 group active:-translate-y-2 font-semibold flex-shrink-0 py-6! px-12 rounded-[50rem]! position-sm-in-box"
+                                    data-block="button">
                                     <span class="button__flair"></span>
-                                    <span class="text-white text-sm rounded flex justify-center items-center relative group-hover:text-main-600 duration-500">
+                                    <span
+                                        class="text-white text-sm rounded flex justify-center items-center relative group-hover:text-white duration-500">
                                         <i class="ph-bold ph-magnifying-glass"></i>
                                     </span>
                                     <span class="button__label">Search</span>
                                 </button>
                             </form>
-    
+
                             <div class="inline-flex items-center gap-6 mt-8 flex-wrap">
-                                <span class="font-semibold text-lg text-heading">Popular:</span>
+                                <span class="font-bold text-lg text-heading">Popular:</span>
                                 <div class="inline-flex items-center gap-4 flex-wrap">
-                                    <button type="button" class="px-4.5 py-1.5 bg-white rounded-md text-neutral-500 text-sm bg-white common-shadow-eighteen hover:bg-main-600 hover:text-white transition duration-200 font-medium">Coding</button>
-                                    <button type="button" class="px-4.5 py-1.5 bg-white rounded-md text-neutral-500 text-sm bg-white common-shadow-eighteen hover:bg-main-600 hover:text-white transition duration-200 font-medium">Traveling</button>
-                                    <button type="button" class="px-4.5 py-1.5 bg-white rounded-md text-neutral-500 text-sm bg-white common-shadow-eighteen hover:bg-main-600 hover:text-white transition duration-200 font-medium">aeroplane</button>
+                                    <button type="button"
+                                        class="px-4.5 py-1.5 bg-white rounded-md text-neutral-500 text-sm bg-white common-shadow-eighteen hover:bg-main-600 hover:text-white transition duration-200 font-medium">Coding</button>
+                                    <button type="button"
+                                        class="px-4.5 py-1.5 bg-white rounded-md text-neutral-500 text-sm bg-white common-shadow-eighteen hover:bg-main-600 hover:text-white transition duration-200 font-medium">Traveling</button>
+                                    <button type="button"
+                                        class="px-4.5 py-1.5 bg-white rounded-md text-neutral-500 text-sm bg-white common-shadow-eighteen hover:bg-main-600 hover:text-white transition duration-200 font-medium">aeroplane</button>
                                 </div>
                             </div>
                         </div>
@@ -45,227 +54,29 @@
             </div>
         </section>
         <!-- ================================ Integrated apps End ====================================== -->
-        
-        <!-- ============================== Faq Two Section Start ============================== -->
-        <section class="faq-two py-[80px] sm:py-[100px] lg:py-[120px]">
-            <div class="container">
-                <div class="grid grid-cols-1 sm:grid-cols-12 gap-6">
-                    <div class="col-span-12 lg:col-span-4">
-                        <div class="">
-                            <h3 class="splitTextStyleOne text-heading capitalize">
-                                Frequently ask
-                                <span class="font-dm-serif italic font-normal">Questions</span> 
-                            </h3>
-                            <p class="splitTextStyleOne text-neutral-500 mt-8 max-w-[500px] leading-[2.125] font-medium">Create tasks with various custom statuses to focus more on your keep track of the progress of each why in</p>
-    
-                            <div class="mt-9" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="900" >
-                                <a href="register.html" class="hover:-translate-y-1 active:-translate-y-scale-9 btn button--stroke gap-5 group active:-translate-y-2 rounded-xl! capitalize px-8 py-5.5! font-medium btn-main-two hover-style-two" data-block="button">
-                                    <span class="button__flair"></span>
-                                    <span class="button__label">Contact Us</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-8">
-                        <div class="xl:ps-12">
-                            <div class="accordion common-accordion style-two arrow-bg-orange" id="accordionExample">
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        What is Sassly?
-                                    </button>
-                                </h5>
-                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Why should I choose Sassly?
-                                    </button>
-                                </h5>
-                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Can I upgrade to a different plan at a later time?
-                                    </button>
-                                </h5>
-                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        What’s the cost of additional users?
-                                    </button>
-                                </h5>
-                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        Whats the commitment?
-                                    </button>
-                                </h5>
-                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        What languages does Sassly AI support?
-                                    </button>
-                                </h5>
-                                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ============================== Faq Two Section End ============================== -->
-        
-        <!-- ============================== Faq Section Start ============================== -->
-        <section class="pb-[80px] sm:pb-[100px] lg:pb-[120px]">
-            <div class="container">
-                <div class="grid grid-cols-1 sm:grid-cols-12 gap-6">
-                    <div class="col-span-12 lg:col-span-5">
-                        <div class="">
-                            <h3 class="splitTextStyleOne text-heading capitalize">
-                                Navigating the Digital Marketing Landscape FAQs Unveiled
-                            </h3>
-                            <p class="splitTextStyleOne text-neutral-500 mt-8 max-w-[500px] leading-[2.125] font-medium">Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium totamto aperiame eaque ipsa quae ab illo inventore veritatis</p>
-    
-                            <div class="mt-9" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="900" >
-                                <a href="register.html" class="hover:-translate-y-1 active:-translate-y-scale-9 btn button--stroke gap-5 group active:-translate-y-2 rounded-xl! capitalize px-8 py-5.5! font-medium btn-main hover-style-one" data-block="button">
-                                    <span class="button__flair"></span>
-                                    <span class="button__label">get started trial</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-12 lg:col-span-7">
-                        <div class="xl:ps-12">
-                            <div class="accordion common-accordion style-two style-two-three arrow-bg-orange" id="accordionExampleTwo">
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoTwo" aria-expanded="false" aria-controls="collapseTwoTwo">
-                                        What is Sassly?
-                                    </button>
-                                </h5>
-                                <div id="collapseTwoTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneTwo" aria-expanded="true" aria-controls="collapseOneTwo">
-                                        Why should I choose Sassly?
-                                    </button>
-                                </h5>
-                                <div id="collapseOneTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExampleTwo">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeTwo" aria-expanded="false" aria-controls="collapseThreeTwo">
-                                        Can I upgrade to a different plan at a later time?
-                                    </button>
-                                </h5>
-                                <div id="collapseThreeTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourTwo" aria-expanded="false" aria-controls="collapseFourTwo">
-                                        What’s the cost of additional users?
-                                    </button>
-                                </h5>
-                                <div id="collapseFourTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveTwo" aria-expanded="false" aria-controls="collapseFiveTwo">
-                                        What’s the commitment?
-                                    </button>
-                                </h5>
-                                <div id="collapseFiveTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item py-8 px-4 lg:px-6 xl:px-8 2xl:px-10 rounded-xl bg-transparent border-0 mb-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" >
-                                <h5 class="accordion-header flex items-center justify-between gap-3">
-                                    <button class="accordion-button shadow-none p-0 line-clamp-3 bg-transparent h5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixTwo" aria-expanded="false" aria-controls="collapseSixTwo">
-                                        What languages does Sassly AI support?
-                                    </button>
-                                </h5>
-                                <div id="collapseSixTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
-                                    <div class="accordion-body p-0 mt-6.5 max-w-[620px]">
-                                    <p class="text-neutral-500 leading-[2.125]">GoDaddy offers more than just a platform to build your website, we offer everything you need to create an effective, memorable online presence. Already have a site? We offer hosting plans that will keep it fast, secure and online. Our professional</p>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ============================== Faq Section End ============================== -->
-        
+
+        @@include('../partials/_faq-two.html', {
+        'sectionClasses': 'py-[80px] sm:py-[100px] lg:py-[120px]'
+        })
+
+        @@include('../partials/_faq.html')
+
+
         @@include('../partials/_task-management.html', {
-            sectionClass: 'bg-neutral-light-half',
-            singleBtn: 'hidden',
-            multipleBtn: 'block',
+        sectionClass: 'bg-neutral-light-half',
+        singleBtn: 'hidden',
+        multipleBtn: 'block',
         })
-            
+
         @@include('../partials/_footer-three.html', {
-            sectionClass: 'bg-neutral-light'
+        sectionClass: 'bg-neutral-light'
         })
-        
-  </div>
+
+    </div>
 </div>
 
-    
-    @@include('../partials/_template-bottom.html')
+
+@@include('../partials/_template-bottom.html')
 </body>
+
 </html>
