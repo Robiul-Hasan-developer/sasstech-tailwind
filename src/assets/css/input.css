@@ -1682,5 +1682,34 @@ input[type="range"]::-moz-range-thumb:hover {
   @apply scale-150;
 }
 /* Range slider End */
-
 /* ============================ Inner pages Css End ============================= */
+
+/* ========================================== Shop page css start ========================================== */
+.grid-view .product-item-wrapper > div {
+    grid-column: span 6 / span 6;
+}
+
+@media (max-width: 768px) {
+    .grid-view .product-item-wrapper > div {
+        width: 100%;
+    }
+}
+
+.grid-view .product-item {
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.grid-view .product-item__content {
+    text-align: start !important;
+    flex-grow: 1;
+}
+
+.grid-view .product-item__thumb {
+    max-width: 170px;
+    height: 190px;
+    min-height: unset;
+    width: 100%;
+}
+
+/* ========================================== Shop page css End ========================================== */
