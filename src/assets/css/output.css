@@ -2167,6 +2167,9 @@
   .text-purple-600 {
     color: var(--color-purple-600);
   }
+  .text-red-600 {
+    color: var(--color-red-600);
+  }
   .text-spring-green {
     color: var(--color-spring-green);
   }
