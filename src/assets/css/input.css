@@ -1833,3 +1833,14 @@ input[type="range"]::-moz-range-thumb:hover {
   background-color: var(--info-600);
 }
 /* ================= Toast message css start =================== */
+
+/* Custom Cursor Css Start */
+.cursor,
+.dot {
+  @apply fixed top-0 left-0 rounded-full pointer-events-none flex items-center justify-center text-[8px] text-black invisible w-8 h-8 border border-black translate-x-[-50%] translate-y-[-50%] mix-blend-difference z-[9999999];
+}
+
+.dot {
+  @apply bg-white w-1 h-1;
+}
+/* Custom Cursor Css End */

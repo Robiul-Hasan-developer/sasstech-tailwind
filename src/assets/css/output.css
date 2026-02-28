@@ -910,9 +910,6 @@
   .w-17 {
     width: calc(var(--spacing) * 17);
   }
-  .w-405 {
-    width: calc(var(--spacing) * 405);
-  }
   .w-\[75px\] {
     width: 75px;
   }
@@ -1845,6 +1842,9 @@
   }
   .pe-15 {
     padding-inline-end: calc(var(--spacing) * 15);
+  }
+  .pe-\[56px\] {
+    padding-inline-end: 56px;
   }
   .pe-\[100px\] {
     padding-inline-end: 100px;
@@ -3278,11 +3278,6 @@
       padding-inline: calc(var(--spacing) * 9);
     }
   }
-  .xl\:px-10 {
-    @media (width >= 80rem) {
-      padding-inline: calc(var(--spacing) * 10);
-    }
-  }
   .xl\:px-10\! {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 10) !important;
@@ -3457,11 +3452,6 @@
   .\32 xl\:px-13 {
     @media (width >= 96rem) {
       padding-inline: calc(var(--spacing) * 13);
-    }
-  }
-  .\32 xl\:px-14 {
-    @media (width >= 96rem) {
-      padding-inline: calc(var(--spacing) * 14);
     }
   }
   .\32 xl\:px-14\! {
@@ -5241,6 +5231,34 @@ input[type="range"]::-moz-range-thumb:hover {
 }
 .info .progress__bar::before {
   background-color: var(--info-600);
+}
+.cursor, .dot {
+  pointer-events: none;
+  visibility: hidden;
+  position: fixed;
+  top: calc(var(--spacing) * 0);
+  left: calc(var(--spacing) * 0);
+  z-index: 9999999;
+  display: flex;
+  height: calc(var(--spacing) * 8);
+  width: calc(var(--spacing) * 8);
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(infinity * 1px);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: var(--color-black);
+  font-size: 8px;
+  color: var(--color-black);
+  mix-blend-mode: difference;
+}
+.dot {
+  height: calc(var(--spacing) * 1);
+  width: calc(var(--spacing) * 1);
+  background-color: var(--color-white);
 }
 @property --tw-translate-x {
   syntax: "*";
