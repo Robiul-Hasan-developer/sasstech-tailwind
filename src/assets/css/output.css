@@ -4004,7 +4004,7 @@ button {
   --tw-content: "\e136";
   content: var(--tw-content);
 }
-.has-submenu.activePage > a, .activePage > .nav-submenu__link, .has-submenu.activePage > a::before {
+.has-submenu.activePage > a, .activePage > .nav-submenu__link, .nav-menu__item.activePage > a, .has-submenu.activePage > a::before {
   color: var(--color-main-600) !important;
 }
 .has-submenu:hover a::before {
