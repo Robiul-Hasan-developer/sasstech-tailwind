@@ -2498,6 +2498,13 @@
       }
     }
   }
+  .hover\:scale-\[1\.2\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.2;
+      }
+    }
+  }
   .hover\:scale-\[1\.4\] {
     &:hover {
       @media (hover: hover) {
