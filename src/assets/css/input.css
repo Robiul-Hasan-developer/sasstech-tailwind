@@ -1686,34 +1686,150 @@ input[type="range"]::-moz-range-thumb:hover {
 
 /* ========================================== Shop page css start ========================================== */
 .grid-view .product-item-wrapper > div {
-    grid-column: span 6 / span 6;
+  grid-column: span 6 / span 6;
 }
 
 @media (max-width: 768px) {
-    .grid-view .product-item-wrapper > div {
-        width: 100%;
-    }
+  .grid-view .product-item-wrapper > div {
+    width: 100%;
+  }
 }
 
 .grid-view .product-item {
-    flex-direction: row !important;
-    align-items: center;
+  flex-direction: row !important;
+  align-items: center;
 }
 
 .grid-view .product-item__content {
-    text-align: start !important;
-    flex-grow: 1;
+  text-align: start !important;
+  flex-grow: 1;
 }
 
 .grid-view .product-item__thumb {
-    max-width: 170px;
-    height: 190px;
-    min-height: unset;
-    width: 100%;
+  max-width: 170px;
+  height: 190px;
+  min-height: unset;
+  width: 100%;
 }
 
 .shop-small-thumbs .swiper-slide.swiper-slide-thumb-active > div {
-    @apply border-main-600;
+  @apply border-main-600;
 }
 
 /* ========================================== Shop page css End ========================================== */
+
+/* ================= Toast message css start =================== */
+/* ================= Toast message Tailwind =================== */
+:root {
+  --success-600: #16a34a;
+  --danger-600: #dc2626;
+  --warning-600: #d97706;
+  --info-600: #0284c7;
+}
+
+#toast-container {
+  @apply fixed top-5 right-5 flex flex-col gap-4 z-[9999];
+}
+
+.toast-message {
+  @apply relative w-[300px] overflow-hidden bg-white shadow-lg rounded-md px-4 py-3 inline-block;
+  transform: translateX(calc(100% + 20px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.25, 1.35);
+  border-inline-start: 3px solid var(--success-600);
+}
+
+.toast-message.active {
+  transform: translateX(0);
+}
+
+.toast-message.active .progress__bar::before {
+  animation: progress-bar 3.5s linear forwards;
+  visibility: visible;
+  opacity: 1;
+}
+
+.toast-message:hover .progress__bar::before {
+  animation-play-state: paused;
+}
+
+.toast-message__content {
+  @apply flex items-center gap-4;
+}
+
+.toast-message__icon {
+  @apply text-2xl leading-none;
+  color: var(--success-600);
+}
+
+.toast-message__title {
+  @apply text-lg mb-0 font-bold;
+}
+
+.toast-message__close {
+  @apply bg-transparent border-0 p-0 leading-none text-base;
+}
+
+.toast-message__text {
+  @apply text-sm text-gray-600;
+}
+
+.progress__bar {
+  @apply absolute bottom-0 left-0 h-[3px] w-full bg-white;
+}
+
+.progress__bar::before {
+  content: "";
+  @apply absolute bottom-0 left-0 h-full w-full opacity-0 invisible;
+  background-color: var(--success-600);
+}
+
+@keyframes progress-bar {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+/* ===== Variants ===== */
+
+.success {
+  border-color: var(--success-600);
+}
+.success .toast-message__icon {
+  color: var(--success-600) !important;
+}
+.success .progress__bar::before {
+  background-color: var(--success-600);
+}
+
+.danger {
+  border-color: var(--danger-600);
+}
+.danger .toast-message__icon {
+  color: var(--danger-600) !important;
+}
+.danger .progress__bar::before {
+  background-color: var(--danger-600);
+}
+
+.warning {
+  border-color: var(--warning-600);
+}
+.warning .toast-message__icon {
+  color: var(--warning-600) !important;
+}
+.warning .progress__bar::before {
+  background-color: var(--warning-600);
+}
+
+.info {
+  border-color: var(--info-600);
+}
+.info .toast-message__icon {
+  color: var(--info-600) !important;
+}
+.info .progress__bar::before {
+  background-color: var(--info-600);
+}
+/* ================= Toast message css start =================== */
