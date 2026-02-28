@@ -1190,6 +1190,9 @@
   .resize {
     resize: both;
   }
+  .appearance-none {
+    appearance: none;
+  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1410,10 +1413,6 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .border-b-2 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 2px;
-  }
   .border-b-3 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 3px;
@@ -1487,6 +1486,9 @@
   }
   .bg-\[\#FEE496\] {
     background-color: #FEE496;
+  }
+  .bg-\[\#f3f4f6\] {
+    background-color: #f3f4f6;
   }
   .bg-\[\#ffffff0a\] {
     background-color: #ffffff0a;
@@ -2438,6 +2440,11 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .placeholder\:text-neutral-500 {
+    &::placeholder {
+      color: var(--color-neutral-500);
+    }
+  }
   .hover\:z-\[99\] {
     &:hover {
       @media (hover: hover) {
@@ -2646,6 +2653,12 @@
   .focus\:border-main-600 {
     &:focus {
       border-color: var(--color-main-600);
+    }
+  }
+  .focus\:outline {
+    &:focus {
+      outline-style: var(--tw-outline-style);
+      outline-width: 1px;
     }
   }
   .focus\:outline-0 {
