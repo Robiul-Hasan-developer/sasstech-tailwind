@@ -910,6 +910,9 @@
   .w-17 {
     width: calc(var(--spacing) * 17);
   }
+  .w-405 {
+    width: calc(var(--spacing) * 405);
+  }
   .w-\[75px\] {
     width: 75px;
   }
