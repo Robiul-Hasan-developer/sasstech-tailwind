@@ -1004,6 +1004,9 @@
   .max-w-\[218px\] {
     max-width: 218px;
   }
+  .max-w-\[224px\] {
+    max-width: 224px;
+  }
   .max-w-\[228px\] {
     max-width: 228px;
   }
@@ -1688,11 +1691,17 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+  .px-10\! {
+    padding-inline: calc(var(--spacing) * 10) !important;
+  }
   .px-11 {
     padding-inline: calc(var(--spacing) * 11);
   }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
+  }
+  .px-12\! {
+    padding-inline: calc(var(--spacing) * 12) !important;
   }
   .px-13 {
     padding-inline: calc(var(--spacing) * 13);
