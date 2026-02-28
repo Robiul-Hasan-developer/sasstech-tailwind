@@ -5260,6 +5260,60 @@ input[type="range"]::-moz-range-thumb:hover {
   width: calc(var(--spacing) * 1);
   background-color: var(--color-white);
 }
+.settings-button {
+  pointer-events: auto;
+}
+.settings-button .close-icon {
+  display: none;
+}
+.settings-button.active .setting-icon {
+  display: none;
+}
+.settings-button.active .close-icon {
+  display: block;
+}
+.settings-panel {
+  pointer-events: none;
+  inset-inline-end: -280px;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
+.settings-panel.active {
+  inset-inline-end: calc(var(--spacing) * 0);
+}
+.settings-panel.active .settings-panel__content {
+  --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.settings-panel__content {
+  pointer-events: auto;
+  max-height: 100vh;
+  width: 280px;
+  overflow-y: auto;
+  transition-property: inherit;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+.settings-panel__button.active {
+  background-color: var(--color-main-600);
+}
+.remove-animate-cursor .cursor, .remove-animate-cursor .dot {
+  display: none;
+}
+.animation-rotate {
+  animation: animationRotate 2s linear infinite;
+}
+@keyframes animationRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

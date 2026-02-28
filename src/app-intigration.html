@@ -33,7 +33,50 @@
   </div>
   <!--==================== Preloader End ====================-->
 
-  
+  <!-- ========================== Settings Panel start ==================================== -->
+<div class="settings-panel fixed top-[50%] translate-y-[-50%] z-999 flex items-center">
+  <button type="button"
+    class="settings-button w-12 h-12 bg-main-600 text-white hover:bg-main-800 duration-100 flex justify-center items-center">
+    <i class="ph-fill ph-gear-six setting-icon text-2xl leading-none! animation-rotate w-6 h-6"></i>
+    <i class="ph-bold ph-x close-icon text-2xl leading-none! w-6 h-6"></i>
+  </button>
+
+  <div class="settings-panel__content bg-white px-6 py-13 flex flex-col gap-10 scroll-sm overflow-y-auto">
+    <div class="flex flex-col gap-10">
+      <div class="">
+        <h6 class="settings-panel__title text-center mb-6 font-bold uppercase">
+          Cursor
+        </h6>
+        <div class="settings-panel__buttons cursor__buttons flex gap-4">
+          <button type="button"
+            class="settings-panel__button cursor-animate bg-main-two-600 hover:bg-main-600 duration-300 text-white text-base py-3.5 px-3 font-medium active:scale-094 flex-grow-1 active">
+            Animate
+          </button>
+          <button type="button"
+            class="settings-panel__button cursor-default bg-main-two-600 hover:bg-main-600 duration-300 text-white text-base py-3.5 px-3 font-medium active:scale-094 flex-grow-1">
+            Default
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <h6 class="settings-panel__title text-center mb-6 font-bold uppercase">
+          Direction
+        </h6>
+        <div class="settings-panel__buttons flex gap-4">
+          <button type="button"
+            class="settings-panel__button direction-ltr bg-main-two-600 hover:bg-main-600 duration-300 text-white text-base py-3.5 px-3 font-medium active:scale-094 flex-grow-1 active">
+            LTR
+          </button>
+          <button type="button"
+            class="settings-panel__button direction-rtl bg-main-two-600 hover:bg-main-600 duration-300 text-white text-base py-3.5 px-3 font-medium active:scale-094 flex-grow-1">
+            RTL
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ========================== Settings Panel end ==================================== -->
 
   <!--==================== Overlay Start ====================-->
   <div class="overlay"></div>

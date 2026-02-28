@@ -1846,3 +1846,59 @@ input[type="range"]::-moz-range-thumb:hover {
   @apply bg-white w-1 h-1;
 }
 /* Custom Cursor Css End */
+
+/* settings panel css start */
+.settings-button {
+  @apply pointer-events-auto;
+}
+
+.settings-button .close-icon {
+  @apply hidden;
+}
+
+.settings-button.active .setting-icon {
+  @apply hidden;
+}
+
+.settings-button.active .close-icon {
+  @apply block;
+}
+
+.settings-panel {
+  @apply pointer-events-none transition-all duration-300 end-[-280px];
+}
+
+.settings-panel.active {
+  @apply end-0;
+}
+
+.settings-panel.active .settings-panel__content {
+  @apply shadow-2xl;
+}
+
+.settings-panel__content {
+  @apply pointer-events-auto overflow-y-auto max-h-screen w-[280px] transition-[inherit];
+}
+
+.settings-panel__button.active {
+  @apply bg-main-600;
+}
+
+.remove-animate-cursor .cursor,
+.remove-animate-cursor .dot {
+  @apply hidden;
+}
+
+.animation-rotate {
+  animation: animationRotate 2s linear infinite;
+}
+
+@keyframes animationRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* settings panel css end */
