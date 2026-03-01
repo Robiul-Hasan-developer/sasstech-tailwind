@@ -20,8 +20,8 @@
             </p>
         </div>
 
-        <div class="border border-[#ffffff1f] rounded-2xl sm:p-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
-            data-aos-duration="900">
+        <div class="border border-[#ffffff1f] rounded-2xl sm:p-6" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="900">
             <div class="background-img bg-img rounded-2xl bg-position-top-center w-full! h-full object-cover bg-center bg-no-repeat bg-[length:100%]!"
                 data-background-image="assets/images/shapes/dashboard-screen.png">
                 <div class="p-7 pt-16 flex gap-13 lg:flex-row flex-col">
@@ -29,101 +29,100 @@
                     <!-- Sidebar Start -->
                     <div class="bg-[#f3f4f6] rounded-2xl p-4 max-w-[330px] flex-shrink-0">
                         <div class="ps-4 pt-2 mb-10 pb-10">
-                            <a href="index.html" class="">
+                            <a href="index.html">
                                 <img src="assets/images/logo/logo-two.png" alt="Logo">
                             </a>
                         </div>
-                        <div class="">
-                            <div class="">
-                                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center active-gradient-bg"
-                                    id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content"
-                                    data-tabs-active-classes="text-purple hover:text-purple border-purple"
-                                    data-tabs-inactive-classes="dark:border-transparent text-body hover:text-fg-brand border-default hover:border-brand"
-                                    role="tablist">
-                                    <li class="w-full" role="presentation">
-                                        <button
-                                            class="group w-full animation-item py-5.5 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4 hover:text-spring-green aria-selected:text-white"
-                                            id="profile-styled-tab" data-tabs-target="#styled-profile" type="button"
-                                            role="tab" aria-controls="profile" aria-selected="false">
-                                            <span
-                                                class="icon group-aria-selected:invert-[10] group-aria-selected:brightness-[0] inline-block animate__heartBeat">
-                                                <img src="assets/images/icons/workplace-tab-icon1.svg" alt="Icon">
-                                            </span>
-                                            All Teams
-                                        </button>
-                                    </li>
-                                    <li class="w-full" role="presentation">
-                                        <button
-                                            class="group w-full animation-item py-5.5 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4 hover:text-spring-green aria-selected:text-white"
-                                            id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button"
-                                            role="tab" aria-controls="dashboard" aria-selected="false">
-                                            <span
-                                                class="icon group-aria-selected:invert-[10] group-aria-selected:brightness-[0] inline-block animate__heartBeat">
-                                                <img src="assets/images/icons/workplace-tab-icon2.svg" alt="Icon">
-                                            </span>
-                                            Security
-                                        </button>
-                                    </li>
-                                    <li class="w-full" role="presentation">
-                                        <button
-                                            class="group w-full animation-item py-5.5 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4 hover:text-spring-green aria-selected:text-white"
-                                            id="settings-styled-tab" data-tabs-target="#styled-settings" type="button"
-                                            role="tab" aria-controls="settings" aria-selected="false">
-                                            <span
-                                                class="icon group-aria-selected:invert-[10] group-aria-selected:brightness-[0] inline-block animate__heartBeat">
-                                                <img src="assets/images/icons/workplace-tab-icon3.svg" alt="Icon">
-                                            </span>
-                                            Technology
-                                        </button>
-                                    </li>
-                                    <li class="w-full" role="presentation">
-                                        <button
-                                            class="group w-full animation-item py-5.5 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4 hover:text-spring-green aria-selected:text-white"
-                                            id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button"
-                                            role="tab" aria-controls="contacts" aria-selected="false">
-                                            <span
-                                                class="icon group-aria-selected:invert-[10] group-aria-selected:brightness-[0] inline-block animate__heartBeat">
-                                                <img src="assets/images/icons/workplace-tab-icon4.svg" alt="Icon">
-                                            </span>
-                                            Infrastructure
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+
+                        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center active-gradient-bg"
+                            id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" role="tablist">
+
+                            <li class="w-full" role="presentation">
+                                <button id="profile-styled-tab" data-tabs-target="#styled-profile" type="button"
+                                    role="tab" aria-controls="styled-profile" aria-selected="false"
+                                    class="group w-full animation-item py-5.5 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4 hover:text-spring-green aria-selected:text-white">
+                                    <span
+                                        class="icon group-aria-selected:invert-[10] group-aria-selected:brightness-[0] inline-block">
+                                        <img src="assets/images/icons/workplace-tab-icon1.svg" alt="Icon">
+                                    </span>
+                                    All Teams
+                                </button>
+                            </li>
+
+                            <li class="w-full" role="presentation">
+                                <button id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button"
+                                    role="tab" aria-controls="styled-dashboard" aria-selected="false"
+                                    class="group w-full animation-item py-5.5 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4 hover:text-spring-green aria-selected:text-white">
+                                    <span
+                                        class="icon group-aria-selected:invert-[10] group-aria-selected:brightness-[0] inline-block">
+                                        <img src="assets/images/icons/workplace-tab-icon2.svg" alt="Icon">
+                                    </span>
+                                    Security
+                                </button>
+                            </li>
+
+                            <li class="w-full" role="presentation">
+                                <button id="settings-styled-tab" data-tabs-target="#styled-settings" type="button"
+                                    role="tab" aria-controls="styled-settings" aria-selected="false"
+                                    class="group w-full animation-item py-5.5 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4 hover:text-spring-green aria-selected:text-white">
+                                    <span
+                                        class="icon group-aria-selected:invert-[10] group-aria-selected:brightness-[0] inline-block">
+                                        <img src="assets/images/icons/workplace-tab-icon3.svg" alt="Icon">
+                                    </span>
+                                    Technology
+                                </button>
+                            </li>
+
+                            <li class="w-full" role="presentation">
+                                <button id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button"
+                                    role="tab" aria-controls="styled-contacts" aria-selected="false"
+                                    class="group w-full animation-item py-5.5 px-9 text-lg font-bold text-heading rounded-xl flex items-center gap-4 hover:text-spring-green aria-selected:text-white">
+                                    <span
+                                        class="icon group-aria-selected:invert-[10] group-aria-selected:brightness-[0] inline-block">
+                                        <img src="assets/images/icons/workplace-tab-icon4.svg" alt="Icon">
+                                    </span>
+                                    Infrastructure
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                     <!-- Sidebar End -->
 
                     <!-- Contents Start -->
                     <div id="default-styled-tab-content">
-                        <div class="hidden rounded-base bg-neutral-secondary-soft" id="styled-profile"
-                            role="tabpanel" aria-labelledby="profile-tab">
+
+                        <div id="styled-profile" role="tabpanel" aria-labelledby="profile-styled-tab"
+                            class="hidden rounded-base bg-neutral-secondary-soft">
                             <div class="rounded-2xl">
                                 <img src="assets/images/thumbs/workplace-tab-thumb.png" alt="Thumbs"
                                     class="w-full h-full">
                             </div>
                         </div>
-                        <div class="hidden rounded-base bg-neutral-secondary-soft" id="styled-dashboard"
-                            role="tabpanel" aria-labelledby="dashboard-tab">
+
+                        <div id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-styled-tab"
+                            class="hidden rounded-base bg-neutral-secondary-soft">
                             <div class="rounded-2xl">
                                 <img src="assets/images/thumbs/workplace-tab-thumb.png" alt="Thumbs"
                                     class="w-full h-full">
                             </div>
                         </div>
-                        <div class="hidden rounded-base bg-neutral-secondary-soft" id="styled-settings"
-                            role="tabpanel" aria-labelledby="settings-tab">
+
+                        <div id="styled-settings" role="tabpanel" aria-labelledby="settings-styled-tab"
+                            class="hidden rounded-base bg-neutral-secondary-soft">
                             <div class="rounded-2xl">
                                 <img src="assets/images/thumbs/workplace-tab-thumb.png" alt="Thumbs"
                                     class="w-full h-full">
                             </div>
                         </div>
-                        <div class="hidden rounded-base bg-neutral-secondary-soft" id="styled-contacts"
-                            role="tabpanel" aria-labelledby="contacts-tab">
+
+                        <div id="styled-contacts" role="tabpanel" aria-labelledby="contacts-styled-tab"
+                            class="hidden rounded-base bg-neutral-secondary-soft">
                             <div class="rounded-2xl">
                                 <img src="assets/images/thumbs/workplace-tab-thumb.png" alt="Thumbs"
                                     class="w-full h-full">
                             </div>
                         </div>
+
                     </div>
                     <!-- Contents End -->
                 </div>
