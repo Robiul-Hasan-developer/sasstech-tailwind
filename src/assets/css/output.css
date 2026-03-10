@@ -74,6 +74,7 @@
     --color-main-950: #081a42;
     --color-main-two-600: #150e3e;
     --color-spring-green: #30e87a;
+    --color-crm: #256bfe;
   }
 }
 @layer base {
@@ -1391,9 +1392,17 @@
     border-style: var(--tw-border-style);
     border-width: 3px;
   }
+  .border-x-0 {
+    border-inline-style: var(--tw-border-style);
+    border-inline-width: 0px;
+  }
   .border-s {
     border-inline-start-style: var(--tw-border-style);
     border-inline-start-width: 1px;
+  }
+  .border-s-0 {
+    border-inline-start-style: var(--tw-border-style);
+    border-inline-start-width: 0px;
   }
   .border-s-2 {
     border-inline-start-style: var(--tw-border-style);
@@ -1423,9 +1432,9 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .border-b-2 {
+  .border-b-0 {
     border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 2px;
+    border-bottom-width: 0px;
   }
   .border-b-3 {
     border-bottom-style: var(--tw-border-style);
@@ -1507,6 +1516,9 @@
   .bg-\[\#f3f4f6\] {
     background-color: #f3f4f6;
   }
+  .bg-\[\#f5f5f8\] {
+    background-color: #f5f5f8;
+  }
   .bg-\[\#f6f6f6\] {
     background-color: #f6f6f6;
   }
@@ -1527,6 +1539,9 @@
   }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-crm {
+    background-color: var(--color-crm);
   }
   .bg-main-50 {
     background-color: var(--color-main-50);
@@ -1981,6 +1996,9 @@
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
   }
+  .pb-0\! {
+    padding-bottom: calc(var(--spacing) * 0) !important;
+  }
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
   }
@@ -2153,6 +2171,12 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
+  .text-crm {
+    color: var(--color-crm);
+  }
+  .text-crm\! {
+    color: var(--color-crm) !important;
+  }
   .text-heading {
     color: var(--color-heading);
   }
@@ -2250,6 +2274,10 @@
   }
   .shadow-xl {
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xs {
+    --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
@@ -3399,6 +3427,12 @@
   .xl\:pb-\[120px\] {
     @media (width >= 80rem) {
       padding-bottom: 120px;
+    }
+  }
+  .xl\:text-2xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .xl\:text-xl {
@@ -5512,9 +5546,6 @@ input[type="range"]::-moz-range-thumb:hover {
 .home-crm .font-caveat {
   font-family: var(--font-caveat);
 }
-.home-crm .text-crm {
-  color: var(--crm-color);
-}
 .home-crm .text-blue {
   color: var(--blue-color);
 }
@@ -5533,6 +5564,9 @@ input[type="range"]::-moz-range-thumb:hover {
 }
 .home-crm .btn-orange-outline .button__flair::before {
   background-color: #ff5e1a;
+}
+.bg-dark-light-style .accordion-item:has(button[aria-expanded="true"]) {
+  background-color: #f5f5f8;
 }
 @property --tw-translate-x {
   syntax: "*";

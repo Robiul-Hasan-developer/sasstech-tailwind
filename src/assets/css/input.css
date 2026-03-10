@@ -42,6 +42,7 @@
   --color-heading: #150e3e;
   --color-orange: #ff5e1a;
   --color-spring-green: #30e87a;
+  --color-crm: #256bfe;
 }
 
 img {
@@ -1997,10 +1998,6 @@ input[type="range"]::-moz-range-thumb:hover {
   font-family: var(--font-caveat);
 }
 
-.home-crm .text-crm {
-  color: var(--crm-color);
-}
-
 .home-crm .text-blue {
   color: var(--blue-color);
 }
@@ -2018,11 +2015,15 @@ input[type="range"]::-moz-range-thumb:hover {
 }
 
 .home-crm .header .header-box-inner {
-  border-radius: 50rem;
-  padding-inline: 24px;
+  @apply rounded-[50rem] px-[24px];
 }
 
 .home-crm .btn-orange-outline .button__flair::before {
   @apply bg-[#ff5e1a];
+}
+
+
+.bg-dark-light-style .accordion-item:has(button[aria-expanded="true"]) {
+  @apply bg-[#f5f5f8];
 }
 /* ===================== Home CRM End ================================= */
