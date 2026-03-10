@@ -1392,17 +1392,9 @@
     border-style: var(--tw-border-style);
     border-width: 3px;
   }
-  .border-x-0 {
-    border-inline-style: var(--tw-border-style);
-    border-inline-width: 0px;
-  }
   .border-s {
     border-inline-start-style: var(--tw-border-style);
     border-inline-start-width: 1px;
-  }
-  .border-s-0 {
-    border-inline-start-style: var(--tw-border-style);
-    border-inline-start-width: 0px;
   }
   .border-s-2 {
     border-inline-start-style: var(--tw-border-style);
@@ -1431,10 +1423,6 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
-  }
-  .border-b-0 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 0px;
   }
   .border-b-3 {
     border-bottom-style: var(--tw-border-style);
@@ -1521,6 +1509,9 @@
   }
   .bg-\[\#f6f6f6\] {
     background-color: #f6f6f6;
+  }
+  .bg-\[\#fff\] {
+    background-color: #fff;
   }
   .bg-\[\#ffffff0a\] {
     background-color: #ffffff0a;
@@ -1644,9 +1635,6 @@
   }
   .p-12 {
     padding: calc(var(--spacing) * 12);
-  }
-  .px-0 {
-    padding-inline: calc(var(--spacing) * 0);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -1810,9 +1798,6 @@
   .py-\[100px\] {
     padding-block: 100px;
   }
-  .ps-0 {
-    padding-inline-start: calc(var(--spacing) * 0);
-  }
   .ps-2 {
     padding-inline-start: calc(var(--spacing) * 2);
   }
@@ -1863,9 +1848,6 @@
   }
   .ps-\[98px\] {
     padding-inline-start: 98px;
-  }
-  .pe-0 {
-    padding-inline-end: calc(var(--spacing) * 0);
   }
   .pe-1 {
     padding-inline-end: calc(var(--spacing) * 1);
@@ -5572,6 +5554,12 @@ input[type="range"]::-moz-range-thumb:hover {
 }
 .bg-dark-light-style .accordion-item:has(button[aria-expanded="true"]) {
   background-color: #f5f5f8;
+}
+.bg-white-style .accordion-item:has(button[aria-expanded="true"]) {
+  background-color: #fff;
+}
+.gradient-bg-top-bottom {
+  background: linear-gradient(0deg, #e7e7ea 0%, rgba(238, 238, 252, 0) 100%);
 }
 @property --tw-translate-x {
   syntax: "*";
