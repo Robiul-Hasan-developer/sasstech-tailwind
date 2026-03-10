@@ -40,6 +40,7 @@
   --color-main-two-950: #070515;
 
   --color-heading: #150e3e;
+  --color-orange: #ff5e1a;
   --color-spring-green: #30e87a;
 }
 
@@ -469,7 +470,7 @@ button {
 }
 
 .btn-orange-outline {
-  @apply border-orange-600 text-orange-600;
+  @apply border border-orange-600 text-orange-600;
 }
 /* =========================== Button Css End =================== */
 
@@ -2019,5 +2020,9 @@ input[type="range"]::-moz-range-thumb:hover {
 .home-crm .header .header-box-inner {
   border-radius: 50rem;
   padding-inline: 24px;
+}
+
+.home-crm .btn-orange-outline .button__flair::before {
+  @apply bg-[#ff5e1a];
 }
 /* ===================== Home CRM End ================================= */
