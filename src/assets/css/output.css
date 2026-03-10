@@ -2158,6 +2158,9 @@
   .text-blue-600 {
     color: var(--color-blue-600);
   }
+  .text-blue-600\! {
+    color: var(--color-blue-600) !important;
+  }
   .text-crm {
     color: var(--color-crm);
   }
