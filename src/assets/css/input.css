@@ -2159,16 +2159,24 @@ input[type="range"]::-moz-range-thumb:hover {
 }
 
 .gradient-line {
-  background: linear-gradient(90deg, #FFFFFF 0%, #E5E3E3 7%, #E6E3E3 50%, #E5E3E3 94%, #FFFFFF 100%);
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #e5e3e3 7%,
+    #e6e3e3 50%,
+    #e5e3e3 94%,
+    #ffffff 100%
+  );
 }
 
 .gradient-bg-eight {
-    background: linear-gradient(0deg, #DAF2FF 0%, #DAF2FF 100%);
+  background: linear-gradient(0deg, #daf2ff 0%, #daf2ff 100%);
 }
 
-.stair-bg::before, .stair-bg::after {
+.stair-bg::before,
+.stair-bg::after {
   @apply absolute content-[""] w-full h-full top-[-35px] start-0 z-[-1] rounded-[inherit];
-  background: linear-gradient(0deg, #FFE3DA 0%, #FFE3DA 100%);
+  background: linear-gradient(0deg, #ffe3da 0%, #ffe3da 100%);
 }
 .stair-bg::after {
   @apply top-[-70px] z-[-2];
@@ -2181,5 +2189,17 @@ input[type="range"]::-moz-range-thumb:hover {
 
 .inactive-dots-white .swiper-pagination-bullet-active {
   @apply bg-main-600 opacity-[1];
+}
+
+.pagination-style-five .swiper-pagination-bullet {
+  @apply w-8 h-8 bg-transparent flex items-center justify-center text-[13px] font-semibold text-black;
+}
+
+.pagination-style-five .swiper-pagination-bullet-active {
+  @apply bg-transparent! text-black;
+}
+
+.shop-small-thumbs .swiper-slide.swiper-slide-thumb-active > div {
+  @apply border border-main-600;
 }
 /* ===================== Home Five End ================================= */
