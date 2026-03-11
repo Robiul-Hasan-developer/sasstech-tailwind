@@ -2151,6 +2151,10 @@
     --tw-leading: 1.53 !important;
     line-height: 1.53 !important;
   }
+  .leading-\[1\] {
+    --tw-leading: 1;
+    line-height: 1;
+  }
   .leading-\[2\.125\] {
     --tw-leading: 2.125;
     line-height: 2.125;
