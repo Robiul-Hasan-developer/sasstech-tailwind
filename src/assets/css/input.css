@@ -2192,14 +2192,19 @@ input[type="range"]::-moz-range-thumb:hover {
 }
 
 .pagination-style-five .swiper-pagination-bullet {
-  @apply w-8 h-8 bg-transparent flex items-center justify-center text-[13px] font-semibold text-black;
+  @apply w-8 h-8 bg-transparent flex items-center justify-center text-[13px] font-bold text-black! opacity-[.6] hover:text-blue-600;
 }
 
 .pagination-style-five .swiper-pagination-bullet-active {
-  @apply bg-transparent! text-black;
+  @apply border border-main-600 text-blue-600!;
 }
 
 .shop-small-thumbs .swiper-slide.swiper-slide-thumb-active > div {
   @apply border border-main-600;
+}
+
+.gradient-bg-70-top-bottom::before {
+  @apply absolute content-[""] w-full h-[84%] start-0 bottom-0 z-[-1] rounded-[inherit];
+  background: linear-gradient(180deg, #d7f2ff 0%, #f5f5fd 74.92%, #ffffff 100%);
 }
 /* ===================== Home Five End ================================= */
