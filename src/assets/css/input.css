@@ -2162,4 +2162,17 @@ input[type="range"]::-moz-range-thumb:hover {
   background: linear-gradient(90deg, #FFFFFF 0%, #E5E3E3 7%, #E6E3E3 50%, #E5E3E3 94%, #FFFFFF 100%);
 }
 
+.gradient-bg-eight {
+    background: linear-gradient(0deg, #DAF2FF 0%, #DAF2FF 100%);
+}
+
+.stair-bg::before, .stair-bg::after {
+  @apply absolute content-[""] w-full h-full top-[-35px] start-0 z-[-1] rounded-[inherit];
+  background: linear-gradient(0deg, #FFE3DA 0%, #FFE3DA 100%);
+}
+.stair-bg::after {
+  @apply top-[-70px] z-[-2];
+  background: var(--color-main-600);
+}
+
 /* ===================== Home Five End ================================= */
