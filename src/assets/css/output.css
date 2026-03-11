@@ -5506,7 +5506,7 @@ input[type="range"]::-moz-range-thumb:hover {
   background: linear-gradient(0deg, #e7e7ea 0%, rgba(238, 238, 252, 0) 100%);
 }
 .gradient-bg-bottom-top {
-  background: linear-gradient(0deg, #F7F6FC 0%, #F5F5FD 74.92%, #FFFFFF 100%);
+  background: linear-gradient(0deg, #f7f6fc 0%, #f5f5fd 74.92%, #ffffff 100%);
 }
 .home-five {
   --color-main-50: #e6f6f7;
@@ -5578,9 +5578,6 @@ input[type="range"]::-moz-range-thumb:hover {
 .home-five .hover-style-two .button__flair::before {
   background: var(--main-600);
 }
-.home-five .hover-style-one .button__flair::before {
-  background-color: var(--main-two-600) !important;
-}
 .home-five .header.fixed-header {
   position: fixed !important;
   margin-block-start: 0;
@@ -5591,7 +5588,10 @@ input[type="range"]::-moz-range-thumb:hover {
   background-color: transparent;
 }
 .gradient-bg-seven {
-  background: linear-gradient(180deg, #D7F2FF 0%, #F5F5FD 74.92%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #d7f2ff 0%, #f5f5fd 74.92%, #ffffff 100%);
+}
+.gradient-line {
+  background: linear-gradient(90deg, #FFFFFF 0%, #E5E3E3 7%, #E6E3E3 50%, #E5E3E3 94%, #FFFFFF 100%);
 }
 @property --tw-translate-x {
   syntax: "*";

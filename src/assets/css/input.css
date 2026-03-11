@@ -2022,7 +2022,6 @@ input[type="range"]::-moz-range-thumb:hover {
   @apply bg-[#ff5e1a];
 }
 
-
 .bg-dark-light-style .accordion-item:has(button[aria-expanded="true"]) {
   @apply bg-[#f5f5f8];
 }
@@ -2031,16 +2030,16 @@ input[type="range"]::-moz-range-thumb:hover {
   @apply bg-[#fff];
 }
 .gradient-bg-top-bottom {
-    background: linear-gradient(0deg, #e7e7ea 0%, rgba(238, 238, 252, 0) 100%);
+  background: linear-gradient(0deg, #e7e7ea 0%, rgba(238, 238, 252, 0) 100%);
 }
 .gradient-bg-bottom-top {
-  background: linear-gradient(0deg, #F7F6FC 0%, #F5F5FD 74.92%, #FFFFFF 100%);
+  background: linear-gradient(0deg, #f7f6fc 0%, #f5f5fd 74.92%, #ffffff 100%);
 }
 /* ===================== Home CRM End ================================= */
 
 /* ===================== Home Five Start ================================= */
 .home-five {
-  --color-main-50:  #e6f6f7;
+  --color-main-50: #e6f6f7;
   --color-main-100: #c0e6e9;
   --color-main-200: #8fd2d7;
   --color-main-300: #5ebec5;
@@ -2054,96 +2053,113 @@ input[type="range"]::-moz-range-thumb:hover {
 }
 
 .home-five:root {
-    --heading-one: clamp(2.125rem, -0.0733rem + 5.5vw, 4.375rem);
-    --heading-two: clamp(2rem, 0.3353rem + 2.1661vw, 3.5rem);
-    --heading-three: clamp(1.5rem, 0.7133rem + 2.8846vw, 1.75rem);
-    --heading-four: clamp(1.25rem, 1.2rem + 0.722vw, 1.5rem);
-    --heading-five: clamp(1.125rem, 0.769rem + 0.6813vw, 1.25rem);
-    --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.125rem);
+  --heading-one: clamp(2.125rem, -0.0733rem + 5.5vw, 4.375rem);
+  --heading-two: clamp(2rem, 0.3353rem + 2.1661vw, 3.5rem);
+  --heading-three: clamp(1.5rem, 0.7133rem + 2.8846vw, 1.75rem);
+  --heading-four: clamp(1.25rem, 1.2rem + 0.722vw, 1.5rem);
+  --heading-five: clamp(1.125rem, 0.769rem + 0.6813vw, 1.25rem);
+  --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.125rem);
   /* template main color */
-    --main-h: 184;
-    --main-s: 84%;
-    --main-l: 30%;
-    --main: var(--main-h) var(--main-s) var(--main-l);
+  --main-h: 184;
+  --main-s: 84%;
+  --main-l: 30%;
+  --main: var(--main-h) var(--main-s) var(--main-l);
   /* template main two color */
-    --main-two-h: 205;
-    --main-two-s: 75%;
-    --main-two-l: 11%;
-    --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
-    --heading-color: #072032;
+  --main-two-h: 205;
+  --main-two-s: 75%;
+  --main-two-l: 11%;
+  --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
+  --heading-color: #072032;
 }
 
-.home-five h1, .home-five .h1, .home-five h2, .home-five .h2, .home-five h3, .home-five .h3, .home-five h4, .home-five .h4, .home-five h5, .home-five .h5, .home-five h6, .home-five .h6 {
-    color: var(--heading-color);
+.home-five h1,
+.home-five .h1,
+.home-five h2,
+.home-five .h2,
+.home-five h3,
+.home-five .h3,
+.home-five h4,
+.home-five .h4,
+.home-five h5,
+.home-five .h5,
+.home-five h6,
+.home-five .h6 {
+  color: var(--heading-color);
 }
 
-.home-five h1, .home-five .h1 {
-    font-size: var(--heading-one);
+.home-five h1,
+.home-five .h1 {
+  font-size: var(--heading-one);
 }
 
-.home-five h2, .home-five .h2 {
-    font-size: var(--heading-two);
+.home-five h2,
+.home-five .h2 {
+  font-size: var(--heading-two);
 }
 
-.home-five h3, .home-five .h3 {
-    font-size: var(--heading-three);
+.home-five h3,
+.home-five .h3 {
+  font-size: var(--heading-three);
 }
 
-.home-five h4, .home-five .h4 {
-    font-size: var(--heading-four);
+.home-five h4,
+.home-five .h4 {
+  font-size: var(--heading-four);
 }
 
-.home-five h5, .home-five .h5 {
-    font-size: var(--heading-five);
+.home-five h5,
+.home-five .h5 {
+  font-size: var(--heading-five);
 }
 
-.home-five h6, .home-five .h6 {
-    font-size: var(--heading-six);
+.home-five h6,
+.home-five .h6 {
+  font-size: var(--heading-six);
 }
 
 .home-five .font-dm-serif {
-    font-family: var(--dm-serif);
+  font-family: var(--dm-serif);
 }
 
 .home-five .text-heading {
-    color: var(--heading-color);
+  color: var(--heading-color);
 }
 
 .home-five .bg-main-three {
-    background-color: var(--bg-main-green);
+  background-color: var(--bg-main-green);
 }
 
 .home-five .btn-main-two {
-    background-color: var(--main-two-600) !important;
-    color: hsl(var(--white)) !important;
+  background-color: var(--main-two-600) !important;
+  color: hsl(var(--white)) !important;
 }
 
-.home-five .btn-main-two:hover, .home-five .btn-main-two:hover span {
-    color: hsl(var(--white)) !important;
+.home-five .btn-main-two:hover,
+.home-five .btn-main-two:hover span {
+  color: hsl(var(--white)) !important;
 }
 
 .home-five .hover-style-two .button__flair::before {
-    background: var(--main-600);
-}
-
-.home-five .hover-style-one .button__flair::before {
-    background-color: var(--main-two-600) !important;
+  background: var(--main-600);
 }
 
 .home-five .header.fixed-header {
-    position: fixed !important;
-    margin-block-start: 0;
-    background-color: #fff;
+  position: fixed !important;
+  margin-block-start: 0;
+  background-color: #fff;
 }
 
 .home-five .header.fixed-header .header-three__inner {
-    box-shadow: none !important;
-    background-color: transparent;
+  box-shadow: none !important;
+  background-color: transparent;
 }
 
 .gradient-bg-seven {
-    background: linear-gradient(180deg, #D7F2FF 0%, #F5F5FD 74.92%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #d7f2ff 0%, #f5f5fd 74.92%, #ffffff 100%);
 }
 
+.gradient-line {
+  background: linear-gradient(90deg, #FFFFFF 0%, #E5E3E3 7%, #E6E3E3 50%, #E5E3E3 94%, #FFFFFF 100%);
+}
 
 /* ===================== Home Five End ================================= */
