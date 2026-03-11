@@ -2175,4 +2175,11 @@ input[type="range"]::-moz-range-thumb:hover {
   background: var(--color-main-600);
 }
 
+.inactive-dots-white .swiper-pagination-bullet {
+  @apply bg-white opacity-[.6];
+}
+
+.inactive-dots-white .swiper-pagination-bullet-active {
+  @apply bg-main-600 opacity-[1];
+}
 /* ===================== Home Five End ================================= */
