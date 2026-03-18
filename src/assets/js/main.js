@@ -338,44 +338,42 @@
     // ================================= Testimonials Five slider End =========================
 
     // ========================= Counter Up Js Start ===================
-    const counterUp = window.counterUp.default;
+    const counterUp = window.counterUp?.default;
 
-    const callback = (entries) => {
+    // Exit if library not loaded
+    if (!counterUp) return;
+    const counters = document.querySelectorAll(".counter");
+
+    // Exit if no counters
+    if (!counters.length) return;
+    const callback = (entries, observer) => {
       entries.forEach((entry) => {
         const el = entry.target;
+
         if (entry.isIntersecting && !el.classList.contains("is-visible")) {
           counterUp(el, {
             duration: 3500,
             delay: 16,
           });
+
           el.classList.add("is-visible");
+
+          // Stop observing after animation (performance boost)
+          observer.unobserve(el);
         }
       });
     };
-    const IO = new IntersectionObserver(callback, { threshold: 1 });
 
-    // Banner statistics Counter
-    const statisticsCounter = document.querySelectorAll(".counter");
-    if (statisticsCounter.length > 0) {
-      statisticsCounter.forEach((counterNumber) => {
-        IO.observe(counterNumber);
-      });
-    }
+    const observer = new IntersectionObserver(callback, {
+      threshold: 0.5, // better UX than 1
+    });
 
-    // performance Count
-    const performanceCount = document.querySelectorAll(".counter");
-    if (performanceCount.length > 0) {
-      performanceCount.forEach((counterNumber) => {
-        IO.observe(counterNumber);
-      });
-    }
+    // Observe all counters (ONLY ONCE)
+    counters.forEach((el) => observer.observe(el));
     // ========================= Counter Up Js End ===================
 
     // ========================= AOS Js Start ===================
-    // AOS.init();
-    AOS.init({
-      // once: true,
-    });
+    AOS.init();
     // ========================= AOS Js End ===================
 
     // ========================= Animated Radial Progress Js Start ===================
@@ -682,7 +680,7 @@
     // ========================= Plan Execute slider Js End ===================
 
     // ========================= Testimonials Three slider Js start ===================
-    var planExecuteSlider = new Swiper(".testimonials-three-slider", {
+    var testimonialsThreeSlider = new Swiper(".testimonials-three-slider", {
       autoplay: {
         delay: 2000,
         disableOnInteraction: false,

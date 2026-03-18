@@ -5658,6 +5658,9 @@ input[type="range"]::-moz-range-thumb:hover {
   content: var(--tw-content);
   background: linear-gradient(180deg, #d7f2ff 0%, #f5f5fd 74.92%, #ffffff 100%);
 }
+.home-two-header .header-box-inner {
+  border-radius: 16px;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

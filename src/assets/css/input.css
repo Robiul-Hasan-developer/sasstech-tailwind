@@ -2141,4 +2141,9 @@ input[type="range"]::-moz-range-thumb:hover {
   @apply absolute content-[""] w-full h-[84%] start-0 bottom-0 z-[-1] rounded-[inherit];
   background: linear-gradient(180deg, #d7f2ff 0%, #f5f5fd 74.92%, #ffffff 100%);
 }
+
+
+.home-two-header .header-box-inner {
+    border-radius: 16px;
+}
 /* ===================== Home Five End ================================= */
