@@ -29,45 +29,34 @@
     // ============== Mobile Nav Menu Dropdown Js End =======================
 
     // ===================== Scroll Back to Top Js Start ======================
-    const progressPath = document.querySelector(".progress-wrap path");
+    const progressWrap = $(".progress-wrap");
 
-    if (progressPath) {
-      const pathLength = progressPath.getTotalLength();
+    // Exit if element doesn't exist
+    if (!progressWrap.length) return;
 
-      progressPath.style.transition = "none";
-      progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
-      progressPath.style.strokeDashoffset = pathLength;
+    const offset = 50;
+    const duration = 550;
 
-      progressPath.getBoundingClientRect();
+    // Scroll handler
+    const toggleProgress = () => {
+      if ($(window).scrollTop() > offset) {
+        progressWrap.addClass("active-progress");
+      } else {
+        progressWrap.removeClass("active-progress");
+      }
+    };
 
-      progressPath.style.transition = "stroke-dashoffset 10ms linear";
+    // Run on load
+    toggleProgress();
 
-      const updateProgress = function () {
-        const scroll = $(window).scrollTop();
-        const height = $(document).height() - $(window).height();
-        const progress = pathLength - (scroll * pathLength) / height;
-        progressPath.style.strokeDashoffset = progress;
-      };
+    // Optimized scroll event
+    $(window).on("scroll", toggleProgress);
 
-      updateProgress();
-      $(window).on("scroll", updateProgress);
-
-      const offset = 50;
-      const duration = 550;
-
-      $(window).on("scroll", function () {
-        if ($(this).scrollTop() > offset) {
-          $(".progress-wrap").addClass("active-progress");
-        } else {
-          $(".progress-wrap").removeClass("active-progress");
-        }
-      });
-
-      $(".progress-wrap").on("click", function (event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, duration);
-      });
-    }
+    // Scroll to top on click
+    progressWrap.on("click", function (e) {
+      e.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, duration);
+    });
     // ===================== Scroll Back to Top Js End ======================
 
     // ========================== add active class to navbar menu current page Js Start =====================

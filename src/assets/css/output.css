@@ -56,7 +56,6 @@
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
-    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -5379,76 +5378,44 @@ input[type="range"]::-moz-range-thumb:hover {
   }
 }
 .progress-wrap {
+  visibility: hidden;
   position: fixed;
   inset-inline-end: 36px;
-  inset-block-end: 36px;
+  bottom: 36px;
+  z-index: 10000;
+  display: flex;
   height: 46px;
   width: 46px;
+  --tw-translate-y: 15px;
+  translate: var(--tw-translate-x) var(--tw-translate-y);
   cursor: pointer;
-  display: block;
-  border-radius: 50px;
-  box-shadow: 0 0 34px #3f3f3f;
-  z-index: 10000;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(15px);
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-  background-color: var(--black);
-  mix-blend-mode: difference;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(infinity * 1px);
+  background-color: var(--color-main-600);
+  color: var(--color-white);
+  opacity: 0%;
+  --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
 }
 @media screen and (max-width: 991px) {
   .progress-wrap {
     inset-inline-end: 24px;
-    inset-block-end: 24px;
+    bottom: 24px;
     height: 40px;
     width: 40px;
-    line-height: 40px;
   }
 }
 .progress-wrap.active-progress {
-  opacity: 1;
   visibility: visible;
-  transform: translateY(0);
-}
-.progress-wrap:hover {
-  transform: scale(1.06);
-}
-.progress-wrap::after {
-  position: absolute;
-  font-family: "Phosphor";
-  font-weight: 900;
-  content: "\e08e";
-  text-align: center;
-  height: 46px;
-  width: 46px;
-  line-height: 46px;
-  font-size: 18px;
-  inset-inline-start: 0;
-  inset-block-start: 0;
-  cursor: pointer;
-  display: block;
-  z-index: 1;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-  color: hsl(var(--main)) !important;
-}
-@media screen and (max-width: 991px) {
-  .progress-wrap::after {
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-  }
-}
-.progress-wrap svg path {
-  fill: none;
-}
-.progress-wrap svg.progress-circle path {
-  stroke: var(--main-600);
-  stroke-width: 5;
-  box-sizing: border-box;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
+  --tw-translate-y: calc(var(--spacing) * 0);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  opacity: 100%;
 }
 .home-four-header.fixed-header {
   position: fixed !important;

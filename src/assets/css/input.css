@@ -1832,83 +1832,17 @@ input[type="range"]::-moz-range-thumb:hover {
 
 /* ===================== Scroll to Top Start ================================= */
 .progress-wrap {
-  position: fixed;
-  inset-inline-end: 36px;
-  inset-block-end: 36px;
-  height: 46px;
-  width: 46px;
-  cursor: pointer;
-  display: block;
-  border-radius: 50px;
-  box-shadow: 0 0 34px #3f3f3f;
-  z-index: 10000;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(15px);
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-  background-color: var(--black);
-  mix-blend-mode: difference;
+  @apply fixed flex justify-center items-center rounded-full z-[10000] opacity-0 invisible translate-y-[15px] transition-all duration-200 cursor-pointer end-[36px] bottom-[36px] h-[46px] w-[46px] shadow bg-main-600 text-white;
 }
 
 @media screen and (max-width: 991px) {
   .progress-wrap {
-    inset-inline-end: 24px;
-    inset-block-end: 24px;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
+    @apply end-[24px] bottom-[24px] h-[40px] w-[40px];
   }
 }
 
 .progress-wrap.active-progress {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.progress-wrap:hover {
-  transform: scale(1.06);
-}
-
-.progress-wrap::after {
-  position: absolute;
-  font-family: "Phosphor";
-  font-weight: 900;
-  content: "\e08e";
-  text-align: center;
-  height: 46px;
-  width: 46px;
-  line-height: 46px;
-  font-size: 18px;
-  inset-inline-start: 0;
-  inset-block-start: 0;
-  cursor: pointer;
-  display: block;
-  z-index: 1;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-  color: hsl(var(--main)) !important;
-}
-
-@media screen and (max-width: 991px) {
-  .progress-wrap::after {
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-  }
-}
-
-.progress-wrap svg path {
-  fill: none;
-}
-
-.progress-wrap svg.progress-circle path {
-  stroke: var(--main-600);
-  stroke-width: 5;
-  box-sizing: border-box;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
+  @apply opacity-100 visible translate-y-0;
 }
 /* ===================== Scroll to Top End ================================= */
 
