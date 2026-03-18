@@ -134,34 +134,51 @@
 
     // ********************* Toast Notification Js start *********************
     function toastMessage(messageType, messageTitle, messageText, messageIcon) {
-      let $toastContainer = $("#toast-container");
+      const $toastContainer = $("#toast-container");
 
-      let $toast = $("<div>", {
-        class: `toast-message ${messageType}`,
-        html: `
-        <div class="toast-message__content">
-          <span class="toast-message__icon">
-            <i class="${messageIcon}"></i>
-          </span>
-          <div class="flex-grow-1">
-            <div class="flex items-start justify-between mb-1">
-              <h6 class="toast-message__title">${messageTitle}</h6>
-              <button type="button" class="toast-message__close">
-                <i class="ph-bold ph-x"></i>
-              </button>
-            </div>
-            <span class="toast-message__text">${messageText}</span>
-          </div>
-        </div>
-        <div class="progress__bar"></div>
-      `,
-      });
+      // Exit if container not found
+      if (!$toastContainer.length) return;
+
+      // Create elements safely
+      const $toast = $("<div>").addClass(`toast-message ${messageType}`);
+
+      const $content = $("<div>").addClass("toast-message__content");
+
+      const $icon = $("<span>")
+        .addClass("toast-message__icon")
+        .append($("<i>").addClass(messageIcon));
+
+      const $body = $("<div>").addClass("flex-grow-1");
+
+      const $header = $("<div>").addClass(
+        "flex items-start justify-between mb-1",
+      );
+
+      const $title = $("<h6>")
+        .addClass("toast-message__title")
+        .text(messageTitle); // ✅ SAFE
+
+      const $closeBtn = $("<button>")
+        .attr("type", "button")
+        .addClass("toast-message__close")
+        .append($("<i>").addClass("ph-bold ph-x"));
+
+      const $text = $("<span>")
+        .addClass("toast-message__text")
+        .text(messageText); // ✅ SAFE
+
+      const $progress = $("<div>").addClass("progress__bar");
+
+      // Build structure
+      $header.append($title, $closeBtn);
+      $body.append($header, $text);
+      $content.append($icon, $body);
+      $toast.append($content, $progress);
 
       $toastContainer.append($toast);
 
-      setTimeout(() => {
-        $toast.addClass("active");
-      }, 50);
+      // Show animation
+      setTimeout(() => $toast.addClass("active"), 50);
 
       let totalDuration = 3500;
       let startTime = Date.now();
@@ -170,26 +187,19 @@
 
       function hideToast() {
         $toast.removeClass("active");
-        setTimeout(() => {
-          $toast.remove();
-        }, 500);
+        setTimeout(() => $toast.remove(), 500);
       }
 
-      // Remove Toast on Close Button Click
-      $toast.find(".toast-message__close").on("click", function () {
-        $toast.removeClass("active");
-        setTimeout(() => {
-          $toast.remove();
-        }, 500);
-      });
+      // Close button
+      $closeBtn.on("click", hideToast);
 
-      // Pause Timeout on Hover
+      // Pause on hover
       $toast.on("mouseenter", function () {
         remainingTime -= Date.now() - startTime;
         clearTimeout(toastTimeout);
       });
 
-      // Resume Timeout on Mouse Leave
+      // Resume on leave
       $toast.on("mouseleave", function () {
         startTime = Date.now();
         toastTimeout = setTimeout(hideToast, remainingTime);
@@ -879,10 +889,9 @@
     // ========================= Form Submit Js Start ===================
     $(document).on("submit", ".form-submit", function (e) {
       e.preventDefault();
+      const $form = $(this);
 
-      $("input").val("");
-
-      $("textarea").val("");
+      $form.find("input, textarea").val("");
 
       toastMessage(
         "success",
