@@ -337,41 +337,6 @@
     });
     // ================================= Testimonials Five slider End =========================
 
-    // ========================= Counter Up Js Start ===================
-    const counterUp = window.counterUp?.default;
-
-    // Exit if library not loaded
-    if (!counterUp) return;
-    const counters = document.querySelectorAll(".counter");
-
-    // Exit if no counters
-    if (!counters.length) return;
-    const callback = (entries, observer) => {
-      entries.forEach((entry) => {
-        const el = entry.target;
-
-        if (entry.isIntersecting && !el.classList.contains("is-visible")) {
-          counterUp(el, {
-            duration: 3500,
-            delay: 16,
-          });
-
-          el.classList.add("is-visible");
-
-          // Stop observing after animation (performance boost)
-          observer.unobserve(el);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(callback, {
-      threshold: 0.5, // better UX than 1
-    });
-
-    // Observe all counters (ONLY ONCE)
-    counters.forEach((el) => observer.observe(el));
-    // ========================= Counter Up Js End ===================
-
     // ========================= AOS Js Start ===================
     AOS.init();
     // ========================= AOS Js End ===================
@@ -946,20 +911,25 @@
 
     // ========================= See All Feature pricing plan Js Start ===================
     $(document).on("click", ".see-all-btn", function () {
-      const $pricingItem = $(this).closest(".pricing-item");
+      const $btn = $(this);
+      const $pricingItem = $btn.closest(".pricing-item");
+
+      // Toggle class
       $pricingItem.toggleClass("expand");
 
-      // Check if 'expand' class is added and update the button content accordingly
+      // Clear existing content safely
+      $btn.empty();
+
       if ($pricingItem.hasClass("expand")) {
-        $(this).html(`
-        Less features
-        <i class="ph-bold ph-caret-up"></i>
-      `);
+        // Text (safe)
+        $btn.text("Less features ");
+
+        // Icon (safe append)
+        $btn.append($("<i>").addClass("ph-bold ph-caret-up"));
       } else {
-        $(this).html(`
-        See all features
-        <i class="ph-bold ph-caret-down"></i>
-      `);
+        $btn.text("See all features ");
+
+        $btn.append($("<i>").addClass("ph-bold ph-caret-down"));
       }
     });
     // ========================= See All Feature pricing plan Js End ===================
@@ -991,6 +961,41 @@
       }
     });
     // ========================= Toggle Monthly Yearly duration pricing plan Js End ===================
+
+    // ========================= Counter Up Js Start ===================
+    const counterUp = window.counterUp?.default;
+
+    // Exit if library not loaded
+    if (!counterUp) return;
+    const counters = document.querySelectorAll(".counter");
+
+    // Exit if no counters
+    if (!counters.length) return;
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
+
+        if (entry.isIntersecting && !el.classList.contains("is-visible")) {
+          counterUp(el, {
+            duration: 3500,
+            delay: 16,
+          });
+
+          el.classList.add("is-visible");
+
+          // Stop observing after animation (performance boost)
+          observer.unobserve(el);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, {
+      threshold: 0.5, // better UX than 1
+    });
+
+    // Observe all counters (ONLY ONCE)
+    counters.forEach((el) => observer.observe(el));
+    // ========================= Counter Up Js End ===================
   });
   // ==========================================
   //      End Document Ready function
