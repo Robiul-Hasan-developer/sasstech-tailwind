@@ -29,37 +29,45 @@
     // ============== Mobile Nav Menu Dropdown Js End =======================
 
     // ===================== Scroll Back to Top Js Start ======================
-    var progressPath = document.querySelector(".progress-wrap path");
-    var pathLength = progressPath.getTotalLength();
-    progressPath.style.transition = progressPath.style.WebkitTransition =
-      "none";
-    progressPath.style.strokeDasharray = pathLength + " " + pathLength;
-    progressPath.style.strokeDashoffset = pathLength;
-    progressPath.getBoundingClientRect();
-    progressPath.style.transition = progressPath.style.WebkitTransition =
-      "stroke-dashoffset 10ms linear";
-    var updateProgress = function () {
-      var scroll = $(window).scrollTop();
-      var height = $(document).height() - $(window).height();
-      var progress = pathLength - (scroll * pathLength) / height;
-      progressPath.style.strokeDashoffset = progress;
-    };
-    updateProgress();
-    $(window).scroll(updateProgress);
-    var offset = 50;
-    var duration = 550;
-    jQuery(window).on("scroll", function () {
-      if (jQuery(this).scrollTop() > offset) {
-        jQuery(".progress-wrap").addClass("active-progress");
-      } else {
-        jQuery(".progress-wrap").removeClass("active-progress");
-      }
-    });
-    jQuery(".progress-wrap").on("click", function (event) {
-      event.preventDefault();
-      jQuery("html, body").animate({ scrollTop: 0 }, duration);
-      return false;
-    });
+    const progressPath = document.querySelector(".progress-wrap path");
+
+    if (progressPath) {
+      const pathLength = progressPath.getTotalLength();
+
+      progressPath.style.transition = "none";
+      progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+      progressPath.style.strokeDashoffset = pathLength;
+
+      progressPath.getBoundingClientRect();
+
+      progressPath.style.transition = "stroke-dashoffset 10ms linear";
+
+      const updateProgress = function () {
+        const scroll = $(window).scrollTop();
+        const height = $(document).height() - $(window).height();
+        const progress = pathLength - (scroll * pathLength) / height;
+        progressPath.style.strokeDashoffset = progress;
+      };
+
+      updateProgress();
+      $(window).on("scroll", updateProgress);
+
+      const offset = 50;
+      const duration = 550;
+
+      $(window).on("scroll", function () {
+        if ($(this).scrollTop() > offset) {
+          $(".progress-wrap").addClass("active-progress");
+        } else {
+          $(".progress-wrap").removeClass("active-progress");
+        }
+      });
+
+      $(".progress-wrap").on("click", function (event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, duration);
+      });
+    }
     // ===================== Scroll Back to Top Js End ======================
 
     // ========================== add active class to navbar menu current page Js Start =====================
@@ -111,7 +119,7 @@
       function () {
         $(this).siblings().removeClass("active");
         $(this).addClass("active");
-      }
+      },
     );
 
     // Cursor start
@@ -744,7 +752,7 @@
             $range.css(
               "inset-inline-start",
               (minPrice / parseInt($rangeInput.eq(0).attr("max"), 10)) * 100 +
-                "%"
+                "%",
             );
           } else {
             $rangeInput.eq(1).val(maxPrice);
@@ -752,7 +760,7 @@
               "inset-inline-end",
               100 -
                 (maxPrice / parseInt($rangeInput.eq(1).attr("max"), 10)) * 100 +
-                "%"
+                "%",
             );
           }
         }
@@ -774,13 +782,13 @@
           $priceInput.eq(1).val(maxVal);
           $range.css(
             "inset-inline-start",
-            (minVal / parseInt($rangeInput.eq(0).attr("max"), 10)) * 100 + "%"
+            (minVal / parseInt($rangeInput.eq(0).attr("max"), 10)) * 100 + "%",
           );
           $range.css(
             "inset-inline-end",
             100 -
               (maxVal / parseInt($rangeInput.eq(1).attr("max"), 10)) * 100 +
-              "%"
+              "%",
           );
         }
       });
@@ -807,7 +815,7 @@
       },
     });
     // ========================= Shop Details Slider Js End =====================
-    
+
     // ========================= Testimonials Six Slider Js Start =====================
     var testimonialsSixSlider = new Swiper(".testimonials-six-slider", {
       slidesPerView: 2,
@@ -873,7 +881,7 @@
         "danger",
         "Deleted",
         "You deleted successfully!",
-        "ph-bold ph-trash"
+        "ph-bold ph-trash",
       );
     });
 
@@ -891,7 +899,7 @@
         "success",
         "Success",
         "Form submitted successfully!",
-        "ph-fill ph-check-circle"
+        "ph-fill ph-check-circle",
       );
     });
     // ========================= Form Submit Js End ===================
